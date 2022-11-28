@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--gray-color);
+
+  &__container {
+    @include flex-all-sb;
+  }
+
+}
+.header-logo {
+
+  @include flex-v-center;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 5%;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--light-color);
+  }
+
+
+}
