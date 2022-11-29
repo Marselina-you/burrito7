@@ -1,11 +1,14 @@
 .header {
-  background-color: var(--gray-color);
+  position: relative;
+  z-index: 100;
+  background: transparent;
 
   &__container {
     @include flex-all-sb;
   }
 
 }
+
 .header-logo {
 
   @include flex-v-center;

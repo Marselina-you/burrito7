@@ -80,7 +80,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
+  padding: 0 15px;
   max-width: 1560px;
 }
 
@@ -104,4 +104,11 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+.flower {
+  width: 60px;
+  height: 60px;
+  background: url("../img/flower.png") no-repeat;
+  background-position: center;
+
 }

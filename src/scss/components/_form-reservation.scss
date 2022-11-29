@@ -1,0 +1,84 @@
+.reservation {
+  background-color: var(--light-color);
+  padding-bottom: 60px;
+
+  &__container {
+@include flex-column-center;
+
+  }
+  &__content {
+
+    padding-bottom: 60px;
+
+    width: 70%;
+  }
+}
+.reservation-form {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid;
+    border-color: var(--gray-light-color);
+    padding-bottom: 60px;
+
+  &__btn {
+    border-radius: 0 5px 5px 0 ;
+    padding: 20px 100px;
+  }
+}
+.reservation-form-field {
+
+  margin: 0;
+  padding: 0;
+
+
+  &__select {
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--gray-light-color);
+    padding: 20px 45px;
+    width: 100%;
+    text-align: start;
+    font-size: 32px;
+    line-height: 144px;
+    color: var(--gray-light-color);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+
+    }
+    &--data {
+      border-radius: 5px 0 0 5px;
+      border-right: 0;
+      background-image: url("../img/data.png");
+
+
+
+    }
+    &--people {
+      background-image: url("../img/people.png");
+      border-right: 0;
+
+
+    }
+
+    &--hour {
+      border-right: 0;
+      background-image: url("../img/hour.png");
+
+
+    }
+
+}
+.reservation-explain {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--text-light-color);
+}
+.reservation-flower {
+  @include flex-column-center;
+
+  }
+

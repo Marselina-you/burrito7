@@ -1,0 +1,30 @@
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  //border-radius: 4px;
+  //padding: 15px 40px;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  color: var(--light-color);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+
+  &--primary {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+
+
+    &:hover {
+      border-color: var(--primary-color-hover);
+      background-color: var(--primary-color-hover);
+    }
+    &:active {
+      background-color: var(--primary-color-hover);
+    }
+    &:focus {
+      background-color: var(--primary-color-hover);
+    }
+  }
+}

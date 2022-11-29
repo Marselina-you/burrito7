@@ -2,7 +2,7 @@
   background-color:  var(--gray-light-color);
 
   &__list {
-    padding: 13px 40px;
+    padding: 10px 40px;
     @include flex-v-center;
   }
   &__item {
@@ -12,7 +12,7 @@
   }
     &__link {
       font-weight: 400;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 160%;
       color: var(--light-color);
 
