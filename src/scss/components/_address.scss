@@ -1,0 +1,37 @@
+.address-block {
+
+  &__content {
+    @include flex-column-center;
+    padding: 100px 0;
+  }
+
+
+  &__title {
+    font-weight: 700;
+    margin: 0;
+    font-size: 28px;
+    line-height: 70px;
+    color: var( --text-light-color);
+  }
+  &__address {
+    font-size: 20px;
+    line-height: 70px;
+    color: var( --text-light-color);
+
+  }
+  &__phone {
+    font-size: 20px;
+    line-height: 70px;
+    color: var( --text-light-color);
+  }
+  &__mail {
+    font-size: 20px;
+    line-height: 70px;
+    color: var( --text-light-color);
+  }
+  &__btn {
+margin-top: 20px;
+border-radius: 5px;
+    padding: 15px 30px;
+  }
+}

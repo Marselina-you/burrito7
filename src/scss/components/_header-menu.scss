@@ -1,0 +1,31 @@
+.header-menu {
+  margin: 0;
+  background-color: var(--gray-color);
+
+
+}
+.header-menu-nav {
+  padding-top: 46px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &__list {
+    @include flex-all-center;
+  }
+
+
+
+}
+.header-menu-nav--bottom {
+  margin-bottom: 46px;
+}
+
+
+

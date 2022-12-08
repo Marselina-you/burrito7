@@ -43,7 +43,7 @@
   @include flex-column-center;
 
   &__pretitle {
-    font-style: italic;
+    font: var(--middle-regular-gabriola);
     font-size: 28px;
     color: var(--text-light-color);
   }

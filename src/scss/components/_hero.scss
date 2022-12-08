@@ -15,11 +15,19 @@
     padding-bottom: 70px;
 
   }
+  &__logo {
+    width: 50%;
+    height: auto;
+  }
+  &__decor {
+    width: 28%;
+    height: auto;
+  }
 
   &__title {
     font-weight: 400;
     font-size: 65px;
-    line-height: 100%;
+    line-height: 140%;
     text-transform: uppercase;
     color: var(--light-color);
 
@@ -27,6 +35,7 @@
   &__subtitle {
     font-weight: 400;
     font-size: 24px;
+    line-height: 140%;
     color: var(--light-color);
   }
   &__nav {
@@ -50,7 +59,8 @@
       top: -200px;
       width: 32px;
       height: 38px;
-      background-image: url("../img/right.png");
+      background-image: url("../img/right.svg");
+      opacity: 0.8;
       background-position: center;
       background-repeat: no-repeat;
       cursor: pointer;
@@ -63,7 +73,8 @@
       top: -200px;
       width: 32px;
       height: 38px;
-      background-image: url("../img/left.png");
+      background-image: url("../img/left.svg");
+      opacity: 0.8;
       background-position: center;
       background-repeat: no-repeat;
       cursor: pointer;
