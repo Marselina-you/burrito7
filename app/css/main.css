@@ -981,4 +981,44 @@ a {
 .btn--order:focus {
   background-color: var(--order-color-hover);
 }
+
+.add-plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
+}
+.add-plus__btn {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 6px;
+  background-color: #3d67b7;
+}
+.add-plus__btn:hover {
+  background-color: #2d4f8f;
+}
+.add-plus__svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.add-plus__svg svg {
+  fill: white;
+}
+.add-plus__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 3px;
+  font-size: 16px;
+}
+.add-plus--visibility {
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
