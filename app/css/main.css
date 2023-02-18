@@ -254,6 +254,18 @@ a {
   font-size: 20px;
   line-height: 160%;
   color: var(--light-color);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.nav__link:hover {
+  color: var(--text-light-color);
+}
+.nav__link:focus {
+  color: var(--primary-color-hover);
+}
+.nav__link:active {
+  color: var(--primary-color-hover);
 }
 
 .hero {
@@ -322,7 +334,13 @@ a {
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   cursor: pointer;
+}
+.hero__nav--right:hover {
+  opacity: 1;
 }
 .hero__nav--left {
   position: absolute;
@@ -333,7 +351,13 @@ a {
   opacity: 0.8;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   cursor: pointer;
+}
+.hero__nav--left:hover {
+  opacity: 1;
 }
 
 .reservation {
@@ -970,12 +994,15 @@ a {
   font-weight: 400;
   font-size: 18px;
   background-color: var(--order-color);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .btn--order:hover {
-  border-color: var(--order-color-hover);
   background-color: var(--order-color-hover);
 }
 .btn--order:active {
+  border-color: var(--primary-color-hover);
   background-color: var(--order-color-hover);
 }
 .btn--order:focus {
@@ -993,6 +1020,9 @@ a {
   border-radius: 8px;
   padding: 5px 6px;
   background-color: #3d67b7;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .add-plus__btn:hover {
   background-color: #2d4f8f;

@@ -15,6 +15,19 @@
       font-size: 20px;
       line-height: 160%;
       color: var(--light-color);
+      transition: color 0.3s ease-in-out;
+
+
+        &:hover {
+          color: var( --text-light-color);
+
+      }
+      &:focus {
+        color: var(--primary-color-hover);
+      }
+      &:active {
+        color: var(--primary-color-hover);
+      }
 
     }
 
