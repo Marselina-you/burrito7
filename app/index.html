@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Burrito</title>
-  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -24,7 +24,7 @@
       <span class="header-logo__subtitle">chilebar</span>
     </div>
 
-    <nav class="nav header__nav" title="">
+    <nav class="nav header__nav" data-nav=>
       <ul class="nav__list list-reset">
         <li class="nav__item"><a href="#" class="nav__link">main</a></li>
         <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
@@ -33,6 +33,12 @@
         <li class="nav__item"><a href="#" class="nav__link">order</a></li>
       </ul>
     </nav>
+    <div class="burger-wrap">
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
   </div>
 </header>
 
@@ -133,7 +139,7 @@
       <section class="quote quote--first">
   <div class="container quote__container">
     <div class="quote__content">
-      <quote class="quote__title">«Burrito ignites a hot flame in you, it collapses
+      <quote class="quote__text">«Burrito ignites a hot flame in you, it collapses
         on you like lava, with its most powerful music,
                a sea of tequila and devilish food»</quote>
                <div class="quote__autor">Jonny Depp, the visitor</div>
@@ -219,12 +225,11 @@
       <section class="quote quote--second">
   <div class="container quote__container">
     <div class="quote__content quote__content--second">
-      <quote class="quote__title">«Burrito ignites a hot flame in you, it collapses
+      <quote class="quote__text">«Burrito ignites a hot flame in you, it collapses
         on you like lava, with its most powerful music,
-               a sea of tequila and devilish food»</quote>
-               <div class="quote__autor">Penelope Cruz, the visitor</div>
+        a sea of tequila and devilish food»</quote>
+      <div class="quote__autor">Penelope Cruz, the visitor</div>
     </div>
-
   </div>
 </section>
 
@@ -271,7 +276,7 @@
 
   </div>
   <script defer src="js/main.js"></script>
-  <script defer src="js/vendor.js"></script>
+
 </body>
 
 </html>

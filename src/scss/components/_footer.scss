@@ -27,15 +27,16 @@
     }
   }
   &__title {
+    font: var(--regular-lato);
 
-    font-size: 24px;
     line-height: 150%;
     color: var( --light-color);
 
   }
   &__subtitle {
-    font-weight: 400;
-    font-size: 24px;
+    font: var(--regular-lato);
+    //font-weight: 400;
+    font-size: 22px;
     line-height: 150%;
     color: var( --light-color);
 

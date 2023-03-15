@@ -1,6 +1,7 @@
 .header {
   position: relative;
   z-index: 100;
+  padding-top: 20px;
   background: transparent;
 
   &__container {
@@ -18,16 +19,18 @@
   flex-direction: column;
 
   &__title {
-    font-weight: 400;
+    font: var(--bold-lato);
     font-size: 65px;
     line-height: 0;
     text-transform: uppercase;
     color: var(--light-color);
+
+    @include big-desktop {
+      font-size: 40px;
+    }
   }
   &__subtitle {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 160%;
+    font: var(--regular-ubuntu);
     color: var(--light-color);
   }
 
