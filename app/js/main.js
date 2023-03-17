@@ -9,8 +9,9 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger.js */ "./src/js/components/burger.js");
-/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_burger_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger-menu.js */ "./src/js/components/burger-menu.js");
+/* harmony import */ var _components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__);
+//import './components/burger.js';
 
 
 /***/ }),
@@ -143,32 +144,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/components/burger.js":
-/*!*************************************!*\
-  !*** ./src/js/components/burger.js ***!
-  \*************************************/
+/***/ "./src/js/components/burger-menu.js":
+/*!******************************************!*\
+  !*** ./src/js/components/burger-menu.js ***!
+  \******************************************/
 /***/ (() => {
 
-const burger = document?.querySelector('[data-burger]'); //знак "?" прверяет существует ли этот элемент
-const nav = document?.querySelector('[data-nav]');
-const navItems = nav?.querySelectorAll('a');
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__nav');
+const items = document.querySelectorAll('.nav__item');
 const wrap = document?.querySelector('.burger-wrap');
-const body = document.body;
-console.log(burger);
-console.log(nav);
-burger?.addEventListener('click', () => {
-  body.classList.toggle('stop-scroll');
+console.log(items);
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('header__nav--active');
   wrap?.classList.toggle('burger-wrap--close');
-  burger?.classList.toggle('burger--active');
-  nav.classList.toggle('nav--visible');
-});
-navItems.forEach(el => {
-  el.addEventListener('click', () => {
-    body.classList.remove('stop-scroll');
-    wrap?.classList.remove('burger-wrap--close');
-    burger?.classList.remove('burger--active');
-    nav?.classList.remove('nav--visible');
-  });
 });
 
 /***/ }),

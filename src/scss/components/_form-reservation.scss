@@ -10,7 +10,7 @@
 
     @include big-desktop {
       padding-bottom: 40px;
-      width: 90%;
+      width: 80%;
     }
 
 
@@ -26,6 +26,11 @@
     border-radius: 0 5px 5px 0 ;
     padding: 0 100px;
     font: var(--regular-ubuntu);
+
+    @include tablet {
+      border-radius: 5px;
+      padding: 10px 100px;
+    }
   }
 }
 .reservation-form-field {
@@ -35,6 +40,10 @@
 
   @include tablet {
     grid-column: 12 span;
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+
   }
 
 &__select {
@@ -50,17 +59,12 @@
     background-position: 10px 50%;
     background-repeat: no-repeat;
 
-    }
     &--data {
       border-radius: 5px 0 0 5px;
       border-right: 0;
       background-image: url("../img/data.png");
 
-      @include tablet {
 
-        border: 1 px solid var(--gray-light-color);
-        border-radius: 5px;
-      }
 }
     &--people {
       background-image: url("../img/people.png");
@@ -71,6 +75,16 @@
       border-right: 0;
       background-image: url("../img/hour.png");
     }
+
+    @include tablet {
+      border: 1px solid var(--gray-light-color);
+      //border-right: 1px solid var(--gray-light-color);
+      border-radius: 5px;
+      //background-image: url("../img/hour.png");
+    }
+
+    }
+
 
 }
 .reservation-explain {
