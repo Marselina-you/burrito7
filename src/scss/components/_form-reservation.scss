@@ -1,5 +1,10 @@
 .reservation {
+  margin-top: -100px;
   background-color: var(--light-color);
+
+  @include mobile {
+    margin-top: -60px;
+  }
 
   &__container {
 @include flex-column-center;
@@ -13,6 +18,11 @@
       width: 80%;
     }
 
+    @include small-tablet {
+      margin-top: -50px;
+      width: 100%;
+    }
+
 
   }
 }
@@ -22,14 +32,25 @@
   border-bottom: 1px solid var(--gray-light-color);
   padding-bottom: 60px;
 
+  @include small-tablet {
+    border-style: none;
+    padding-bottom: 30px;
+  }
+
+
   &__btn {
+    grid-column: 4 / 1 span; //начинается со 4 колонки / занимает 1 колонки
     border-radius: 0 5px 5px 0 ;
     padding: 0 100px;
     font: var(--regular-ubuntu);
 
-    @include tablet {
+    @include old-desktop {
+
       border-radius: 5px;
       padding: 10px 100px;
+    }
+    @include mobile {
+      grid-column: 4 span;
     }
   }
 }
@@ -38,7 +59,7 @@
   padding: 0;
   grid-column: 1 span;
 
-  @include tablet {
+  @include old-desktop {
     grid-column: 12 span;
     &:not(:last-child) {
       padding-bottom: 20px;
@@ -76,7 +97,7 @@
       background-image: url("../img/hour.png");
     }
 
-    @include tablet {
+    @include old-desktop {
       border: 1px solid var(--gray-light-color);
       //border-right: 1px solid var(--gray-light-color);
       border-radius: 5px;
@@ -94,6 +115,11 @@
   line-height: 160%;
   text-align: center;
   color: var(--text-light-color);
+
+  @include tablet {
+    margin-top: 10px;
+    font-size: 20px;
+  }
 }
 .reservation-flower {
   @include flex-column-center;

@@ -3,6 +3,10 @@
   &__content {
     @include flex-column-center;
     padding: 100px 0;
+
+    @include tablet {
+      padding: 40px 0;
+    }
   }
 
 

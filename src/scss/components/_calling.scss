@@ -8,6 +8,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include tablet {
+    height: 500px;
+  }
+
   &__container {
     position: relative;
     height: 100%;
@@ -21,6 +25,12 @@
     padding: 20px 100px;
     color: var(--light-color);
     background-color: var(--blue-light-color);
+
+    @include tablet {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 45px;
+    }
 
   }
 }

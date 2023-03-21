@@ -5,10 +5,19 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include tablet {
+    height: 500px;
+  }
+
   &__container {
     @include flex-column-start;
     position: relative;
     height: 100%;
+
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+    }
   }
 
 
@@ -25,6 +34,12 @@
     width: 70%;
     background-color:  var(--gray-light-color);
 
+    @include tablet {
+      margin-top: 8%;
+      padding: 5px 5px;
+      width: 95%;
+    }
+
     &--second {
       background-color: var(--blue-light-color);
     }
@@ -36,6 +51,10 @@
     font-size: 45px;
     line-height: 150%;
     color: var(--light-color);
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
   &__autor {
     font: var(--regular-lato);
@@ -43,6 +62,10 @@
     text-align: end;
     text-transform: uppercase;
     color: var(--primary-color);
+
+    @include tablet {
+      font-size: 20px;
+    }
   }
 }
 

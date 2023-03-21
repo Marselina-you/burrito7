@@ -1,12 +1,20 @@
 .nav {
   //display: flex;
-  background-color: var(--gray-light-color);
+//position: relative;
+  background-color: var(--gray-light-color-v);
+
+
+
+
 
 
 
   &__list {
+    position: relative;
     padding: 10px 40px;
     @include flex-v-center;
+
+
   }
   &__item {
     &:not(:last-child) {
@@ -72,7 +80,7 @@
   --burger-width: 44px;
   --burger-height: 30px;
   --burger-line-height: 3px;
-  z-index: 2000;
+  z-index: 5000;
 
 
   display: none;
