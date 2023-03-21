@@ -5,6 +5,11 @@
     @content;
   }
 }
+@mixin old-desktop {
+  @media (max-width: (1240px)) {
+    @content;
+  }
+}
 
 @mixin big-desktop {
   @media (max-width: (1440px)) {

@@ -183,29 +183,31 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade]);
-var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
-  effect: 'fade',
-  pagination: {
-    el: ".swiper-pagination"
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
-  speed: 10000,
-  //effect: "fade",
-  //fadeEffect: {
-  //crossFade: true
-  //},
-  //speed: 10000,
+const mainSlider = document.querySelector(".mainSlider");
+if (mainSlider) {
+  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](mainSlider, {
+    effect: 'fade',
+    loop: true,
+    navigation: {
+      nextEl: ".hero__nav--left",
+      prevEl: ".hero__nav--right"
+      //clickable: true,
+    },
 
-  mousewheel: true,
-  keyboard: true
-});
+    // autoplay: {
+    //delay: 2500,
+    //disableOnInteraction: false,
+    //},
+    speed: 1000,
+    //effect: "fade",
+    //fadeEffect: {
+    //crossFade: true
+    //},
+
+    mousewheel: true,
+    keyboard: true
+  });
+}
 
 /***/ }),
 

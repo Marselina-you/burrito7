@@ -33,6 +33,10 @@
 
   &__container {
     @include flex-all-sb;
+
+    @include small-tablet {
+      justify-content: flex-end;
+    }
   }
 
 }
@@ -45,6 +49,10 @@
   @include flex-v-center;
   flex-direction: column;
 
+  @include small-tablet {
+    display: none;
+  }
+
   &__title {
     font: var(--bold-lato);
     font-size: 65px;
@@ -55,10 +63,17 @@
     @include big-desktop {
       font-size: 40px;
     }
+    @include small-tablet {
+      font-size: 30px;
+    }
   }
   &__subtitle {
     font: var(--regular-ubuntu);
     color: var(--light-color);
+
+    @include small-tablet {
+      font-size: 15px;
+    }
   }
 
 
