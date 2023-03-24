@@ -12,11 +12,9 @@
   --dark-color: rgb(27, 29, 27);
   --order-color: rgb(0, 123, 255);
   --order-color-hover: rgb(7, 96, 192);
-  --font-family: "Ubuntu", sans-serif;
-  --font-family-lato: "Lato";
+  --font-family-lato: "Lato", sans-serif;
   --font-family-gabriola: "Gabriola", sans-serif;
-  --middle-regular-gabriola: 400 30px / 140% var(--font-family-gabriola);
-  --regular-ubuntu: 400 22px / 160% var(--font-family);
+  --middle-regular-gabriola: 300 30px / 140% var(--font-family-gabriola);
   --regular-lato: 400 24px / 140% var(--font-family-lato);
   --bold-lato: 700 24px / 140% var(--font-family-lato);
 }
@@ -38,37 +36,9 @@
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable value-keyword-case */
 @font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/../fonts/Ubuntu-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/../fonts/Ubuntu-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/../fonts/Ubuntu-MediumItalic.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/../fonts/Lato-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/../fonts/Lato-Black.woff2") format("woff2");
-  font-weight: 900;
+  font-family: "Gabriola";
+  src: url("../fonts/../fonts/Gabriola.woff2") format("woff2");
+  font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
@@ -80,9 +50,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Gabriola";
-  src: url("../fonts/../fonts/Gabriola.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "Lato";
+  src: url("../fonts/../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
@@ -109,6 +79,11 @@ html {
   font-weight: 400;
   overflow-x: hidden;
   background-color: gray;
+}
+
+/* all :hover rules need to be prepended with body.hasHover */
+body.hasHover a:hover {
+  color: blue;
 }
 
 img {
@@ -336,7 +311,7 @@ a {
   }
 }
 .header-logo__subtitle {
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
   color: var(--light-color);
 }
 @media (max-width: 768px) {
@@ -381,19 +356,20 @@ a {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-@media (max-width: 1024px) {
-  .nav__link {
-    font-size: 25px;
-  }
-}
-.nav__link:focus {
-  color: var(--primary-color-hover);
-}
 .nav__link:hover {
   color: var(--text-light-color);
 }
 .nav__link:active {
   color: var(--primary-color-hover);
+}
+.nav__link:focus-visible {
+  outline: none;
+  color: var(--primary-color-hover);
+}
+@media (max-width: 1024px) {
+  .nav__link {
+    font-size: 25px;
+  }
 }
 
 .burger-wrap {
@@ -648,7 +624,7 @@ a {
   grid-column: 4/1 span;
   border-radius: 0 5px 5px 0;
   padding: 0 100px;
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
 }
 @media (max-width: 1240px) {
   .reservation-form__btn {
@@ -685,7 +661,7 @@ a {
   border-color: var(--gray-light-color);
   padding: 20px 45px;
   width: 100%;
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
   text-align: start;
   color: var(--gray-light-color);
   background-position: 10px 50%;
@@ -713,9 +689,7 @@ a {
 
 .reservation-explain {
   margin-top: 60px;
-  font: var(--regular-ubuntu);
-  font-size: 24px;
-  line-height: 160%;
+  font: var(--regular-lato);
   text-align: center;
   color: var(--text-light-color);
 }
@@ -849,8 +823,7 @@ a {
   color: var(--text-light-color);
 }
 .info__text {
-  font-size: 24px;
-  line-height: 40px;
+  font: var(--regular-lato);
   color: var(--text-light-color);
 }
 @media (max-width: 1024px) {
@@ -999,18 +972,18 @@ a {
   color: var(--text-light-color);
 }
 .address-block__address {
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
   font-size: 20px;
   color: var(--text-light-color);
 }
 .address-block__phone {
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
   font-size: 20px;
   line-height: 70px;
   color: var(--text-light-color);
 }
 .address-block__mail {
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
   font-size: 20px;
   line-height: 70px;
   color: var(--text-light-color);
@@ -1019,7 +992,7 @@ a {
   margin-top: 20px;
   border-radius: 5px;
   padding: 15px 30px;
-  font: var(--regular-ubuntu);
+  font: var(--regular-lato);
 }
 
 .header-menu {
@@ -1297,6 +1270,7 @@ a {
 }
 .swiper-slide__title {
   font: var(--bold-lato);
+  letter-spacing: 5px;
   font-size: 65px;
   text-transform: uppercase;
   color: var(--light-color);
@@ -1312,9 +1286,7 @@ a {
   }
 }
 .swiper-slide__subtitle {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 140%;
+  font: var(--regular-lato);
   color: var(--light-color);
 }
 @media (max-width: 1024px) {

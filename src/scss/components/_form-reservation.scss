@@ -42,7 +42,7 @@
     grid-column: 4 / 1 span; //начинается со 4 колонки / занимает 1 колонки
     border-radius: 0 5px 5px 0 ;
     padding: 0 100px;
-    font: var(--regular-ubuntu);
+    font: var(--regular-lato);
 
     @include old-desktop {
 
@@ -74,7 +74,7 @@
     border-color: var(--gray-light-color);
     padding: 20px 45px;
     width: 100%;
-    font: var(--regular-ubuntu);
+    font: var(--regular-lato);
     text-align: start;
     color: var(--gray-light-color);
     background-position: 10px 50%;
@@ -110,9 +110,8 @@
 }
 .reservation-explain {
   margin-top: 60px;
-  font: var(--regular-ubuntu);
-  font-size: 24px;
-  line-height: 160%;
+  font: var(--regular-lato);
+
   text-align: center;
   color: var(--text-light-color);
 

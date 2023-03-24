@@ -22,6 +22,10 @@ html {
   background-color: gray;
 
 }
+/* all :hover rules need to be prepended with body.hasHover */
+body.hasHover a:hover {
+  color: blue;
+}
 
 img {
   height: auto;

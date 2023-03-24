@@ -1,21 +1,10 @@
 .nav {
-  //display: flex;
-//position: relative;
   background-color: var(--gray-light-color-v);
-
-
-
-
-
-
-
   &__list {
     position: relative;
     padding: 10px 40px;
     @include flex-v-center;
-
-
-  }
+}
   &__item {
     &:not(:last-child) {
       margin-right: 140px;
@@ -36,22 +25,25 @@
       color: var(--light-color);
       transition: color 0.3s ease-in-out;
 
-@include tablet {
 
-  font-size: 25px;
-}
 
-      &:focus {
-        color: var(--primary-color-hover);
-      }
 
-        &:hover {
-          color: var( --text-light-color);
+      &:hover {
+        color: var( --text-light-color);
 
       }
-
       &:active {
         color: var(--primary-color-hover);
+      }
+      &:focus-visible {
+        outline: none;
+        color: var(--primary-color-hover);
+      }
+
+
+
+      @include tablet {
+        font-size: 25px;
       }
 
     }

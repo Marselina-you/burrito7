@@ -19,19 +19,19 @@
     color: var( --text-light-color);
   }
   &__address {
-    font: var(--regular-ubuntu);
+    font: var(--regular-lato);
     font-size: 20px;
     color: var( --text-light-color);
 
   }
   &__phone {
-    font: var(--regular-ubuntu);
+    font: var(--regular-lato);
     font-size: 20px;
     line-height: 70px;
     color: var( --text-light-color);
   }
   &__mail {
-    font: var(--regular-ubuntu);
+    font: var(--regular-lato);
     font-size: 20px;
     line-height: 70px;
     color: var( --text-light-color);
@@ -40,6 +40,6 @@
     margin-top: 20px;
     border-radius: 5px;
     padding: 15px 30px;
-    font: var(--regular-ubuntu);
+    font: var(--regular-lato);
   }
 }
