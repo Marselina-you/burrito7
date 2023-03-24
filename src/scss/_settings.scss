@@ -19,7 +19,7 @@ html {
   //font-family: "Ubuntu", "Gabriola", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: gray;
+  background-color: var(--gray-color);
 
 }
 /* all :hover rules need to be prepended with body.hasHover */
@@ -38,7 +38,12 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 15px;
+   // если используете на сайте position: sticky - уберите эту настройку
 }
 
 .is-hidden {
@@ -88,6 +93,12 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1560px;
+}
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
+  background-color: inherit;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

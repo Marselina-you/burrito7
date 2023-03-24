@@ -6,6 +6,7 @@
   // colors
   --light-color: #fff;
   --gray-color: rgba(36, 50, 55, 1);
+  --gray-color-opacity: rgba(36, 50, 55, .7);
   --gray-light-color: rgba(56, 60, 56, 0.76);
   --gray-light-color-v: rgba(56, 60, 56, 0.9);
   --primary-color: rgba(250, 60, 60, 1);
@@ -26,6 +27,6 @@
   --middle-regular-gabriola: 300 30px / 140% var(--font-family-gabriola);
 
   --regular-lato: 400 24px / 140% var(--font-family-lato);
-  --bold-lato: 700 24px / 140% var(--font-family-lato);
-  
+  --bold-lato: 700 32px / 140% var(--font-family-lato);
+
 }

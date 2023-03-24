@@ -1,5 +1,5 @@
 .nav {
-  background-color: var(--gray-light-color-v);
+  background-color: var(--gray-color-opacity);
   &__list {
     position: relative;
     padding: 10px 40px;
@@ -21,7 +21,7 @@
     &__link {
       font: var(--regular-lato);
       text-transform: capitalize;
-      font-size: 20px;
+      //font-size: 20px;
       color: var(--light-color);
       transition: color 0.3s ease-in-out;
 

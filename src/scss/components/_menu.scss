@@ -6,63 +6,91 @@
 &__container {
   display: flex;
   flex-direction: column;
-  //align-items: center;
+
 }
-
-
-
-  &__title {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 100px;
-
-    text-align: center;
-    font-size: 32px;
-    color: var(--light-color);
+&__title {
+  font: var(--bold-lato);
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: var(--light-color);
   }
  &__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 50px;
+  letter-spacing: 1px;
   padding-bottom: 65px;
   align-items: center;
 
+  @include small-tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 }
 
 
+}
+.menu-content-image {
+  grid-column: 6 span;
+
+  @include small-tablet {
+    grid-column: 4 span;
+  }
 }
 .menu-content-text {
+  grid-column: 6 span;
+
+  @include small-tablet {
+    grid-column: 4 span;
+  }
 
   @include flex-column-center;
 
   &__title {
+
     margin: 0;
     padding: 0;
-    font-weight: 700;
-    font-size: 22px;
+    font: var(--bold-lato);
     color: var(--light-color);
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
   &__components {
-    font-weight: 400;
-    font-size: 22px;
+    font: var(--regular-lato);
+
     color: var(--light-color);
+    @include tablet {
+      font-size: 20px;
+    }
   }
-  &__value {
-    font-weight: 400;
-  }
+
   &__weight {
-    font-weight: 400;
+    font: var(--regular-lato);
     font-size: 22px;
     line-height: 180%;
     color: var(--light-color);
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
   &__calories {
-    font-weight: 400;
+    font: var(--regular-lato);
     font-size: 22px;
     line-height: 180%;
     color: var(--light-color);
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
   &__btn {
+    font: var(--regular-lato);
     margin-top: 20px;
 
   }

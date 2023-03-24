@@ -16,15 +16,14 @@
 
 <body class="body">
   <div class="site-container">
-    <header class="header header--secondary">
-  <div class="container header__container">
+    <header class="header container">
+  <div class="header__container">
     <div class="header-logo">
       <h1 class="header-logo__title">burrito</h1>
       <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
       <span class="header-logo__subtitle">chilebar</span>
     </div>
-
-    <nav class="nav header__nav" title="">
+    <nav class="nav header__nav" data-nav=>
       <ul class="nav__list list-reset">
         <li class="nav__item"><a href="#" class="nav__link">main</a></li>
         <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
@@ -33,6 +32,11 @@
         <li class="nav__item"><a href="#" class="nav__link">order</a></li>
       </ul>
     </nav>
+    <div class="burger-wrap">
+      <button class="burger btn-reset">
+        <span class="burger__line"></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -56,11 +60,11 @@
   <div class="container menu__container">
     <h2 class="menu__title">Appetizers</h2>
     <div class="menu__content">
-      <div class="menu-content__image">
+      <div class="menu-content-image">
         <img src="img/tapas.png" alt="tapas with bacon">
       </div>
       <div class="menu-content-text">
-        <h3 class="menu-content-text__title">Tapas with bacon<span class="menu-content-text__value">10 $</span></h3>
+        <h3 class="menu-content-text__title"><span>Tapas with bacon</span> <span class="menu-content-text__value">10 $</span></h3>
         <p class="menu-content-text__components">Dates, bacon, cheese, lemon</p>
         <div class="menu-content-text__calories">350 Kk</div>
         <div class="menu-content-text__weight">400 g</div>
@@ -68,11 +72,11 @@
       </div>
     </div>
     <div class="menu__content">
-      <div class="menu-content__image">
+      <div class="menu-content-image">
         <img src="img/salat.png" alt="mexican salad">
       </div>
       <div class="menu-content-text">
-        <h3 class="menu-content-text__title">Mexican salad<span class="menu-content-text__value">10 $</span></h3>
+        <h3 class="menu-content-text__title"><span>Mexican salad</span> <span class="menu-content-text__value">10 $</span></h3>
         <p class="menu-content-text__components">Dates, bacon, cheese, lemon</p>
         <div class="menu-content-text__calories">350 Kk</div>
         <div class="menu-content-text__weight">400 g</div>
@@ -80,11 +84,11 @@
       </div>
     </div>
     <div class="menu__content">
-      <div class="menu-content__image">
+      <div class="menu-content-image">
         <img src="img/seviche.png" alt="seafood ceviche">
       </div>
       <div class="menu-content-text">
-        <h3 class="menu-content-text__title">Seafood ceviche<span class="menu-content-text__value">10 $</span></h3>
+        <h3 class="menu-content-text__title"><span>Seafood ceviche</span> <span class="menu-content-text__value">10 $</span></h3>
         <p class="menu-content-text__components">Dates, bacon, cheese, lemon</p>
         <div class="menu-content-text__calories">350 Kk</div>
         <div class="menu-content-text__weight">400 g</div>
@@ -207,7 +211,7 @@
 
   </div>
   <script defer src="js/main.js"></script>
-  <script defer src="js/vendor.js"></script>
+
 </body>
 
 </html>

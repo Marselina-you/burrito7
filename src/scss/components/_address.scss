@@ -1,5 +1,5 @@
 .address-block {
-
+background-color: var(--light-color);
   &__content {
     @include flex-column-center;
     padding: 100px 0;
