@@ -19,6 +19,7 @@ html {
   //font-family: "Ubuntu", "Gabriola", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  background-color: gray;
 
 }
 
@@ -113,3 +114,37 @@ a {
   background-position: center;
 
 }
+.down-wrap {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.down {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  //border-top-left-radius: 18px;
+  background-image: url(../img/down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+svg {
+  //position: absolute;
+  //top: 25px;
+  //right: 5px;
+      width: 30px;
+      height: 30px;
+      fill: var(--dark-color);
+    }
+
+}
+

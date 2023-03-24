@@ -1,6 +1,7 @@
 .header {
-  position: relative;
+  position: absolute;
   z-index: 5000;
+  width: 100%;
   padding-top: 20px;
   background: transparent;
 
@@ -61,7 +62,7 @@
     color: var(--light-color);
 
     @include big-desktop {
-      font-size: 40px;
+      font-size: 50px;
     }
     @include small-tablet {
       font-size: 30px;
