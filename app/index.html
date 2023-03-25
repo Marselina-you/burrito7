@@ -28,15 +28,68 @@
         <li class="nav__item"><a href="#" class="nav__link">main</a></li>
         <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
         <li class="nav__item"><a href="#" class="nav__link">menu</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">happy-hours </a></li>
-        <li class="nav__item"><a href="#" class="nav__link">order</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">reservation</a></li>
+        <li class="nav__item"><button class="btn-reset btn-order nav__link cart__count">order 1</button></li>
+  </ul>
+  </nav>
+  <div class="burger-wrap">
+    <button class="burger btn-reset">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+  <div class="mini-cart">
+    <div class="mini-cart__top">
+      <ul class="list-reset mini-cart__list">
+        <li class="mini-cart__item" data-id="">
+          <article class="mini-cart__product mini-product">
+            <div class="mini-product__image">
+              <img src="/img/tapas.png" alt="">
+            </div>
+            <div class="mini-product__content">
+              <div class="mini-product__text">
+                <h3 class="mini-product__title">Tapas with bacon</h3>
+                <span class="mini-product__quant">4</span>
+                <span class="mini-product__price">1450 r</span>
+
+              </div>
+              <button class="btn-reset mini-product__delete" aria-label="Удалить товар">
+                <svg>
+                  <use xlink:href="img/sprite.svg#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="mini-cart__item" data-id="">
+          <article class="mini-cart__product mini-product">
+            <div class="mini-product__image">
+              <img src="/img/tapas.png" alt="">
+            </div>
+            <div class="mini-product__content">
+              <div class="mini-product__text">
+                <h3 class="mini-product__title">Tapas with bacon</h3>
+                <span class="mini-product__quant">4</span>
+                <span class="mini-product__price">1450 r</span>
+
+              </div>
+              <button class="btn-reset mini-product__delete" aria-label="Удалить товар">
+                <svg>
+                  <use xlink:href="img/sprite.svg#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
       </ul>
-    </nav>
-    <div class="burger-wrap">
-      <button class="burger btn-reset">
-        <span class="burger__line"></span>
-      </button>
     </div>
+  <div class="mini-cart__bottom">
+    <div class="mini-cart__itog">
+      <span class="mini-cart__txt">In total</span>
+      <span class="mini-cart__summ">1459</span>
+    </div>
+    <button class="btn-reset btn btn--primary mini-cart__btn" data-graph-path="cart-modal">order</button>
+  </div>
+  </div>
   </div>
 </header>
 

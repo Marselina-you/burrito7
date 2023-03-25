@@ -1,11 +1,11 @@
 .header {
   position: relative;
   z-index: 5000;
-
-  //max-width: 1560px;
   width: 100%;
   padding-top: 20px;
   background: transparent;
+
+
 
   &__nav {
 @include tablet {
