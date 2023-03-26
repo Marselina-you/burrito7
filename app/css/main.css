@@ -521,7 +521,7 @@ a {
 .hero {
   position: relative;
   width: 100%;
-  margin-top: -130px;
+  margin-top: -160px;
   background-color: inherit;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1545,6 +1545,70 @@ a {
   .mini-product {
     display: block;
   }
+}
+
+.quantity {
+  display: inline-block;
+  margin-top: 3px;
+  padding-left: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  font: var(--regular-lato);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  position: static;
+}
+
+.quantity-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  top: 45px;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  top: 12px;
+  right: -5px;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  top: 12px;
+  left: -15px;
 }
 
 .footer__content {
