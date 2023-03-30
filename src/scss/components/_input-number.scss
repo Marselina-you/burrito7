@@ -1,7 +1,8 @@
 .quantity {
+  //position: relative;
   display: inline-block;
   margin-top: 3px;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -33,10 +34,10 @@ input[type=number]
 }
 
 .quantity-nav {
-  //float: left;
+  float: left;
   position: static;
 
-  //height: 42px;
+  height: 42px;
 }
 
 .quantity-button {
@@ -63,4 +64,20 @@ input[type=number]
   top: 12px;
   left: -15px;
 
+}
+.summ-wrap {
+  position: absolute;
+  top: 50%;
+  margin-left: 50px;
+  width: 115px;
+  height: 115px;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
 }

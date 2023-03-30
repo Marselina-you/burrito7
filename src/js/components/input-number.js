@@ -1,27 +1,27 @@
 import $ from "jquery";
 $.when( $.ready ).then(function() {
 
-  $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>').insertAfter('.quantity input');
+
     $('.quantity').each(function() {
       var spinner = $(this),
-        input = spinner.find('input[type="number"]'),
-        btnUp = spinner.find('.quantity-up'),
-        btnDown = spinner.find('.quantity-down'),
-        min = input.attr('min'),
-        max = input.attr('max');
+        input = spinner.find('input[type="number"]'),//нашли инпут
+        btnUp = spinner.find('.quantity-up'),//нашли кнопку плюс
+        btnDown = spinner.find('.quantity-down'),//нашли кнопку минус
+        min = input.attr('min'),//определили переменную с мин.значением
+        max = input.attr('max');//определили переменную с макс.значением
 
-      btnUp.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue >= max) {
-          var newVal = oldValue;
+      btnUp.on('click', function() {//нажали на плюс
+        var oldValue = parseFloat(input.val());//берем у инпута value и превращаем в десятичное число
+        if (oldValue >= max) { //если value >= max значения
+          var newVal = oldValue;//записываем новую переменную, равную изначальному value
         } else {
-          var newVal = oldValue + 1;
+          var newVal = oldValue + 1;//k value прибавляем один
         }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
+        spinner.find("input").val(newVal);//
+        spinner.find("input").trigger("change");//Событие change предназначено для регистрации изменения значения элементов input; trigger выбирает именно событие change
       });
 
-      btnDown.click(function() {
+      btnDown.on('click', function() {
         var oldValue = parseFloat(input.val());
         if (oldValue <= min) {
           var newVal = oldValue;
@@ -33,6 +33,14 @@ $.when( $.ready ).then(function() {
       });
 
     });
+
+  $('.quantity-button').on('click', function() {
+    let summItem = $('.extras').val() * $('.value').data('price');
+    console.log(summItem)
+    $('.value').html(summItem + ' €');
+  })
+
+
 
 });
 

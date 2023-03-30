@@ -15,7 +15,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_cart_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/cart.js */ "./src/js/components/cart.js");
 /* harmony import */ var _components_cart_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_cart_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
+/* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/extras.js */ "./src/js/components/extras.js");
+/* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_extras_js__WEBPACK_IMPORTED_MODULE_4__);
 //import './components/burger.js';
+
 
 
 
@@ -37,7 +40,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // Определение операционной системы на мобильных
 
-console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)());
+//console.log(mobileCheck())
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -171,7 +174,6 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
 const items = document.querySelectorAll('.nav__item');
 const wrap = document?.querySelector('.burger-wrap');
-console.log(items);
 burger.addEventListener('click', () => {
   burger.classList.toggle('burger--active');
   menu.classList.toggle('header__nav--active');
@@ -188,17 +190,61 @@ burger.addEventListener('click', () => {
 
 const cartBtn = document.querySelector('.btn-order');
 const miniCart = document.querySelector('.mini-cart');
-console.log(cartBtn);
-console.log(miniCart);
 cartBtn.addEventListener('click', () => {
   miniCart.classList.toggle('mini-cart--visible');
 });
 document.addEventListener('click', e => {
-  //console.log(e.target)
   if (!e.target.classList.contains('mini-cart') && !e.target.closest('.mini-cart') && !e.target.closest('.mini-cart') && !e.target.classList.contains('btn-order')) {
     miniCart.classList.remove('mini-cart--visible');
   }
 });
+
+/***/ }),
+
+/***/ "./src/js/components/extras.js":
+/*!*************************************!*\
+  !*** ./src/js/components/extras.js ***!
+  \*************************************/
+/***/ (() => {
+
+const menuDopList = document.querySelector('.menu-dop__list');
+let prodQuantity = 8;
+if (menuDopList) {
+  const loadProducts = function () {
+    let quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 5;
+    fetch('../data/data.json').then(response => {
+      return response.json();
+    }).then(data => {
+      //console.log(data);
+
+      dataLength = data.length;
+      menuDopList.innerHTML = '';
+      for (let i = 0; i < dataLength; i++) {
+        if (i < quantity) {
+          let item = data[i];
+          //console.log(item)
+
+          menuDopList.innerHTML += `
+        <li class="menu-dop__item">
+        <div class="menu-dop__top">
+          <div class="menu-dop__name-wrap">
+            <div class="menu-dop__name">${item.title}</div>
+          </div>
+
+          <div class="quantity">
+            <input class="extras" type="number" min="1" max="9" step="1" value="0">
+            <div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
+          </div>
+        </div>
+        <div class="menu-dop__value"><span class="value" data-price="${item.price}">${item.price}<span>  €</span></div>
+      </li>
+`;
+        }
+      }
+    });
+  };
+  loadProducts(prodQuantity);
+}
 
 /***/ }),
 
@@ -214,25 +260,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default().when((jquery__WEBPACK_IMPORTED_MODULE_0___default().ready)).then(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>').insertAfter('.quantity input');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.quantity').each(function () {
     var spinner = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this),
       input = spinner.find('input[type="number"]'),
+      //нашли инпут
       btnUp = spinner.find('.quantity-up'),
+      //нашли кнопку плюс
       btnDown = spinner.find('.quantity-down'),
+      //нашли кнопку минус
       min = input.attr('min'),
-      max = input.attr('max');
-    btnUp.click(function () {
-      var oldValue = parseFloat(input.val());
+      //определили переменную с мин.значением
+      max = input.attr('max'); //определили переменную с макс.значением
+
+    btnUp.on('click', function () {
+      //нажали на плюс
+      var oldValue = parseFloat(input.val()); //берем у инпута value и превращаем в десятичное число
       if (oldValue >= max) {
-        var newVal = oldValue;
+        //если value >= max значения
+        var newVal = oldValue; //записываем новую переменную, равную изначальному value
       } else {
-        var newVal = oldValue + 1;
+        var newVal = oldValue + 1; //k value прибавляем один
       }
-      spinner.find("input").val(newVal);
-      spinner.find("input").trigger("change");
+
+      spinner.find("input").val(newVal); //
+      spinner.find("input").trigger("change"); //Событие change предназначено для регистрации изменения значения элементов input; trigger выбирает именно событие change
     });
-    btnDown.click(function () {
+
+    btnDown.on('click', function () {
       var oldValue = parseFloat(input.val());
       if (oldValue <= min) {
         var newVal = oldValue;
@@ -242,6 +296,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default().when((jquery__WEBPACK_IMPORTED_MOD
       spinner.find("input").val(newVal);
       spinner.find("input").trigger("change");
     });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.quantity-button').on('click', function () {
+    let summItem = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.extras').val() * jquery__WEBPACK_IMPORTED_MODULE_0___default()('.value').data('price');
+    console.log(summItem);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.value').html(summItem + ' €');
   });
 });
 

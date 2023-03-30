@@ -1,0 +1,33 @@
+[
+  {
+    "id":1,
+    "title":"pistachios",
+    "price":1
+   },
+   {
+    "id":1,
+    "title":"Маасдам",
+    "price":3
+   },
+   {
+    "id":1,
+    "title":"nachos",
+    "price":11
+   },
+   {
+    "id":1,
+    "title":"chips",
+    "price":5
+   },
+   {
+    "id":1,
+    "title":"guacamole",
+    "price":4
+   },
+   {
+    "id":1,
+    "title":"peanut",
+    "price":2
+   }
+
+]
