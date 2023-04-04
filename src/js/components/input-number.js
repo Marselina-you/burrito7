@@ -1,4 +1,7 @@
+
 import $ from "jquery";
+
+
 $.when( $.ready ).then(function() {
 
 
@@ -34,17 +37,16 @@ $.when( $.ready ).then(function() {
 
     });
 
-  $('.quantity-button').on('click', function() {
-    let summItem = $('.extras').val() * $('.value').data('price');
-    console.log(summItem)
-    $('.value').html(summItem + ' €');
-  })
+
 
 
 
 });
-
-
+// $('.quantity-button').on('click', function() {
+//  let summItem = $('.extras').val() * $('.value').data('price');
+  //console.log(summItem)
+  //$('.value').html(summItem + ' €');
+//})
 
 
 

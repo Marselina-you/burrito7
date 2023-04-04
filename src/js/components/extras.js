@@ -2,6 +2,7 @@ const menuDopList = document.querySelector('.menu-dop__list');
 let prodQuantity = 8;
 
 if (menuDopList) {
+
   const loadProducts = (quantity = 5 ) => {
   fetch('../data/data.json')
     .then((response) => {
@@ -27,7 +28,7 @@ if (menuDopList) {
           </div>
 
           <div class="quantity">
-            <input class="extras" type="number" min="1" max="9" step="1" value="0">
+            <input class="extras" type="number" min="1" max="9" data-id="${item.id}" step="1" value="0">
             <div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
           </div>
         </div>
@@ -53,3 +54,5 @@ if (menuDopList) {
 
 
 }
+//конец вывода товаров
+

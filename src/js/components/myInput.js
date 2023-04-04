@@ -3,23 +3,23 @@ let calculate = document.querySelectorAll("calculation");
 let count = document.querySelectorAll("buttonCountNumber");
 let calculation = document.querySelectorAll("calculation").innerHTML;
 
+const quantity = document.querySelectorAll('.quantity');
+const up = document.querySelectorAll('.quantity-up');
+//console.log(quantity)
+up.forEach(el => {
 
-counter.forEach(el => {
-  let btn =el;
+  el.addEventListener('click', (e) => {
+    const en = e.currentTarget;
+    let btn = e.previousElementSibling;
+    console.log(btn)
+  })
 
-  //let plus = btn.querySelector('.buttonCountPlus');
+
+
+  console.log(btn)
+  let input = document.querySelector(`.extras[data-id="${id}"]`);
+
+})
 
 
 
-document.querySelector('.buttonCauntPlus').addEventListener('click', (e) => {
-let countPlus = count.innerHTML;
-
-if(+countPlus <= 3) {
-  count.innerHTML++;
-  let countPlus = count.innerHTML;
-  console.log(countPlus);
-  //calculate.innerHTML = calculations(countPlus);
-}
-});
-
-});

@@ -1,0 +1,62 @@
+[
+  {
+    "id":1,
+    "title":"Tapas with bacon",
+    "price":10,
+    "calories": 350,
+    "weight": 400,
+    "mainImage":"./data/images/8/swissAdler.webp",
+    "ingredients": [
+      "dates",
+      "bacon",
+      "cheese",
+      "lemon"
+    ]
+   },
+   {
+    "id":2,
+    "title":"mexican salad",
+    "category":"appetizers",
+    "price":3,
+    "calories": 350,
+    "weight": 400,
+    "mainImage":"./data/images/8/swissAdler.webp",
+    "ingredients": [
+      "dates",
+      "bacon",
+      "cheese",
+      "lemon"
+    ]
+   },
+   {
+    "id":3,
+    "title":"seafood ceviche",
+    "category":"appetizers",
+    "price":11,
+    "calories": 350,
+    "weight": 400,
+    "mainImage":"./data/images/8/swissAdler.webp",
+    "ingredients": [
+      "dates",
+      "bacon",
+      "cheese",
+      "lemon"
+    ]
+   },
+   {
+    "id":4,
+    "title":"nachos",
+    "category":"appetizers",
+    "price":11,
+    "calories": 350,
+    "weight": 400,
+    "mainImage":"./data/images/8/swissAdler.webp",
+    "ingredients": [
+      "dates",
+      "bacon",
+      "cheese",
+      "lemon"
+    ]
+   }
+
+]
