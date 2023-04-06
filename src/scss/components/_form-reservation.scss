@@ -29,7 +29,7 @@
 .reservation-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-bottom: 1px solid var(--gray-light-color);
+
   padding-bottom: 60px;
 
   @include small-tablet {
@@ -109,7 +109,8 @@
 
 }
 .reservation-explain {
-  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid var(--gray-light-color);
   font: var(--regular-lato);
 
   text-align: center;

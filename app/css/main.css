@@ -641,7 +641,6 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  border-bottom: 1px solid var(--gray-light-color);
   padding-bottom: 60px;
 }
 @media (max-width: 768px) {
@@ -718,7 +717,8 @@ a {
 }
 
 .reservation-explain {
-  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid var(--gray-light-color);
   font: var(--regular-lato);
   text-align: center;
   color: var(--text-light-color);
