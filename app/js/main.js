@@ -10,10 +10,8 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger-menu.js */ "./src/js/components/burger-menu.js");
-/* harmony import */ var _components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider.js */ "./src/js/components/slider.js");
 /* harmony import */ var _components_cart_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/cart.js */ "./src/js/components/cart.js");
-/* harmony import */ var _components_cart_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_cart_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/extras.js */ "./src/js/components/extras.js");
 /* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_extras_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
@@ -149,9 +147,28 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************!*\
   !*** ./src/js/_vendor.js ***!
   \***************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: D:\\OSPanel\\domains\\burrito7\\src\\js\\_vendor.js: Identifier 'WOW' has already been declared. (8:7)\n\n\u001b[0m \u001b[90m  6 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../node_modules/wowjs/dist/wow.js\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36mimport\u001b[39m { \u001b[33mWOW\u001b[39m } \u001b[36mfrom\u001b[39m \u001b[32m'./vendor/wow.min'\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[33mWOW\u001b[39m \u001b[36mfrom\u001b[39m \u001b[32m\"wowjs\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n    at instantiate (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:67:32)\n    at constructor (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at Parser.raise (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:3365:19)\n    at ScopeHandler.checkRedeclarationInScope (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:1587:19)\n    at ScopeHandler.declareName (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:1558:12)\n    at Parser.declareNameFromIdentifier (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:10756:16)\n    at Parser.checkIdentifier (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:10752:12)\n    at Parser.checkLVal (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:10686:12)\n    at Parser.finishImportSpecifier (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:14560:10)\n    at Parser.parseImportSpecifierLocal (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:14557:31)\n    at Parser.maybeParseDefaultImportSpecifier (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:14653:12)\n    at Parser.parseImport (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:14526:31)\n    at Parser.parseStatementContent (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:13068:27)\n    at Parser.parseStatementLike (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:12952:17)\n    at Parser.parseModuleItem (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:12933:17)\n    at Parser.parseBlockOrModuleBlockBody (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:13558:36)\n    at Parser.parseBlockBody (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:13550:10)\n    at Parser.parseProgram (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:12842:10)\n    at Parser.parseTopLevel (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:12832:25)\n    at Parser.parse (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:14740:10)\n    at parse (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\parser\\lib\\index.js:14782:38)\n    at parser (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\core\\lib\\parser\\index.js:41:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:66:38)\n    at normalizeFile.next (<anonymous>)\n    at run (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\core\\lib\\transformation\\index.js:21:50)\n    at run.next (<anonymous>)\n    at transform (D:\\OSPanel\\domains\\burrito7\\node_modules\\@babel\\core\\lib\\transform.js:22:41)\n    at transform.next (<anonymous>)\n    at step (D:\\OSPanel\\domains\\burrito7\\node_modules\\gensync\\index.js:261:32)\n    at D:\\OSPanel\\domains\\burrito7\\node_modules\\gensync\\index.js:273:13\n    at async.call.result.err.err (D:\\OSPanel\\domains\\burrito7\\node_modules\\gensync\\index.js:223:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
+/* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vendor_wow_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/wow.js */ "./src/js/vendor/wow.js");
+/* harmony import */ var _vendor_wow_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_wow_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _vendor_wow_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/wow.min.js */ "./src/js/vendor/wow.min.js");
+/* harmony import */ var _vendor_wow_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_wow_min_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_wowjs_dist_wow_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/wowjs/dist/wow.min.js */ "./node_modules/wowjs/dist/wow.min.js");
+/* harmony import */ var _node_modules_wowjs_dist_wow_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_wowjs_dist_wow_min_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_wowjs_dist_wow_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! wowjs */ "./node_modules/wowjs/dist/wow.js");
+/* harmony import */ var _node_modules_wowjs_dist_wow_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_wowjs_dist_wow_js__WEBPACK_IMPORTED_MODULE_4__);
+
+//import './vendor/swiper-bundle.min.js';
+
+
+
+
+//import { WOW } from './vendor/wow.min';
+
 
 /***/ }),
 
@@ -159,7 +176,12 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 /*!******************************************!*\
   !*** ./src/js/components/burger-menu.js ***!
   \******************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wowjs */ "./node_modules/wowjs/dist/wow.js");
+/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_0__);
 
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
@@ -177,7 +199,12 @@ burger.addEventListener('click', () => {
 /*!***********************************!*\
   !*** ./src/js/components/cart.js ***!
   \***********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wowjs */ "./node_modules/wowjs/dist/wow.js");
+/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_0__);
 
 const cartBtn = document.querySelector('.btn-order');
 const miniCart = document.querySelector('.mini-cart');
@@ -248,12 +275,15 @@ if (menuDopList) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wowjs */ "./node_modules/wowjs/dist/wow.js");
+/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default().when((jquery__WEBPACK_IMPORTED_MODULE_0___default().ready)).then(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.quantity').each(function () {
-    var spinner = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this),
+
+jquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MODULE_1___default().ready)).then(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.quantity').each(function () {
+    var spinner = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this),
       input = spinner.find('input[type="number"]'),
       //нашли инпут
       btnUp = spinner.find('.quantity-up'),
@@ -289,12 +319,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default().when((jquery__WEBPACK_IMPORTED_MOD
       spinner.find("input").trigger("change");
     });
   });
+  new (wowjs__WEBPACK_IMPORTED_MODULE_0___default().WOW)({
+    live: false //чтобы не было ошибок в консоли
+    //и любые другие параметры - это просто пример
+  }).init();
 });
-// $('.quantity-button').on('click', function() {
-//  let summItem = $('.extras').val() * $('.value').data('price');
-//console.log(summItem)
-//$('.value').html(summItem + ' €');
-//})
 
 /***/ }),
 
@@ -364,6 +393,978 @@ const mobileCheck = () => {
   }
   return "unknown";
 };
+
+/***/ }),
+
+/***/ "./src/js/vendor/focus-visible.js":
+/*!****************************************!*\
+  !*** ./src/js/vendor/focus-visible.js ***!
+  \****************************************/
+/***/ (() => {
+
+/**
+ * Applies the :focus-visible polyfill at the given scope.
+ * A scope in this case is either the top-level Document or a Shadow Root.
+ *
+ * @param {(Document|ShadowRoot)} scope
+ * @see https://github.com/WICG/focus-visible
+ */
+function applyFocusVisiblePolyfill(scope) {
+  var hadKeyboardEvent = true;
+  var hadFocusVisibleRecently = false;
+  var hadFocusVisibleRecentlyTimeout = null;
+  var inputTypesAllowlist = {
+    text: true,
+    search: true,
+    url: true,
+    tel: true,
+    email: true,
+    password: true,
+    number: true,
+    date: true,
+    month: true,
+    week: true,
+    time: true,
+    datetime: true,
+    'datetime-local': true
+  };
+
+  /**
+   * Helper function for legacy browsers and iframes which sometimes focus
+   * elements like document, body, and non-interactive SVG.
+   * @param {Element} el
+   */
+  function isValidFocusTarget(el) {
+    if (el && el !== document && el.nodeName !== 'HTML' && el.nodeName !== 'BODY' && 'classList' in el && 'contains' in el.classList) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Computes whether the given element should automatically trigger the
+   * `focus-visible` class being added, i.e. whether it should always match
+   * `:focus-visible` when focused.
+   * @param {Element} el
+   * @return {boolean}
+   */
+  function focusTriggersKeyboardModality(el) {
+    var type = el.type;
+    var tagName = el.tagName;
+    if (tagName === 'INPUT' && inputTypesAllowlist[type] && !el.readOnly) {
+      return true;
+    }
+    if (tagName === 'TEXTAREA' && !el.readOnly) {
+      return true;
+    }
+    if (el.isContentEditable) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Add the `focus-visible` class to the given element if it was not added by
+   * the author.
+   * @param {Element} el
+   */
+  function addFocusVisibleClass(el) {
+    if (el.classList.contains('focus-visible')) {
+      return;
+    }
+    el.classList.add('focus-visible');
+    el.setAttribute('data-focus-visible-added', '');
+  }
+
+  /**
+   * Remove the `focus-visible` class from the given element if it was not
+   * originally added by the author.
+   * @param {Element} el
+   */
+  function removeFocusVisibleClass(el) {
+    if (!el.hasAttribute('data-focus-visible-added')) {
+      return;
+    }
+    el.classList.remove('focus-visible');
+    el.removeAttribute('data-focus-visible-added');
+  }
+
+  /**
+   * If the most recent user interaction was via the keyboard;
+   * and the key press did not include a meta, alt/option, or control key;
+   * then the modality is keyboard. Otherwise, the modality is not keyboard.
+   * Apply `focus-visible` to any current active element and keep track
+   * of our keyboard modality state with `hadKeyboardEvent`.
+   * @param {KeyboardEvent} e
+   */
+  function onKeyDown(e) {
+    if (e.metaKey || e.altKey || e.ctrlKey) {
+      return;
+    }
+    if (isValidFocusTarget(scope.activeElement)) {
+      addFocusVisibleClass(scope.activeElement);
+    }
+    hadKeyboardEvent = true;
+  }
+
+  /**
+   * If at any point a user clicks with a pointing device, ensure that we change
+   * the modality away from keyboard.
+   * This avoids the situation where a user presses a key on an already focused
+   * element, and then clicks on a different element, focusing it with a
+   * pointing device, while we still think we're in keyboard modality.
+   * @param {Event} e
+   */
+  function onPointerDown(e) {
+    hadKeyboardEvent = false;
+  }
+
+  /**
+   * On `focus`, add the `focus-visible` class to the target if:
+   * - the target received focus as a result of keyboard navigation, or
+   * - the event target is an element that will likely require interaction
+   *   via the keyboard (e.g. a text box)
+   * @param {Event} e
+   */
+  function onFocus(e) {
+    // Prevent IE from focusing the document or HTML element.
+    if (!isValidFocusTarget(e.target)) {
+      return;
+    }
+    if (hadKeyboardEvent || focusTriggersKeyboardModality(e.target)) {
+      addFocusVisibleClass(e.target);
+    }
+  }
+
+  /**
+   * On `blur`, remove the `focus-visible` class from the target.
+   * @param {Event} e
+   */
+  function onBlur(e) {
+    if (!isValidFocusTarget(e.target)) {
+      return;
+    }
+    if (e.target.classList.contains('focus-visible') || e.target.hasAttribute('data-focus-visible-added')) {
+      // To detect a tab/window switch, we look for a blur event followed
+      // rapidly by a visibility change.
+      // If we don't see a visibility change within 100ms, it's probably a
+      // regular focus change.
+      hadFocusVisibleRecently = true;
+      window.clearTimeout(hadFocusVisibleRecentlyTimeout);
+      hadFocusVisibleRecentlyTimeout = window.setTimeout(function () {
+        hadFocusVisibleRecently = false;
+      }, 100);
+      removeFocusVisibleClass(e.target);
+    }
+  }
+
+  /**
+   * If the user changes tabs, keep track of whether or not the previously
+   * focused element had .focus-visible.
+   * @param {Event} e
+   */
+  function onVisibilityChange(e) {
+    if (document.visibilityState === 'hidden') {
+      // If the tab becomes active again, the browser will handle calling focus
+      // on the element (Safari actually calls it twice).
+      // If this tab change caused a blur on an element with focus-visible,
+      // re-apply the class when the user switches back to the tab.
+      if (hadFocusVisibleRecently) {
+        hadKeyboardEvent = true;
+      }
+      addInitialPointerMoveListeners();
+    }
+  }
+
+  /**
+   * Add a group of listeners to detect usage of any pointing devices.
+   * These listeners will be added when the polyfill first loads, and anytime
+   * the window is blurred, so that they are active when the window regains
+   * focus.
+   */
+  function addInitialPointerMoveListeners() {
+    document.addEventListener('mousemove', onInitialPointerMove);
+    document.addEventListener('mousedown', onInitialPointerMove);
+    document.addEventListener('mouseup', onInitialPointerMove);
+    document.addEventListener('pointermove', onInitialPointerMove);
+    document.addEventListener('pointerdown', onInitialPointerMove);
+    document.addEventListener('pointerup', onInitialPointerMove);
+    document.addEventListener('touchmove', onInitialPointerMove);
+    document.addEventListener('touchstart', onInitialPointerMove);
+    document.addEventListener('touchend', onInitialPointerMove);
+  }
+  function removeInitialPointerMoveListeners() {
+    document.removeEventListener('mousemove', onInitialPointerMove);
+    document.removeEventListener('mousedown', onInitialPointerMove);
+    document.removeEventListener('mouseup', onInitialPointerMove);
+    document.removeEventListener('pointermove', onInitialPointerMove);
+    document.removeEventListener('pointerdown', onInitialPointerMove);
+    document.removeEventListener('pointerup', onInitialPointerMove);
+    document.removeEventListener('touchmove', onInitialPointerMove);
+    document.removeEventListener('touchstart', onInitialPointerMove);
+    document.removeEventListener('touchend', onInitialPointerMove);
+  }
+
+  /**
+   * When the polfyill first loads, assume the user is in keyboard modality.
+   * If any event is received from a pointing device (e.g. mouse, pointer,
+   * touch), turn off keyboard modality.
+   * This accounts for situations where focus enters the page from the URL bar.
+   * @param {Event} e
+   */
+  function onInitialPointerMove(e) {
+    // Work around a Safari quirk that fires a mousemove on <html> whenever the
+    // window blurs, even if you're tabbing out of the page. ¯\_(ツ)_/¯
+    if (e.target.nodeName && e.target.nodeName.toLowerCase() === 'html') {
+      return;
+    }
+    hadKeyboardEvent = false;
+    removeInitialPointerMoveListeners();
+  }
+
+  // For some kinds of state, we are interested in changes at the global scope
+  // only. For example, global pointer input, global key presses and global
+  // visibility change should affect the state at every scope:
+  document.addEventListener('keydown', onKeyDown, true);
+  document.addEventListener('mousedown', onPointerDown, true);
+  document.addEventListener('pointerdown', onPointerDown, true);
+  document.addEventListener('touchstart', onPointerDown, true);
+  document.addEventListener('visibilitychange', onVisibilityChange, true);
+  addInitialPointerMoveListeners();
+
+  // For focus and blur, we specifically care about state changes in the local
+  // scope. This is because focus / blur events that originate from within a
+  // shadow root are not re-dispatched from the host element if it was already
+  // the active element in its own scope:
+  scope.addEventListener('focus', onFocus, true);
+  scope.addEventListener('blur', onBlur, true);
+
+  // We detect that a node is a ShadowRoot by ensuring that it is a
+  // DocumentFragment and also has a host property. This check covers native
+  // implementation and polyfill implementation transparently. If we only cared
+  // about the native implementation, we could just check if the scope was
+  // an instance of a ShadowRoot.
+  if (scope.nodeType === Node.DOCUMENT_FRAGMENT_NODE && scope.host) {
+    // Since a ShadowRoot is a special kind of DocumentFragment, it does not
+    // have a root element to add a class to. So, we add this attribute to the
+    // host element instead:
+    scope.host.setAttribute('data-js-focus-visible', '');
+  } else if (scope.nodeType === Node.DOCUMENT_NODE) {
+    document.documentElement.classList.add('js-focus-visible');
+    document.documentElement.setAttribute('data-js-focus-visible', '');
+  }
+}
+
+// It is important to wrap all references to global window and document in
+// these checks to support server-side rendering use cases
+// @see https://github.com/WICG/focus-visible/issues/199
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  // Make the polyfill helper globally available. This can be used as a signal
+  // to interested libraries that wish to coordinate with the polyfill for e.g.,
+  // applying the polyfill to a shadow root:
+  window.applyFocusVisiblePolyfill = applyFocusVisiblePolyfill;
+
+  // Notify interested libraries of the polyfill's presence, in case the
+  // polyfill was loaded lazily:
+  var event;
+  try {
+    event = new CustomEvent('focus-visible-polyfill-ready');
+  } catch (error) {
+    // IE11 does not support using CustomEvent as a constructor directly:
+    event = document.createEvent('CustomEvent');
+    event.initCustomEvent('focus-visible-polyfill-ready', false, false, {});
+  }
+  window.dispatchEvent(event);
+}
+if (typeof document !== 'undefined') {
+  // Apply the polyfill to the global document, so that no JavaScript
+  // coordination is required to use the polyfill in the top-level document:
+  applyFocusVisiblePolyfill(document);
+}
+
+/***/ }),
+
+/***/ "./src/js/vendor/wow.js":
+/*!******************************!*\
+  !*** ./src/js/vendor/wow.js ***!
+  \******************************/
+/***/ (function() {
+
+(function () {
+  var MutationObserver,
+    Util,
+    WeakMap,
+    getComputedStyle,
+    getComputedStyleRX,
+    bind = function (fn, me) {
+      return function () {
+        return fn.apply(me, arguments);
+      };
+    },
+    indexOf = [].indexOf || function (item) {
+      for (var i = 0, l = this.length; i < l; i++) {
+        if (i in this && this[i] === item) return i;
+      }
+      return -1;
+    };
+  Util = function () {
+    function Util() {}
+    Util.prototype.extend = function (custom, defaults) {
+      var key, value;
+      for (key in defaults) {
+        value = defaults[key];
+        if (custom[key] == null) {
+          custom[key] = value;
+        }
+      }
+      return custom;
+    };
+    Util.prototype.isMobile = function (agent) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+    };
+    Util.prototype.createEvent = function (event, bubble, cancel, detail) {
+      var customEvent;
+      if (bubble == null) {
+        bubble = false;
+      }
+      if (cancel == null) {
+        cancel = false;
+      }
+      if (detail == null) {
+        detail = null;
+      }
+      if (document.createEvent != null) {
+        customEvent = document.createEvent('CustomEvent');
+        customEvent.initCustomEvent(event, bubble, cancel, detail);
+      } else if (document.createEventObject != null) {
+        customEvent = document.createEventObject();
+        customEvent.eventType = event;
+      } else {
+        customEvent.eventName = event;
+      }
+      return customEvent;
+    };
+    Util.prototype.emitEvent = function (elem, event) {
+      if (elem.dispatchEvent != null) {
+        return elem.dispatchEvent(event);
+      } else if (event in (elem != null)) {
+        return elem[event]();
+      } else if ("on" + event in (elem != null)) {
+        return elem["on" + event]();
+      }
+    };
+    Util.prototype.addEvent = function (elem, event, fn) {
+      if (elem.addEventListener != null) {
+        return elem.addEventListener(event, fn, false);
+      } else if (elem.attachEvent != null) {
+        return elem.attachEvent("on" + event, fn);
+      } else {
+        return elem[event] = fn;
+      }
+    };
+    Util.prototype.removeEvent = function (elem, event, fn) {
+      if (elem.removeEventListener != null) {
+        return elem.removeEventListener(event, fn, false);
+      } else if (elem.detachEvent != null) {
+        return elem.detachEvent("on" + event, fn);
+      } else {
+        return delete elem[event];
+      }
+    };
+    Util.prototype.innerHeight = function () {
+      if ('innerHeight' in window) {
+        return window.innerHeight;
+      } else {
+        return document.documentElement.clientHeight;
+      }
+    };
+    return Util;
+  }();
+  WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = function () {
+    function WeakMap() {
+      this.keys = [];
+      this.values = [];
+    }
+    WeakMap.prototype.get = function (key) {
+      var i, item, j, len, ref;
+      ref = this.keys;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        item = ref[i];
+        if (item === key) {
+          return this.values[i];
+        }
+      }
+    };
+    WeakMap.prototype.set = function (key, value) {
+      var i, item, j, len, ref;
+      ref = this.keys;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        item = ref[i];
+        if (item === key) {
+          this.values[i] = value;
+          return;
+        }
+      }
+      this.keys.push(key);
+      return this.values.push(value);
+    };
+    return WeakMap;
+  }());
+  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = function () {
+    function MutationObserver() {
+      if (typeof console !== "undefined" && console !== null) {
+        console.warn('MutationObserver is not supported by your browser.');
+      }
+      if (typeof console !== "undefined" && console !== null) {
+        console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+      }
+    }
+    MutationObserver.notSupported = true;
+    MutationObserver.prototype.observe = function () {};
+    return MutationObserver;
+  }());
+  getComputedStyle = this.getComputedStyle || function (el, pseudo) {
+    this.getPropertyValue = function (prop) {
+      var ref;
+      if (prop === 'float') {
+        prop = 'styleFloat';
+      }
+      if (getComputedStyleRX.test(prop)) {
+        prop.replace(getComputedStyleRX, function (_, _char) {
+          return _char.toUpperCase();
+        });
+      }
+      return ((ref = el.currentStyle) != null ? ref[prop] : void 0) || null;
+    };
+    return this;
+  };
+  getComputedStyleRX = /(\-([a-z]){1})/g;
+  this.WOW = function () {
+    WOW.prototype.defaults = {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+      callback: null,
+      scrollContainer: null
+    };
+    function WOW(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.scrollCallback = bind(this.scrollCallback, this);
+      this.scrollHandler = bind(this.scrollHandler, this);
+      this.resetAnimation = bind(this.resetAnimation, this);
+      this.start = bind(this.start, this);
+      this.scrolled = true;
+      this.config = this.util().extend(options, this.defaults);
+      if (options.scrollContainer != null) {
+        this.config.scrollContainer = document.querySelector(options.scrollContainer);
+      }
+      this.animationNameCache = new WeakMap();
+      this.wowEvent = this.util().createEvent(this.config.boxClass);
+    }
+    WOW.prototype.init = function () {
+      var ref;
+      this.element = window.document.documentElement;
+      if ((ref = document.readyState) === "interactive" || ref === "complete") {
+        this.start();
+      } else {
+        this.util().addEvent(document, 'DOMContentLoaded', this.start);
+      }
+      return this.finished = [];
+    };
+    WOW.prototype.start = function () {
+      var box, j, len, ref;
+      this.stopped = false;
+      this.boxes = function () {
+        var j, len, ref, results;
+        ref = this.element.querySelectorAll("." + this.config.boxClass);
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          box = ref[j];
+          results.push(box);
+        }
+        return results;
+      }.call(this);
+      this.all = function () {
+        var j, len, ref, results;
+        ref = this.boxes;
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          box = ref[j];
+          results.push(box);
+        }
+        return results;
+      }.call(this);
+      if (this.boxes.length) {
+        if (this.disabled()) {
+          this.resetStyle();
+        } else {
+          ref = this.boxes;
+          for (j = 0, len = ref.length; j < len; j++) {
+            box = ref[j];
+            this.applyStyle(box, true);
+          }
+        }
+      }
+      if (!this.disabled()) {
+        this.util().addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+        this.util().addEvent(window, 'resize', this.scrollHandler);
+        this.interval = setInterval(this.scrollCallback, 50);
+      }
+      if (this.config.live) {
+        return new MutationObserver(function (_this) {
+          return function (records) {
+            var k, len1, node, record, results;
+            results = [];
+            for (k = 0, len1 = records.length; k < len1; k++) {
+              record = records[k];
+              results.push(function () {
+                var l, len2, ref1, results1;
+                ref1 = record.addedNodes || [];
+                results1 = [];
+                for (l = 0, len2 = ref1.length; l < len2; l++) {
+                  node = ref1[l];
+                  results1.push(this.doSync(node));
+                }
+                return results1;
+              }.call(_this));
+            }
+            return results;
+          };
+        }(this)).observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      }
+    };
+    WOW.prototype.stop = function () {
+      this.stopped = true;
+      this.util().removeEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+      this.util().removeEvent(window, 'resize', this.scrollHandler);
+      if (this.interval != null) {
+        return clearInterval(this.interval);
+      }
+    };
+    WOW.prototype.sync = function (element) {
+      if (MutationObserver.notSupported) {
+        return this.doSync(this.element);
+      }
+    };
+    WOW.prototype.doSync = function (element) {
+      var box, j, len, ref, results;
+      if (element == null) {
+        element = this.element;
+      }
+      if (element.nodeType !== 1) {
+        return;
+      }
+      element = element.parentNode || element;
+      ref = element.querySelectorAll("." + this.config.boxClass);
+      results = [];
+      for (j = 0, len = ref.length; j < len; j++) {
+        box = ref[j];
+        if (indexOf.call(this.all, box) < 0) {
+          this.boxes.push(box);
+          this.all.push(box);
+          if (this.stopped || this.disabled()) {
+            this.resetStyle();
+          } else {
+            this.applyStyle(box, true);
+          }
+          results.push(this.scrolled = true);
+        } else {
+          results.push(void 0);
+        }
+      }
+      return results;
+    };
+    WOW.prototype.show = function (box) {
+      this.applyStyle(box);
+      box.className = box.className + " " + this.config.animateClass;
+      if (this.config.callback != null) {
+        this.config.callback(box);
+      }
+      this.util().emitEvent(box, this.wowEvent);
+      this.util().addEvent(box, 'animationend', this.resetAnimation);
+      this.util().addEvent(box, 'oanimationend', this.resetAnimation);
+      this.util().addEvent(box, 'webkitAnimationEnd', this.resetAnimation);
+      this.util().addEvent(box, 'MSAnimationEnd', this.resetAnimation);
+      return box;
+    };
+    WOW.prototype.applyStyle = function (box, hidden) {
+      var delay, duration, iteration;
+      duration = box.getAttribute('data-wow-duration');
+      delay = box.getAttribute('data-wow-delay');
+      iteration = box.getAttribute('data-wow-iteration');
+      return this.animate(function (_this) {
+        return function () {
+          return _this.customStyle(box, hidden, duration, delay, iteration);
+        };
+      }(this));
+    };
+    WOW.prototype.animate = function () {
+      if ('requestAnimationFrame' in window) {
+        return function (callback) {
+          return window.requestAnimationFrame(callback);
+        };
+      } else {
+        return function (callback) {
+          return callback();
+        };
+      }
+    }();
+    WOW.prototype.resetStyle = function () {
+      var box, j, len, ref, results;
+      ref = this.boxes;
+      results = [];
+      for (j = 0, len = ref.length; j < len; j++) {
+        box = ref[j];
+        results.push(box.style.visibility = 'visible');
+      }
+      return results;
+    };
+    WOW.prototype.resetAnimation = function (event) {
+      var target;
+      if (event.type.toLowerCase().indexOf('animationend') >= 0) {
+        target = event.target || event.srcElement;
+        return target.className = target.className.replace(this.config.animateClass, '').trim();
+      }
+    };
+    WOW.prototype.customStyle = function (box, hidden, duration, delay, iteration) {
+      if (hidden) {
+        this.cacheAnimationName(box);
+      }
+      box.style.visibility = hidden ? 'hidden' : 'visible';
+      if (duration) {
+        this.vendorSet(box.style, {
+          animationDuration: duration
+        });
+      }
+      if (delay) {
+        this.vendorSet(box.style, {
+          animationDelay: delay
+        });
+      }
+      if (iteration) {
+        this.vendorSet(box.style, {
+          animationIterationCount: iteration
+        });
+      }
+      this.vendorSet(box.style, {
+        animationName: hidden ? 'none' : this.cachedAnimationName(box)
+      });
+      return box;
+    };
+    WOW.prototype.vendors = ["moz", "webkit"];
+    WOW.prototype.vendorSet = function (elem, properties) {
+      var name, results, value, vendor;
+      results = [];
+      for (name in properties) {
+        value = properties[name];
+        elem["" + name] = value;
+        results.push(function () {
+          var j, len, ref, results1;
+          ref = this.vendors;
+          results1 = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            vendor = ref[j];
+            results1.push(elem["" + vendor + name.charAt(0).toUpperCase() + name.substr(1)] = value);
+          }
+          return results1;
+        }.call(this));
+      }
+      return results;
+    };
+    WOW.prototype.vendorCSS = function (elem, property) {
+      var j, len, ref, result, style, vendor;
+      style = getComputedStyle(elem);
+      result = style.getPropertyCSSValue(property);
+      ref = this.vendors;
+      for (j = 0, len = ref.length; j < len; j++) {
+        vendor = ref[j];
+        result = result || style.getPropertyCSSValue("-" + vendor + "-" + property);
+      }
+      return result;
+    };
+    WOW.prototype.animationName = function (box) {
+      var animationName, error;
+      try {
+        animationName = this.vendorCSS(box, 'animation-name').cssText;
+      } catch (error) {
+        animationName = getComputedStyle(box).getPropertyValue('animation-name');
+      }
+      if (animationName === 'none') {
+        return '';
+      } else {
+        return animationName;
+      }
+    };
+    WOW.prototype.cacheAnimationName = function (box) {
+      return this.animationNameCache.set(box, this.animationName(box));
+    };
+    WOW.prototype.cachedAnimationName = function (box) {
+      return this.animationNameCache.get(box);
+    };
+    WOW.prototype.scrollHandler = function () {
+      return this.scrolled = true;
+    };
+    WOW.prototype.scrollCallback = function () {
+      var box;
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.boxes = function () {
+          var j, len, ref, results;
+          ref = this.boxes;
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            box = ref[j];
+            if (!box) {
+              continue;
+            }
+            if (this.isVisible(box)) {
+              this.show(box);
+              continue;
+            }
+            results.push(box);
+          }
+          return results;
+        }.call(this);
+        if (!(this.boxes.length || this.config.live)) {
+          return this.stop();
+        }
+      }
+    };
+    WOW.prototype.offsetTop = function (element) {
+      var top;
+      while (element.offsetTop === void 0) {
+        element = element.parentNode;
+      }
+      top = element.offsetTop;
+      while (element = element.offsetParent) {
+        top += element.offsetTop;
+      }
+      return top;
+    };
+    WOW.prototype.isVisible = function (box) {
+      var bottom, offset, top, viewBottom, viewTop;
+      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      viewTop = this.config.scrollContainer && this.config.scrollContainer.scrollTop || window.pageYOffset;
+      viewBottom = viewTop + Math.min(this.element.clientHeight, this.util().innerHeight()) - offset;
+      top = this.offsetTop(box);
+      bottom = top + box.clientHeight;
+      return top <= viewBottom && bottom >= viewTop;
+    };
+    WOW.prototype.util = function () {
+      return this._util != null ? this._util : this._util = new Util();
+    };
+    WOW.prototype.disabled = function () {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    };
+    return WOW;
+  }();
+}).call(this);
+
+/***/ }),
+
+/***/ "./src/js/vendor/wow.min.js":
+/*!**********************************!*\
+  !*** ./src/js/vendor/wow.min.js ***!
+  \**********************************/
+/***/ (function() {
+
+/*! WOW - v1.1.2 - 2016-04-08
+* Copyright (c) 2016 Matthieu Aussaguel;*/(function () {
+  var a,
+    b,
+    c,
+    d,
+    e,
+    f = function (a, b) {
+      return function () {
+        return a.apply(b, arguments);
+      };
+    },
+    g = [].indexOf || function (a) {
+      for (var b = 0, c = this.length; c > b; b++) if (b in this && this[b] === a) return b;
+      return -1;
+    };
+  b = function () {
+    function a() {}
+    return a.prototype.extend = function (a, b) {
+      var c, d;
+      for (c in b) d = b[c], null == a[c] && (a[c] = d);
+      return a;
+    }, a.prototype.isMobile = function (a) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a);
+    }, a.prototype.createEvent = function (a, b, c, d) {
+      var e;
+      return null == b && (b = !1), null == c && (c = !1), null == d && (d = null), null != document.createEvent ? (e = document.createEvent("CustomEvent"), e.initCustomEvent(a, b, c, d)) : null != document.createEventObject ? (e = document.createEventObject(), e.eventType = a) : e.eventName = a, e;
+    }, a.prototype.emitEvent = function (a, b) {
+      return null != a.dispatchEvent ? a.dispatchEvent(b) : b in (null != a) ? a[b]() : "on" + b in (null != a) ? a["on" + b]() : void 0;
+    }, a.prototype.addEvent = function (a, b, c) {
+      return null != a.addEventListener ? a.addEventListener(b, c, !1) : null != a.attachEvent ? a.attachEvent("on" + b, c) : a[b] = c;
+    }, a.prototype.removeEvent = function (a, b, c) {
+      return null != a.removeEventListener ? a.removeEventListener(b, c, !1) : null != a.detachEvent ? a.detachEvent("on" + b, c) : delete a[b];
+    }, a.prototype.innerHeight = function () {
+      return "innerHeight" in window ? window.innerHeight : document.documentElement.clientHeight;
+    }, a;
+  }(), c = this.WeakMap || this.MozWeakMap || (c = function () {
+    function a() {
+      this.keys = [], this.values = [];
+    }
+    return a.prototype.get = function (a) {
+      var b, c, d, e, f;
+      for (f = this.keys, b = d = 0, e = f.length; e > d; b = ++d) if (c = f[b], c === a) return this.values[b];
+    }, a.prototype.set = function (a, b) {
+      var c, d, e, f, g;
+      for (g = this.keys, c = e = 0, f = g.length; f > e; c = ++e) if (d = g[c], d === a) return void (this.values[c] = b);
+      return this.keys.push(a), this.values.push(b);
+    }, a;
+  }()), a = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (a = function () {
+    function a() {
+      "undefined" != typeof console && null !== console && console.warn("MutationObserver is not supported by your browser."), "undefined" != typeof console && null !== console && console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.");
+    }
+    return a.notSupported = !0, a.prototype.observe = function () {}, a;
+  }()), d = this.getComputedStyle || function (a, b) {
+    return this.getPropertyValue = function (b) {
+      var c;
+      return "float" === b && (b = "styleFloat"), e.test(b) && b.replace(e, function (a, b) {
+        return b.toUpperCase();
+      }), (null != (c = a.currentStyle) ? c[b] : void 0) || null;
+    }, this;
+  }, e = /(\-([a-z]){1})/g, this.WOW = function () {
+    function e(a) {
+      null == a && (a = {}), this.scrollCallback = f(this.scrollCallback, this), this.scrollHandler = f(this.scrollHandler, this), this.resetAnimation = f(this.resetAnimation, this), this.start = f(this.start, this), this.scrolled = !0, this.config = this.util().extend(a, this.defaults), null != a.scrollContainer && (this.config.scrollContainer = document.querySelector(a.scrollContainer)), this.animationNameCache = new c(), this.wowEvent = this.util().createEvent(this.config.boxClass);
+    }
+    return e.prototype.defaults = {
+      boxClass: "wow",
+      animateClass: "animated",
+      offset: 0,
+      mobile: !0,
+      live: !0,
+      callback: null,
+      scrollContainer: null
+    }, e.prototype.init = function () {
+      var a;
+      return this.element = window.document.documentElement, "interactive" === (a = document.readyState) || "complete" === a ? this.start() : this.util().addEvent(document, "DOMContentLoaded", this.start), this.finished = [];
+    }, e.prototype.start = function () {
+      var b, c, d, e;
+      if (this.stopped = !1, this.boxes = function () {
+        var a, c, d, e;
+        for (d = this.element.querySelectorAll("." + this.config.boxClass), e = [], a = 0, c = d.length; c > a; a++) b = d[a], e.push(b);
+        return e;
+      }.call(this), this.all = function () {
+        var a, c, d, e;
+        for (d = this.boxes, e = [], a = 0, c = d.length; c > a; a++) b = d[a], e.push(b);
+        return e;
+      }.call(this), this.boxes.length) if (this.disabled()) this.resetStyle();else for (e = this.boxes, c = 0, d = e.length; d > c; c++) b = e[c], this.applyStyle(b, !0);
+      return this.disabled() || (this.util().addEvent(this.config.scrollContainer || window, "scroll", this.scrollHandler), this.util().addEvent(window, "resize", this.scrollHandler), this.interval = setInterval(this.scrollCallback, 50)), this.config.live ? new a(function (a) {
+        return function (b) {
+          var c, d, e, f, g;
+          for (g = [], c = 0, d = b.length; d > c; c++) f = b[c], g.push(function () {
+            var a, b, c, d;
+            for (c = f.addedNodes || [], d = [], a = 0, b = c.length; b > a; a++) e = c[a], d.push(this.doSync(e));
+            return d;
+          }.call(a));
+          return g;
+        };
+      }(this)).observe(document.body, {
+        childList: !0,
+        subtree: !0
+      }) : void 0;
+    }, e.prototype.stop = function () {
+      return this.stopped = !0, this.util().removeEvent(this.config.scrollContainer || window, "scroll", this.scrollHandler), this.util().removeEvent(window, "resize", this.scrollHandler), null != this.interval ? clearInterval(this.interval) : void 0;
+    }, e.prototype.sync = function (b) {
+      return a.notSupported ? this.doSync(this.element) : void 0;
+    }, e.prototype.doSync = function (a) {
+      var b, c, d, e, f;
+      if (null == a && (a = this.element), 1 === a.nodeType) {
+        for (a = a.parentNode || a, e = a.querySelectorAll("." + this.config.boxClass), f = [], c = 0, d = e.length; d > c; c++) b = e[c], g.call(this.all, b) < 0 ? (this.boxes.push(b), this.all.push(b), this.stopped || this.disabled() ? this.resetStyle() : this.applyStyle(b, !0), f.push(this.scrolled = !0)) : f.push(void 0);
+        return f;
+      }
+    }, e.prototype.show = function (a) {
+      return this.applyStyle(a), a.className = a.className + " " + this.config.animateClass, null != this.config.callback && this.config.callback(a), this.util().emitEvent(a, this.wowEvent), this.util().addEvent(a, "animationend", this.resetAnimation), this.util().addEvent(a, "oanimationend", this.resetAnimation), this.util().addEvent(a, "webkitAnimationEnd", this.resetAnimation), this.util().addEvent(a, "MSAnimationEnd", this.resetAnimation), a;
+    }, e.prototype.applyStyle = function (a, b) {
+      var c, d, e;
+      return d = a.getAttribute("data-wow-duration"), c = a.getAttribute("data-wow-delay"), e = a.getAttribute("data-wow-iteration"), this.animate(function (f) {
+        return function () {
+          return f.customStyle(a, b, d, c, e);
+        };
+      }(this));
+    }, e.prototype.animate = function () {
+      return "requestAnimationFrame" in window ? function (a) {
+        return window.requestAnimationFrame(a);
+      } : function (a) {
+        return a();
+      };
+    }(), e.prototype.resetStyle = function () {
+      var a, b, c, d, e;
+      for (d = this.boxes, e = [], b = 0, c = d.length; c > b; b++) a = d[b], e.push(a.style.visibility = "visible");
+      return e;
+    }, e.prototype.resetAnimation = function (a) {
+      var b;
+      return a.type.toLowerCase().indexOf("animationend") >= 0 ? (b = a.target || a.srcElement, b.className = b.className.replace(this.config.animateClass, "").trim()) : void 0;
+    }, e.prototype.customStyle = function (a, b, c, d, e) {
+      return b && this.cacheAnimationName(a), a.style.visibility = b ? "hidden" : "visible", c && this.vendorSet(a.style, {
+        animationDuration: c
+      }), d && this.vendorSet(a.style, {
+        animationDelay: d
+      }), e && this.vendorSet(a.style, {
+        animationIterationCount: e
+      }), this.vendorSet(a.style, {
+        animationName: b ? "none" : this.cachedAnimationName(a)
+      }), a;
+    }, e.prototype.vendors = ["moz", "webkit"], e.prototype.vendorSet = function (a, b) {
+      var c, d, e, f;
+      d = [];
+      for (c in b) e = b[c], a["" + c] = e, d.push(function () {
+        var b, d, g, h;
+        for (g = this.vendors, h = [], b = 0, d = g.length; d > b; b++) f = g[b], h.push(a["" + f + c.charAt(0).toUpperCase() + c.substr(1)] = e);
+        return h;
+      }.call(this));
+      return d;
+    }, e.prototype.vendorCSS = function (a, b) {
+      var c, e, f, g, h, i;
+      for (h = d(a), g = h.getPropertyCSSValue(b), f = this.vendors, c = 0, e = f.length; e > c; c++) i = f[c], g = g || h.getPropertyCSSValue("-" + i + "-" + b);
+      return g;
+    }, e.prototype.animationName = function (a) {
+      var b;
+      try {
+        b = this.vendorCSS(a, "animation-name").cssText;
+      } catch (c) {
+        b = d(a).getPropertyValue("animation-name");
+      }
+      return "none" === b ? "" : b;
+    }, e.prototype.cacheAnimationName = function (a) {
+      return this.animationNameCache.set(a, this.animationName(a));
+    }, e.prototype.cachedAnimationName = function (a) {
+      return this.animationNameCache.get(a);
+    }, e.prototype.scrollHandler = function () {
+      return this.scrolled = !0;
+    }, e.prototype.scrollCallback = function () {
+      var a;
+      return !this.scrolled || (this.scrolled = !1, this.boxes = function () {
+        var b, c, d, e;
+        for (d = this.boxes, e = [], b = 0, c = d.length; c > b; b++) a = d[b], a && (this.isVisible(a) ? this.show(a) : e.push(a));
+        return e;
+      }.call(this), this.boxes.length || this.config.live) ? void 0 : this.stop();
+    }, e.prototype.offsetTop = function (a) {
+      for (var b; void 0 === a.offsetTop;) a = a.parentNode;
+      for (b = a.offsetTop; a = a.offsetParent;) b += a.offsetTop;
+      return b;
+    }, e.prototype.isVisible = function (a) {
+      var b, c, d, e, f;
+      return c = a.getAttribute("data-wow-offset") || this.config.offset, f = this.config.scrollContainer && this.config.scrollContainer.scrollTop || window.pageYOffset, e = f + Math.min(this.element.clientHeight, this.util().innerHeight()) - c, d = this.offsetTop(a), b = d + a.clientHeight, e >= d && b >= f;
+    }, e.prototype.util = function () {
+      return null != this._util ? this._util : this._util = new b();
+    }, e.prototype.disabled = function () {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    }, e;
+  }();
+}).call(this);
 
 /***/ }),
 
@@ -11339,6 +12340,542 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
+
+
+/***/ }),
+
+/***/ "./node_modules/wowjs/dist/wow.js":
+/*!****************************************!*\
+  !*** ./node_modules/wowjs/dist/wow.js ***!
+  \****************************************/
+/***/ (function() {
+
+(function() {
+  var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  Util = (function() {
+    function Util() {}
+
+    Util.prototype.extend = function(custom, defaults) {
+      var key, value;
+      for (key in defaults) {
+        value = defaults[key];
+        if (custom[key] == null) {
+          custom[key] = value;
+        }
+      }
+      return custom;
+    };
+
+    Util.prototype.isMobile = function(agent) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+    };
+
+    Util.prototype.createEvent = function(event, bubble, cancel, detail) {
+      var customEvent;
+      if (bubble == null) {
+        bubble = false;
+      }
+      if (cancel == null) {
+        cancel = false;
+      }
+      if (detail == null) {
+        detail = null;
+      }
+      if (document.createEvent != null) {
+        customEvent = document.createEvent('CustomEvent');
+        customEvent.initCustomEvent(event, bubble, cancel, detail);
+      } else if (document.createEventObject != null) {
+        customEvent = document.createEventObject();
+        customEvent.eventType = event;
+      } else {
+        customEvent.eventName = event;
+      }
+      return customEvent;
+    };
+
+    Util.prototype.emitEvent = function(elem, event) {
+      if (elem.dispatchEvent != null) {
+        return elem.dispatchEvent(event);
+      } else if (event in (elem != null)) {
+        return elem[event]();
+      } else if (("on" + event) in (elem != null)) {
+        return elem["on" + event]();
+      }
+    };
+
+    Util.prototype.addEvent = function(elem, event, fn) {
+      if (elem.addEventListener != null) {
+        return elem.addEventListener(event, fn, false);
+      } else if (elem.attachEvent != null) {
+        return elem.attachEvent("on" + event, fn);
+      } else {
+        return elem[event] = fn;
+      }
+    };
+
+    Util.prototype.removeEvent = function(elem, event, fn) {
+      if (elem.removeEventListener != null) {
+        return elem.removeEventListener(event, fn, false);
+      } else if (elem.detachEvent != null) {
+        return elem.detachEvent("on" + event, fn);
+      } else {
+        return delete elem[event];
+      }
+    };
+
+    Util.prototype.innerHeight = function() {
+      if ('innerHeight' in window) {
+        return window.innerHeight;
+      } else {
+        return document.documentElement.clientHeight;
+      }
+    };
+
+    return Util;
+
+  })();
+
+  WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = (function() {
+    function WeakMap() {
+      this.keys = [];
+      this.values = [];
+    }
+
+    WeakMap.prototype.get = function(key) {
+      var i, item, j, len, ref;
+      ref = this.keys;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        item = ref[i];
+        if (item === key) {
+          return this.values[i];
+        }
+      }
+    };
+
+    WeakMap.prototype.set = function(key, value) {
+      var i, item, j, len, ref;
+      ref = this.keys;
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        item = ref[i];
+        if (item === key) {
+          this.values[i] = value;
+          return;
+        }
+      }
+      this.keys.push(key);
+      return this.values.push(value);
+    };
+
+    return WeakMap;
+
+  })());
+
+  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
+    function MutationObserver() {
+      if (typeof console !== "undefined" && console !== null) {
+        console.warn('MutationObserver is not supported by your browser.');
+      }
+      if (typeof console !== "undefined" && console !== null) {
+        console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+      }
+    }
+
+    MutationObserver.notSupported = true;
+
+    MutationObserver.prototype.observe = function() {};
+
+    return MutationObserver;
+
+  })());
+
+  getComputedStyle = this.getComputedStyle || function(el, pseudo) {
+    this.getPropertyValue = function(prop) {
+      var ref;
+      if (prop === 'float') {
+        prop = 'styleFloat';
+      }
+      if (getComputedStyleRX.test(prop)) {
+        prop.replace(getComputedStyleRX, function(_, _char) {
+          return _char.toUpperCase();
+        });
+      }
+      return ((ref = el.currentStyle) != null ? ref[prop] : void 0) || null;
+    };
+    return this;
+  };
+
+  getComputedStyleRX = /(\-([a-z]){1})/g;
+
+  this.WOW = (function() {
+    WOW.prototype.defaults = {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+      callback: null,
+      scrollContainer: null
+    };
+
+    function WOW(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.scrollCallback = bind(this.scrollCallback, this);
+      this.scrollHandler = bind(this.scrollHandler, this);
+      this.resetAnimation = bind(this.resetAnimation, this);
+      this.start = bind(this.start, this);
+      this.scrolled = true;
+      this.config = this.util().extend(options, this.defaults);
+      if (options.scrollContainer != null) {
+        this.config.scrollContainer = document.querySelector(options.scrollContainer);
+      }
+      this.animationNameCache = new WeakMap();
+      this.wowEvent = this.util().createEvent(this.config.boxClass);
+    }
+
+    WOW.prototype.init = function() {
+      var ref;
+      this.element = window.document.documentElement;
+      if ((ref = document.readyState) === "interactive" || ref === "complete") {
+        this.start();
+      } else {
+        this.util().addEvent(document, 'DOMContentLoaded', this.start);
+      }
+      return this.finished = [];
+    };
+
+    WOW.prototype.start = function() {
+      var box, j, len, ref;
+      this.stopped = false;
+      this.boxes = (function() {
+        var j, len, ref, results;
+        ref = this.element.querySelectorAll("." + this.config.boxClass);
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          box = ref[j];
+          results.push(box);
+        }
+        return results;
+      }).call(this);
+      this.all = (function() {
+        var j, len, ref, results;
+        ref = this.boxes;
+        results = [];
+        for (j = 0, len = ref.length; j < len; j++) {
+          box = ref[j];
+          results.push(box);
+        }
+        return results;
+      }).call(this);
+      if (this.boxes.length) {
+        if (this.disabled()) {
+          this.resetStyle();
+        } else {
+          ref = this.boxes;
+          for (j = 0, len = ref.length; j < len; j++) {
+            box = ref[j];
+            this.applyStyle(box, true);
+          }
+        }
+      }
+      if (!this.disabled()) {
+        this.util().addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+        this.util().addEvent(window, 'resize', this.scrollHandler);
+        this.interval = setInterval(this.scrollCallback, 50);
+      }
+      if (this.config.live) {
+        return new MutationObserver((function(_this) {
+          return function(records) {
+            var k, len1, node, record, results;
+            results = [];
+            for (k = 0, len1 = records.length; k < len1; k++) {
+              record = records[k];
+              results.push((function() {
+                var l, len2, ref1, results1;
+                ref1 = record.addedNodes || [];
+                results1 = [];
+                for (l = 0, len2 = ref1.length; l < len2; l++) {
+                  node = ref1[l];
+                  results1.push(this.doSync(node));
+                }
+                return results1;
+              }).call(_this));
+            }
+            return results;
+          };
+        })(this)).observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      }
+    };
+
+    WOW.prototype.stop = function() {
+      this.stopped = true;
+      this.util().removeEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+      this.util().removeEvent(window, 'resize', this.scrollHandler);
+      if (this.interval != null) {
+        return clearInterval(this.interval);
+      }
+    };
+
+    WOW.prototype.sync = function(element) {
+      if (MutationObserver.notSupported) {
+        return this.doSync(this.element);
+      }
+    };
+
+    WOW.prototype.doSync = function(element) {
+      var box, j, len, ref, results;
+      if (element == null) {
+        element = this.element;
+      }
+      if (element.nodeType !== 1) {
+        return;
+      }
+      element = element.parentNode || element;
+      ref = element.querySelectorAll("." + this.config.boxClass);
+      results = [];
+      for (j = 0, len = ref.length; j < len; j++) {
+        box = ref[j];
+        if (indexOf.call(this.all, box) < 0) {
+          this.boxes.push(box);
+          this.all.push(box);
+          if (this.stopped || this.disabled()) {
+            this.resetStyle();
+          } else {
+            this.applyStyle(box, true);
+          }
+          results.push(this.scrolled = true);
+        } else {
+          results.push(void 0);
+        }
+      }
+      return results;
+    };
+
+    WOW.prototype.show = function(box) {
+      this.applyStyle(box);
+      box.className = box.className + " " + this.config.animateClass;
+      if (this.config.callback != null) {
+        this.config.callback(box);
+      }
+      this.util().emitEvent(box, this.wowEvent);
+      this.util().addEvent(box, 'animationend', this.resetAnimation);
+      this.util().addEvent(box, 'oanimationend', this.resetAnimation);
+      this.util().addEvent(box, 'webkitAnimationEnd', this.resetAnimation);
+      this.util().addEvent(box, 'MSAnimationEnd', this.resetAnimation);
+      return box;
+    };
+
+    WOW.prototype.applyStyle = function(box, hidden) {
+      var delay, duration, iteration;
+      duration = box.getAttribute('data-wow-duration');
+      delay = box.getAttribute('data-wow-delay');
+      iteration = box.getAttribute('data-wow-iteration');
+      return this.animate((function(_this) {
+        return function() {
+          return _this.customStyle(box, hidden, duration, delay, iteration);
+        };
+      })(this));
+    };
+
+    WOW.prototype.animate = (function() {
+      if ('requestAnimationFrame' in window) {
+        return function(callback) {
+          return window.requestAnimationFrame(callback);
+        };
+      } else {
+        return function(callback) {
+          return callback();
+        };
+      }
+    })();
+
+    WOW.prototype.resetStyle = function() {
+      var box, j, len, ref, results;
+      ref = this.boxes;
+      results = [];
+      for (j = 0, len = ref.length; j < len; j++) {
+        box = ref[j];
+        results.push(box.style.visibility = 'visible');
+      }
+      return results;
+    };
+
+    WOW.prototype.resetAnimation = function(event) {
+      var target;
+      if (event.type.toLowerCase().indexOf('animationend') >= 0) {
+        target = event.target || event.srcElement;
+        return target.className = target.className.replace(this.config.animateClass, '').trim();
+      }
+    };
+
+    WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
+      if (hidden) {
+        this.cacheAnimationName(box);
+      }
+      box.style.visibility = hidden ? 'hidden' : 'visible';
+      if (duration) {
+        this.vendorSet(box.style, {
+          animationDuration: duration
+        });
+      }
+      if (delay) {
+        this.vendorSet(box.style, {
+          animationDelay: delay
+        });
+      }
+      if (iteration) {
+        this.vendorSet(box.style, {
+          animationIterationCount: iteration
+        });
+      }
+      this.vendorSet(box.style, {
+        animationName: hidden ? 'none' : this.cachedAnimationName(box)
+      });
+      return box;
+    };
+
+    WOW.prototype.vendors = ["moz", "webkit"];
+
+    WOW.prototype.vendorSet = function(elem, properties) {
+      var name, results, value, vendor;
+      results = [];
+      for (name in properties) {
+        value = properties[name];
+        elem["" + name] = value;
+        results.push((function() {
+          var j, len, ref, results1;
+          ref = this.vendors;
+          results1 = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            vendor = ref[j];
+            results1.push(elem["" + vendor + (name.charAt(0).toUpperCase()) + (name.substr(1))] = value);
+          }
+          return results1;
+        }).call(this));
+      }
+      return results;
+    };
+
+    WOW.prototype.vendorCSS = function(elem, property) {
+      var j, len, ref, result, style, vendor;
+      style = getComputedStyle(elem);
+      result = style.getPropertyCSSValue(property);
+      ref = this.vendors;
+      for (j = 0, len = ref.length; j < len; j++) {
+        vendor = ref[j];
+        result = result || style.getPropertyCSSValue("-" + vendor + "-" + property);
+      }
+      return result;
+    };
+
+    WOW.prototype.animationName = function(box) {
+      var animationName, error;
+      try {
+        animationName = this.vendorCSS(box, 'animation-name').cssText;
+      } catch (error) {
+        animationName = getComputedStyle(box).getPropertyValue('animation-name');
+      }
+      if (animationName === 'none') {
+        return '';
+      } else {
+        return animationName;
+      }
+    };
+
+    WOW.prototype.cacheAnimationName = function(box) {
+      return this.animationNameCache.set(box, this.animationName(box));
+    };
+
+    WOW.prototype.cachedAnimationName = function(box) {
+      return this.animationNameCache.get(box);
+    };
+
+    WOW.prototype.scrollHandler = function() {
+      return this.scrolled = true;
+    };
+
+    WOW.prototype.scrollCallback = function() {
+      var box;
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.boxes = (function() {
+          var j, len, ref, results;
+          ref = this.boxes;
+          results = [];
+          for (j = 0, len = ref.length; j < len; j++) {
+            box = ref[j];
+            if (!(box)) {
+              continue;
+            }
+            if (this.isVisible(box)) {
+              this.show(box);
+              continue;
+            }
+            results.push(box);
+          }
+          return results;
+        }).call(this);
+        if (!(this.boxes.length || this.config.live)) {
+          return this.stop();
+        }
+      }
+    };
+
+    WOW.prototype.offsetTop = function(element) {
+      var top;
+      while (element.offsetTop === void 0) {
+        element = element.parentNode;
+      }
+      top = element.offsetTop;
+      while (element = element.offsetParent) {
+        top += element.offsetTop;
+      }
+      return top;
+    };
+
+    WOW.prototype.isVisible = function(box) {
+      var bottom, offset, top, viewBottom, viewTop;
+      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      viewTop = (this.config.scrollContainer && this.config.scrollContainer.scrollTop) || window.pageYOffset;
+      viewBottom = viewTop + Math.min(this.element.clientHeight, this.util().innerHeight()) - offset;
+      top = this.offsetTop(box);
+      bottom = top + box.clientHeight;
+      return top <= viewBottom && bottom >= viewTop;
+    };
+
+    WOW.prototype.util = function() {
+      return this._util != null ? this._util : this._util = new Util();
+    };
+
+    WOW.prototype.disabled = function() {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    };
+
+    return WOW;
+
+  })();
+
+}).call(this);
+
+
+/***/ }),
+
+/***/ "./node_modules/wowjs/dist/wow.min.js":
+/*!********************************************!*\
+  !*** ./node_modules/wowjs/dist/wow.min.js ***!
+  \********************************************/
+/***/ (function() {
+
+/*!
+ - v1.1.2 - 2016-04-08
+* Copyright (c) 2016 Matthieu Aussaguel;*/(function(){var a,b,c,d,e,f=function(a,b){return function(){return a.apply(b,arguments)}},g=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};b=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in b)d=b[c],null==a[c]&&(a[c]=d);return a},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a.prototype.createEvent=function(a,b,c,d){var e;return null==b&&(b=!1),null==c&&(c=!1),null==d&&(d=null),null!=document.createEvent?(e=document.createEvent("CustomEvent"),e.initCustomEvent(a,b,c,d)):null!=document.createEventObject?(e=document.createEventObject(),e.eventType=a):e.eventName=a,e},a.prototype.emitEvent=function(a,b){return null!=a.dispatchEvent?a.dispatchEvent(b):b in(null!=a)?a[b]():"on"+b in(null!=a)?a["on"+b]():void 0},a.prototype.addEvent=function(a,b,c){return null!=a.addEventListener?a.addEventListener(b,c,!1):null!=a.attachEvent?a.attachEvent("on"+b,c):a[b]=c},a.prototype.removeEvent=function(a,b,c){return null!=a.removeEventListener?a.removeEventListener(b,c,!1):null!=a.detachEvent?a.detachEvent("on"+b,c):delete a[b]},a.prototype.innerHeight=function(){return"innerHeight"in window?window.innerHeight:document.documentElement.clientHeight},a}(),c=this.WeakMap||this.MozWeakMap||(c=function(){function a(){this.keys=[],this.values=[]}return a.prototype.get=function(a){var b,c,d,e,f;for(f=this.keys,b=d=0,e=f.length;e>d;b=++d)if(c=f[b],c===a)return this.values[b]},a.prototype.set=function(a,b){var c,d,e,f,g;for(g=this.keys,c=e=0,f=g.length;f>e;c=++e)if(d=g[c],d===a)return void(this.values[c]=b);return this.keys.push(a),this.values.push(b)},a}()),a=this.MutationObserver||this.WebkitMutationObserver||this.MozMutationObserver||(a=function(){function a(){"undefined"!=typeof console&&null!==console&&console.warn("MutationObserver is not supported by your browser."),"undefined"!=typeof console&&null!==console&&console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.")}return a.notSupported=!0,a.prototype.observe=function(){},a}()),d=this.getComputedStyle||function(a,b){return this.getPropertyValue=function(b){var c;return"float"===b&&(b="styleFloat"),e.test(b)&&b.replace(e,function(a,b){return b.toUpperCase()}),(null!=(c=a.currentStyle)?c[b]:void 0)||null},this},e=/(\-([a-z]){1})/g,this.WOW=function(){function e(a){null==a&&(a={}),this.scrollCallback=f(this.scrollCallback,this),this.scrollHandler=f(this.scrollHandler,this),this.resetAnimation=f(this.resetAnimation,this),this.start=f(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults),null!=a.scrollContainer&&(this.config.scrollContainer=document.querySelector(a.scrollContainer)),this.animationNameCache=new c,this.wowEvent=this.util().createEvent(this.config.boxClass)}return e.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:null,scrollContainer:null},e.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():this.util().addEvent(document,"DOMContentLoaded",this.start),this.finished=[]},e.prototype.start=function(){var b,c,d,e;if(this.stopped=!1,this.boxes=function(){var a,c,d,e;for(d=this.element.querySelectorAll("."+this.config.boxClass),e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.all=function(){var a,c,d,e;for(d=this.boxes,e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.boxes.length)if(this.disabled())this.resetStyle();else for(e=this.boxes,c=0,d=e.length;d>c;c++)b=e[c],this.applyStyle(b,!0);return this.disabled()||(this.util().addEvent(this.config.scrollContainer||window,"scroll",this.scrollHandler),this.util().addEvent(window,"resize",this.scrollHandler),this.interval=setInterval(this.scrollCallback,50)),this.config.live?new a(function(a){return function(b){var c,d,e,f,g;for(g=[],c=0,d=b.length;d>c;c++)f=b[c],g.push(function(){var a,b,c,d;for(c=f.addedNodes||[],d=[],a=0,b=c.length;b>a;a++)e=c[a],d.push(this.doSync(e));return d}.call(a));return g}}(this)).observe(document.body,{childList:!0,subtree:!0}):void 0},e.prototype.stop=function(){return this.stopped=!0,this.util().removeEvent(this.config.scrollContainer||window,"scroll",this.scrollHandler),this.util().removeEvent(window,"resize",this.scrollHandler),null!=this.interval?clearInterval(this.interval):void 0},e.prototype.sync=function(b){return a.notSupported?this.doSync(this.element):void 0},e.prototype.doSync=function(a){var b,c,d,e,f;if(null==a&&(a=this.element),1===a.nodeType){for(a=a.parentNode||a,e=a.querySelectorAll("."+this.config.boxClass),f=[],c=0,d=e.length;d>c;c++)b=e[c],g.call(this.all,b)<0?(this.boxes.push(b),this.all.push(b),this.stopped||this.disabled()?this.resetStyle():this.applyStyle(b,!0),f.push(this.scrolled=!0)):f.push(void 0);return f}},e.prototype.show=function(a){return this.applyStyle(a),a.className=a.className+" "+this.config.animateClass,null!=this.config.callback&&this.config.callback(a),this.util().emitEvent(a,this.wowEvent),this.util().addEvent(a,"animationend",this.resetAnimation),this.util().addEvent(a,"oanimationend",this.resetAnimation),this.util().addEvent(a,"webkitAnimationEnd",this.resetAnimation),this.util().addEvent(a,"MSAnimationEnd",this.resetAnimation),a},e.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),this.animate(function(f){return function(){return f.customStyle(a,b,d,c,e)}}(this))},e.prototype.animate=function(){return"requestAnimationFrame"in window?function(a){return window.requestAnimationFrame(a)}:function(a){return a()}}(),e.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.style.visibility="visible");return e},e.prototype.resetAnimation=function(a){var b;return a.type.toLowerCase().indexOf("animationend")>=0?(b=a.target||a.srcElement,b.className=b.className.replace(this.config.animateClass,"").trim()):void 0},e.prototype.customStyle=function(a,b,c,d,e){return b&&this.cacheAnimationName(a),a.style.visibility=b?"hidden":"visible",c&&this.vendorSet(a.style,{animationDuration:c}),d&&this.vendorSet(a.style,{animationDelay:d}),e&&this.vendorSet(a.style,{animationIterationCount:e}),this.vendorSet(a.style,{animationName:b?"none":this.cachedAnimationName(a)}),a},e.prototype.vendors=["moz","webkit"],e.prototype.vendorSet=function(a,b){var c,d,e,f;d=[];for(c in b)e=b[c],a[""+c]=e,d.push(function(){var b,d,g,h;for(g=this.vendors,h=[],b=0,d=g.length;d>b;b++)f=g[b],h.push(a[""+f+c.charAt(0).toUpperCase()+c.substr(1)]=e);return h}.call(this));return d},e.prototype.vendorCSS=function(a,b){var c,e,f,g,h,i;for(h=d(a),g=h.getPropertyCSSValue(b),f=this.vendors,c=0,e=f.length;e>c;c++)i=f[c],g=g||h.getPropertyCSSValue("-"+i+"-"+b);return g},e.prototype.animationName=function(a){var b;try{b=this.vendorCSS(a,"animation-name").cssText}catch(c){b=d(a).getPropertyValue("animation-name")}return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=this.config.scrollContainer&&this.config.scrollContainer.scrollTop||window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);
 
 
 /***/ }),
@@ -23995,7 +25532,6 @@ var __webpack_exports__ = {};
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
-/* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");

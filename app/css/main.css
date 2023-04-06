@@ -366,6 +366,11 @@ a {
     margin-right: 80px;
   }
 }
+@media (max-width: 1180px) {
+  .nav__item:not(:last-child) {
+    margin-right: 65px;
+  }
+}
 @media (max-width: 1024px) {
   .nav__item:not(:last-child) {
     margin: 0;

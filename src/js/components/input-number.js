@@ -1,11 +1,9 @@
-
+import WOW from 'wowjs';
 import $ from "jquery";
 
 
 $.when( $.ready ).then(function() {
-
-
-    $('.quantity').each(function() {
+  $('.quantity').each(function() {
       var spinner = $(this),
         input = spinner.find('input[type="number"]'),//нашли инпут
         btnUp = spinner.find('.quantity-up'),//нашли кнопку плюс
@@ -39,14 +37,12 @@ $.when( $.ready ).then(function() {
 
 
 
-
+    new WOW.WOW({
+      live: false//чтобы не было ошибок в консоли
+     //и любые другие параметры - это просто пример
+    }).init();
 
 });
-// $('.quantity-button').on('click', function() {
-//  let summItem = $('.extras').val() * $('.value').data('price');
-  //console.log(summItem)
-  //$('.value').html(summItem + ' €');
-//})
 
 
 

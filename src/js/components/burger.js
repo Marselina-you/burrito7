@@ -1,3 +1,4 @@
+
 const burger = document?.querySelector('[data-burger]');//знак "?" прверяет существует ли этот элемент
 const nav = document?.querySelector('[data-nav]');
 const navItems = nav?.querySelectorAll('a');

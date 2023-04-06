@@ -1,4 +1,4 @@
-
+import WOW from 'wowjs';
 
 const cartBtn = document.querySelector('.btn-order');
 const miniCart = document.querySelector('.mini-cart');
