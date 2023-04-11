@@ -41,6 +41,7 @@
   }
 }
 .menu-content-text {
+  position: relative;
   grid-column: 6 span;
 
   @include small-tablet {
@@ -70,6 +71,7 @@
   }
 
   &__weight {
+    margin-bottom: 20px;
     font: var(--regular-lato);
     font-size: 22px;
     line-height: 180%;
@@ -91,7 +93,7 @@
   }
   &__btn {
     font: var(--regular-lato);
-    margin-top: 20px;
+
 
   }
 
@@ -109,4 +111,12 @@
   margin-bottom: 30px;
 
 }
-
+.add-plus--none {
+  display: none;
+}
+.add-plus--active {
+  display: flex;
+}
+.btn-order--none {
+  display: none;
+}

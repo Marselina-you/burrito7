@@ -11,6 +11,29 @@
         <div class="menu-content-text__calories">350 Kk</div>
         <div class="menu-content-text__weight">400 g</div>
         <button class="btn-reset btn btn--order menu-content-text__btn">order</button>
+        <div class="add-plus add-plus--none">
+          <div class="add-plus__minus">
+            <button tabindex="0" type="button" class="add-plus__btn">
+              <span class="add-plus__svg" style="border-radius: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path d="M5 11a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z"></path>
+                </svg></span>
+            </button>
+          </div>
+          <input type="text" class="add-plus__input" value="1">
+          <!--<span class="add-plus__quantity" data-id="1" data-value="1">1 шт.</span>-->
+          <div class="add-plus__plus">
+            <button tabindex="0" type="button" class="add-plus__btn">
+              <span class="add-plus__svg" style="border-radius: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1Z">
+                  </path>
+                </svg>
+
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="menu__content">
@@ -23,6 +46,28 @@
         <div class="menu-content-text__calories">350 Kk</div>
         <div class="menu-content-text__weight">400 g</div>
         <button class="btn-reset btn btn--order menu-content-text__btn">order</button>
+        <div class="add-plus add-plus--none">
+          <div class="add-plus__minus">
+            <button tabindex="0" type="button" class="add-plus__btn">
+              <span class="add-plus__svg" style="border-radius: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path d="M5 11a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Z"></path>
+                </svg></span>
+            </button>
+          </div>
+          <input type="text" class="add-plus__input" value="1">
+          <div class="add-plus__plus">
+            <button tabindex="0" type="button" class="add-plus__btn">
+              <span class="add-plus__svg" style="border-radius: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1Z">
+                  </path>
+                </svg>
+
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="menu__content">
@@ -44,7 +89,7 @@
                 </svg></span>
             </button>
           </div>
-          <span class="add-plus__quantity" data-id="">1 шт.</span>
+          <input type="text" class="add-plus__input" value="1">
           <div class="add-plus__plus">
             <button tabindex="0" type="button" class="add-plus__btn">
               <span class="add-plus__svg" style="border-radius: 8px;">
@@ -84,3 +129,49 @@
 
   </div>
 </section>
+plus.forEach(el => {
+  el.addEventListener('click', (e) => {
+    let btn = e.currentTarget;
+    let span = btn.previousElementSibling;
+    let oldValue = Number(span.value);
+    let newVal = oldValue + 1;
+    //span.value = newVal;
+
+  })
+});
+adds.forEach(el => {
+  let plus = document.querySelectorAll('.add-plus__plus');
+  let minus = document.querySelectorAll('.add-plus__minus');
+  let span =  document.querySelector('.add-plus__input');
+
+
+
+
+
+   // console.log(plus)
+plus.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    let value = e.span;
+    let oldValue = Number(span.value);
+    console.log(value)
+   // let oldValue = Number(span.value);
+   // let newVal = oldValue + 1;
+   // span.value = newVal;
+
+  })
+})
+
+
+
+})
+
+adds.forEach((el) => {
+  let plus = document.querySelector('.add-plus__plus');
+  //console.log(plus)
+  el.addEventListener('click', (e) => {
+let btn = e.currentTarget;
+//let span = btn.previousElementSibling;
+console.log(btn)
+  })
+})
+

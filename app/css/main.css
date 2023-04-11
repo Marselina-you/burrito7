@@ -1127,6 +1127,7 @@ a {
 }
 
 .menu-content-text {
+  position: relative;
   -ms-grid-column-span: 6;
   grid-column: 6 span;
   display: -webkit-box;
@@ -1167,6 +1168,7 @@ a {
   }
 }
 .menu-content-text__weight {
+  margin-bottom: 20px;
   font: var(--regular-lato);
   font-size: 22px;
   line-height: 180%;
@@ -1190,7 +1192,6 @@ a {
 }
 .menu-content-text__btn {
   font: var(--regular-lato);
-  margin-top: 20px;
 }
 
 .menu-block-btn {
@@ -1212,6 +1213,20 @@ a {
 .menu__btn {
   width: 200px;
   margin-bottom: 30px;
+}
+
+.add-plus--none {
+  display: none;
+}
+
+.add-plus--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-order--none {
+  display: none;
 }
 
 .menu-dop {
@@ -1784,9 +1799,9 @@ input[type=number] {
 }
 .btn--order {
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 4px 39px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   background-color: var(--order-color);
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
@@ -1803,17 +1818,22 @@ input[type=number] {
   background-color: var(--order-color-hover);
 }
 
-.add-plus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 18px;
+.add-plus__input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+  width: 55px;
+  background-color: inherit;
+  color: var(--light-color);
+  font-size: 20px;
+  text-align: center;
 }
 .add-plus__btn {
   border: none;
   border-radius: 8px;
-  padding: 5px 6px;
-  background-color: #3d67b7;
+  padding: 7px 6px;
+  background-color: var(--order-color);
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -1840,9 +1860,14 @@ input[type=number] {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 3px;
-  font-size: 16px;
+  font-size: 20px;
+  color: var(--light-color);
 }
 .add-plus--visibility {
   opacity: 1;
+}
+
+input:focus-visible {
+  outline: none !important;
 }
 /*# sourceMappingURL=main.css.map */

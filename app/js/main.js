@@ -15,7 +15,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/extras.js */ "./src/js/components/extras.js");
 /* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_extras_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
+/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/menu.js */ "./src/js/components/menu.js");
+/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_menu_js__WEBPACK_IMPORTED_MODULE_5__);
 //import './components/burger.js';
+
 
 
 
@@ -323,6 +326,70 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MOD
     live: false //чтобы не было ошибок в консоли
     //и любые другие параметры - это просто пример
   }).init();
+});
+
+/***/ }),
+
+/***/ "./src/js/components/menu.js":
+/*!***********************************!*\
+  !*** ./src/js/components/menu.js ***!
+  \***********************************/
+/***/ (() => {
+
+const buttons = document.querySelectorAll('.menu-content-text__btn');
+const adds = document.querySelectorAll('.add-plus');
+const plus = document.querySelectorAll('.add-plus__plus');
+const minus = document.querySelectorAll('.add-plus__minus');
+const inputs = document.querySelectorAll('.add-plus__input');
+buttons.forEach(el => {
+  el.addEventListener('click', e => {
+    let btn = e.currentTarget;
+    //console.log(btn)
+    let ad = btn.nextElementSibling;
+    //console.log(ad)
+    let plus = ad.getElementsByClassName('add-plus__plus');
+    let minus = ad.getElementsByClassName('add-plus__minus');
+    let result = ad.getElementsByClassName('add-plus__input');
+
+    //Array.prototype.forEach.call(result, function(el) {
+
+    //})
+
+    Array.prototype.forEach.call(plus, function (element) {
+      let plus = element;
+      plus.addEventListener('click', e => {
+        let span = plus.previousElementSibling;
+        let oldValue = Number(span.value);
+        let newVal = oldValue + 1;
+        //span.value = newVal;
+        span.setAttribute('value', newVal);
+      });
+      //console.log(plus)
+    });
+
+    Array.prototype.forEach.call(minus, function (element) {
+      let minus = element;
+      minus.addEventListener('click', e => {
+        let span = minus.nextElementSibling;
+        let oldValue = Number(span.value);
+        let newVal = oldValue - 1;
+        span.setAttribute('value', newVal);
+      });
+    });
+    ad.classList.toggle('add-plus--active');
+    btn.classList.toggle('btn-order--none');
+    Array.prototype.forEach.call(result, function (el) {
+      let input = el;
+      let res = input.value;
+      console.log(res);
+    });
+  });
+
+  //plus.forEach((el) => {
+  //el.addEventListener('click', (e) => {
+  //console.log(plus)
+  //})
+  //})
 });
 
 /***/ }),
