@@ -21,9 +21,11 @@
 
   &--first {
     background: url("../img/quote-first.jpg");
+    background-repeat: no-repeat;
   }
   &--second {
     background: url("../img/quote-second.jpg");
+    background-repeat: no-repeat;
   }
 
   &__content {
