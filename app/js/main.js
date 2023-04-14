@@ -422,7 +422,7 @@ console.log(modalSlider);
 console.log(modalSlider2);
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](modalSlider, {
   spaceBetween: 10,
-  slidesPerView: 3,
+  slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true
 });

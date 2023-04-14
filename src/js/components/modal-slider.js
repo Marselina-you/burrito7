@@ -7,7 +7,7 @@ console.log(modalSlider2);
 
 var swiper = new Swiper(modalSlider, {
   spaceBetween: 10,
-  slidesPerView: 3,
+  slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
 });
