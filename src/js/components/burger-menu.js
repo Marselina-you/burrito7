@@ -6,6 +6,9 @@ const items = document.querySelectorAll('.nav__item');
 const wrap = document?.querySelector('.burger-wrap');
 
 
+
+
+
 burger.addEventListener('click', () => {
   burger.classList.toggle('burger--active');
   menu.classList.toggle('header__nav--active');

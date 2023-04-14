@@ -5,6 +5,7 @@ SwiperCore.use([Autoplay, EffectFade ]);
 
 const mainSlider = document.querySelector(".mainSlider");
 
+
 if(mainSlider) {
   const swiper = new Swiper(mainSlider, {
     effect: 'fade',
@@ -32,3 +33,4 @@ if(mainSlider) {
   });
 
 }
+
