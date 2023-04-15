@@ -1,0 +1,40 @@
+[
+  {
+    "id":1,
+    "title":"Tapas with bacon",
+    "category":"img-galery",
+    "mainImage":"./data/images/img-1.jpg"
+
+   },
+   {
+    "id":2,
+    "title":"mexican salad",
+    "category":"img-galery",
+
+    "mainImage":"./data/images/img-2.png"
+
+   },
+   {
+    "id":3,
+    "title":"seafood ceviche",
+    "category":"img-galery",
+
+    "mainImage":"./data/images/img-3.png"
+
+   },
+   {
+    "id":4,
+    "title":"nachos",
+    "category":"img-galery",
+    "mainImage":"./data/images/img-4.jpg"
+
+   },
+   {
+    "id":5,
+    "title":"nachos",
+    "category":"img-galery",
+    "mainImage":"./data/images/img-5.jpg"
+
+   }
+
+]
