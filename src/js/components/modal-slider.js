@@ -1,10 +1,13 @@
 import Swiper, { Navigation, Thumbs} from 'swiper';
 Swiper.use([Navigation, Thumbs]);
+import GraphModal from 'graph-modal';
+ //const modal = new GraphModal();
 const modalSlider = document.querySelector(".modalSwiper");
 const modalSlider2 = document.querySelector(".modalSwiper2");
 const imgList = document.querySelector('.about-interior__images');
 let prodQuantity = 3;
 let dataLength = null;
+let modal = null;
 const idImg = document.querySelectorAll('.about-interior__img');
 
 
@@ -34,10 +37,23 @@ if(imgList) {
         </li>`;}
 
       }
-    })
+       modal = new GraphModal;
+       //let w = modal.modalContainer();
+       //console.log(w)
+       const openBtnId = modal.previousActiveElement;
 
 
-  }
+      //if (modal.modalContainer.classList.contains('modal-first')) {
+        console.log(openBtnId)
+      //  const openBtnId = modal.previousActiveElement.dataset.id;
+       // console.log(openBtnId);
+        //loadModalData(openBtnId);
+        //prodSlider.update();
+      //}
+    });//end .then((data)
+
+
+  };//end const loadImg =(quantity = 3)
   loadImg(prodQuantity);
 }
 

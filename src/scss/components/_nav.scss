@@ -28,13 +28,14 @@
       color: var(--light-color);
       transition: color 0.3s ease-in-out;
 
+      @include for-hover {
+   &:hover {
+    color: var( --text-light-color);
+}
+}
 
 
 
-      &:hover {
-        color: var( --text-light-color);
-
-      }
       &:active {
         color: var(--primary-color-hover);
       }

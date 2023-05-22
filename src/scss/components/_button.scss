@@ -51,11 +51,11 @@
   &--primary {
     border-color: var(--primary-color);
     background-color: var(--primary-color);
-
-
-    &:hover {
-      border-color: var(--primary-color-hover);
-      background-color: var(--primary-color-hover);
+    @include for-hover {
+      &:hover {
+        border-color: var(--primary-color-hover);
+        background-color: var(--primary-color-hover);
+      }
     }
     &:active {
       background-color: var(--primary-color-hover);
@@ -64,6 +64,7 @@
       background-color: var(--primary-color-hover);
     }
   }
+
   &--order {
     border-radius: 4px;
     padding: 4px 39px;
@@ -83,12 +84,11 @@
     &:focus {
       background-color: var(--order-color-hover);
     }
+
   }
 }
 .add-plus {
-  //display: flex;
- //margin-top: -38px;
-  //margin-top: -28px;
+
 &__input {
 
   padding: 0;

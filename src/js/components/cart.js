@@ -2,13 +2,10 @@ import WOW from 'wowjs';
 
 const cartBtn = document.querySelector('.btn-order');
 const miniCart = document.querySelector('.mini-cart');
-const btnModalFirst = document.querySelector('.mini-cart');
-import GraphModal from 'graph-modal';
- const modal = new GraphModal();
+const btnModalFirst = document.querySelector('.about-interior-img');
 
- btnModalFirst.addEventListener('click', () => {
-  new GraphModal().open('modal-first');
- });
+
+
 
 
 

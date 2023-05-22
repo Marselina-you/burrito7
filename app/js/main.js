@@ -212,16 +212,10 @@ burger.addEventListener('click', () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wowjs */ "./node_modules/wowjs/dist/wow.js");
 /* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
 
 const cartBtn = document.querySelector('.btn-order');
 const miniCart = document.querySelector('.mini-cart');
-const btnModalFirst = document.querySelector('.mini-cart');
-
-const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]();
-btnModalFirst.addEventListener('click', () => {
-  new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]().open('modal-first');
-});
+const btnModalFirst = document.querySelector('.about-interior-img');
 cartBtn.addEventListener('click', () => {
   miniCart.classList.toggle('mini-cart--visible');
 });
@@ -414,13 +408,17 @@ buttons.forEach(el => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
+
+//const modal = new GraphModal();
 const modalSlider = document.querySelector(".modalSwiper");
 const modalSlider2 = document.querySelector(".modalSwiper2");
 const imgList = document.querySelector('.about-interior__images');
 let prodQuantity = 3;
 let dataLength = null;
+let modal = null;
 const idImg = document.querySelectorAll('.about-interior__img');
 if (imgList) {
   const loadImg = function () {
@@ -443,8 +441,20 @@ if (imgList) {
         </li>`;
         }
       }
-    });
-  };
+      modal = new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]();
+      //let w = modal.modalContainer();
+      //console.log(w)
+      const openBtnId = modal.previousActiveElement;
+
+      //if (modal.modalContainer.classList.contains('modal-first')) {
+      console.log(openBtnId);
+      //  const openBtnId = modal.previousActiveElement.dataset.id;
+      // console.log(openBtnId);
+      //loadModalData(openBtnId);
+      //prodSlider.update();
+      //}
+    }); //end .then((data)
+  }; //end const loadImg =(quantity = 3)
   loadImg(prodQuantity);
 }
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](modalSlider, {

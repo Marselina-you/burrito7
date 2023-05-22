@@ -224,7 +224,7 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: 3000;
+  z-index: 2000;
   width: 100px;
   height: 80px;
   text-align: center;
@@ -267,6 +267,7 @@ a {
   }
 }
 .header__nav--active {
+  z-index: 5000;
   display: block;
 }
 .header__nav--active .nav__list {
@@ -279,6 +280,7 @@ a {
   align-items: center;
 }
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,8 +387,10 @@ a {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-.nav__link:hover {
-  color: var(--text-light-color);
+@media (min-width: 1180px) {
+  .nav__link:hover {
+    color: var(--text-light-color);
+  }
 }
 .nav__link:active {
   color: var(--primary-color-hover);
@@ -574,8 +578,10 @@ a {
     top: -100px;
   }
 }
-.hero__nav--right:hover {
-  opacity: 1;
+@media (min-width: 1180px) {
+  .hero__nav--right:hover {
+    opacity: 1;
+  }
 }
 .hero__nav--left {
   position: absolute;
@@ -594,8 +600,10 @@ a {
     top: -100px;
   }
 }
-.hero__nav--left:hover {
-  opacity: 1;
+@media (min-width: 1180px) {
+  .hero__nav--left:hover {
+    opacity: 1;
+  }
 }
 
 .reservation {
@@ -2263,9 +2271,11 @@ input[type=number] {
   border-color: var(--primary-color);
   background-color: var(--primary-color);
 }
-.btn--primary:hover {
-  border-color: var(--primary-color-hover);
-  background-color: var(--primary-color-hover);
+@media (min-width: 1180px) {
+  .btn--primary:hover {
+    border-color: var(--primary-color-hover);
+    background-color: var(--primary-color-hover);
+  }
 }
 .btn--primary:active {
   background-color: var(--primary-color-hover);
