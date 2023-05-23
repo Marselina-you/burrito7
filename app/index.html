@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Burrito</title>
@@ -193,8 +193,8 @@
       <li class="hero__nav--right"><img src="img/right.svg" alt=""></li>
     </ul>
     <div class="down-wrap">
-      <a href="#" class="down">
-        <svg class="animate__animated animate__fadeInDown animate__infinite animate__slower"><use xlink:href="img/sprite.svg#arrows-down"></use></svg>
+      <a href="#down" class="down">
+        <svg class="animate__animated animate__fadeInUp animate__infinite animate__slower"><use xlink:href="img/sprite.svg#arrows-down"></use></svg>
       </a>
     </div>
   </div>
@@ -330,7 +330,7 @@
         <li class="info__item info__item--block-1 wow animate__fadeInRight" data-wow-offset="200" data-wow-delay=".1s">
           <div class="info__subtitle">The most profitable deals with us</div>
           <div class="info__title">Music Time</div>
-          <div class="info__decor wow animate__pulse" data-wow-offset="100">
+          <div class="info__decor wow animate__pulse" data-wow-offset="200">
             <div class="flower"></div>
           </div>
           <div class="info__text">
@@ -359,7 +359,7 @@
         <li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s">
           <div class="info__subtitle">50% discount every Sunday!</div>
 
-          <div class="info__decor wow animate__pulse" data-wow-offset="100">
+          <div class="info__decor wow animate__pulse" data-wow-offset="300">
             <div class="flower"></div>
           </div>
           <div class="info__title">Sunday with teguila</div>
@@ -401,15 +401,20 @@
       <span class="address-block__phone">(510) 647-9525</span>
       <div class="address-block__mail">info@lamarchaberkeley.com</div>
       <a href="" class="address-block__btn btn btn--gray btn-reset wow animate__pulse" data-wow-offset="200">reserve</a>
-    </div>
 
+    </div>
+    <a class="arrow-up" href="#top">
+      <svg class="animate__animated animate__fadeInUp animate__infinite animate__slower wow" data-wow-offset="200">
+            <use xlink:href="img/sprite.svg#up-arrow"></use>
+          </svg>
+        </a>
   </div>
 </section>
 
     <footer class="footer">
   <div class="container">
     <div class="footer__content">
-      <div class="footer__social">
+      <div class="footer__social" id="down">
         <a class="footer__image" href="">
           <svg>
             <use xlink:href="img/sprite.svg#twit"></use>

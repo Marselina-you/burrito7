@@ -3,6 +3,7 @@ background-color: var(--light-color);
   &__content {
     @include flex-column-center;
     padding: 100px 0;
+    padding-bottom: 50px;
 
     @include tablet {
       padding: 40px 0;
