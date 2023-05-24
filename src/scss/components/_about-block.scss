@@ -54,18 +54,25 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 700px;
+
+    @include mobile {
+      min-height: 500px;
+
+    }
   }
   &__title {
     margin: 0;
     padding: 0;
-
     letter-spacing: 5px;
     line-height: 150%;
     font-size: 55px;
     color: var(--light-color);
     padding: 25px 0;
-   // width: 70%;
     background-color:  var(--gray-light-color);
+
+    @include small-tablet {
+      font-size: 35px;
+    }
 
 
 
@@ -78,8 +85,12 @@ span {
     line-height: 150%;
     color: var(--light-color);
     text-align: start;
-
     background-color:  var(--gray-light-color);
+
+    @include small-tablet {
+      width: 100%;
+      font-size: 24px;
+    }
   }
 }
 .about-block {
@@ -88,6 +99,10 @@ span {
   &__title {
     margin: 0;
     line-height: 150%;
+
+    @include mobile {
+      font-size: 24px;
+    }
 }
   hr {
     display: inline-block;
@@ -97,6 +112,10 @@ span {
     width: 62px;
     height: 1px;
     background-color: var(--text-light-color);
+
+    @include mobile {
+      margin: 0;
+    }
 }
 }
 .about-interior {
@@ -108,13 +127,19 @@ justify-content: center;
   padding-inline-start: 0;
   margin-top: 50px;
   padding-bottom: 50px;
-
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 70px;
   row-gap: 70px;
   max-width: 1300px;
+
+  @include mobile {
+    margin-top: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding-bottom: 0;
+  }
 
 }
 
@@ -137,18 +162,20 @@ justify-content: center;
       object-fit: cover;
       transition: all 1s ease-in-out;
 }
+@include for-hover {
+  &:hover {
+    cursor: pointer;
 
-    &:hover {
-      cursor: pointer;
-
-      img {
-        transform: scale(1.2);
-      }
-      .about__overlay {
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.4);
-}
+    img {
+      transform: scale(1.2);
     }
+    .about__overlay {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.4);
+}
+  }
+}
+
     &__img-left {
       grid-column: 4 span;
       grid-row: 2 span;
@@ -166,18 +193,21 @@ justify-content: center;
           transition: all 1s ease-in-out;
 
         }
+        @include for-hover {
+          &:hover {
+            cursor: pointer;
 
-        &:hover {
-          cursor: pointer;
-
-          img {
-            transform: scale(1.2);
+            img {
+              transform: scale(1.2);
+            }
+            .about__overlay {
+              opacity: 1;
+              background-color: rgba(0, 0, 0, 0.4);
+      }
           }
-          .about__overlay {
-            opacity: 1;
-            background-color: rgba(0, 0, 0, 0.4);
-    }
         }
+
+
 
     }
 
@@ -196,30 +226,41 @@ justify-content: center;
     gap: 70px;
     max-width: 1300px;
     text-align: start;
+
+    @include mobile {
+      margin-top: 10px;
+      gap: 10px;
+    }
   }
   &__left {
     position: relative;
     grid-column: 4 span;
     display: flex;
-
-
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-      cursor: pointer;
-
-      img {
-        transform: scale(1.2);
-
-      }
-      .about__overlay {
-
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.4);
-}
+    @include mobile {
+      grid-column: 8 span;
     }
+
+    @include for-hover {
+      &:hover {
+        cursor: pointer;
+
+        img {
+          transform: scale(1.2);
+
+        }
+        .about__overlay {
+          cursor: pointer;
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.4);
+  }
+      }
+    }
+
+
 
     img {
       width: 100%;
@@ -234,6 +275,10 @@ justify-content: center;
 
   &__right {
     grid-column: 4 span;
+
+    @include mobile {
+      grid-column: 8 span;
+    }
   }
   &__images {
     display: grid;
@@ -254,18 +299,22 @@ justify-content: center;
       transition: all 1s ease-in-out;
 
     }
+    @include for-hover {
+      &:hover {
+        cursor: pointer;
 
-    &:hover {
-      cursor: pointer;
-
-      img {
-        transform: scale(1.2);
+        img {
+          transform: scale(1.2);
+        }
+        .about__overlay {
+          cursor: pointer;
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.4);
+  }
       }
-      .about__overlay {
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.4);
-}
+
     }
+
 
   }
   &__subtitle {
@@ -329,16 +378,25 @@ transform: translateY(-50%);
 
     }
 
-    &:hover {
-      cursor: pointer;
+    @include for-hover {
+      &:hover {
+        cursor: pointer;
 
-      img {
-        transform: scale(1.2);
+        img {
+          transform: scale(1.2);
+        }
+        .about__overlay {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.4);
+  }
       }
-      .about__overlay {
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.4);
-}
     }
+
+    @include mobile {
+      grid-column: 8 span;
+      grid-row: 1 span;
+    }
+
+
 
 }
