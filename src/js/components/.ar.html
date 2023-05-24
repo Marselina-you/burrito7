@@ -1,0 +1,64 @@
+var swiper = new Swiper(modalSlider, {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(modalSlider2, {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+  <div class="modal-slider swiper my-swiper" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" >
+  <div class="modal-slider__container">
+    <div class="swiper-wrapper my-swiper-wrapper">
+      <div class="my-swiper-slide swiper-slide">
+        <img src="/img/modal-slide-1.jpg" />
+      </div>
+      <div class="my-swiper-slide swiper-slide">
+        <img src="/img/modal-slide-2.jpg" />
+      </div>
+      <div class="my-swiper-slide swiper-slide">
+        <img src="/img/modal-slide-3.jpg" />
+      </div>
+      <div class="my-swiper-slide swiper-slide">
+        <img src="/img/modal-slide-4.jpg" />
+      </div>
+      <div class="my-swiper-slide swiper-slide">
+        <img src="/img/modal-slide-5.jpg" />
+      </div>
+
+    </div>
+  </div>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+<div thumbsSlider="" class="my-swiper swiper modalSwiper">
+  <div class="my-swiper-wrapper swiper-wrapper">
+    <div class="my-swiper-slide swiper-slide">
+      <img src="/img/modal-slide-1.jpg" />
+    </div>
+    <div class="my-swiper-slide swiper-slide">
+      <img src="/img/modal-slide-2.jpg" />
+    </div>
+    <div class="my-swiper-slide swiper-slide">
+      <img src="/img/modal-slide-3.jpg" />
+    </div>
+    <div class="my-swiper-slide swiper-slide">
+      <img src="/img/modal-slide-4.jpg" />
+    </div>
+    <div class="my-swiper-slide swiper-slide">
+      <img src="/img/modal-slide-5.jpg" />
+    </div>
+
+
+
+  </div>
+</div>

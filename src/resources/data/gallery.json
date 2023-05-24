@@ -3,14 +3,36 @@
     "id":1,
     "title":"Tapas with bacon",
     "category":"img-galery",
-    "mainImage":"./data/images/img-1.jpg"
+    "mainImage":"./data/images/img-1.jpg",
+    "gallery":[
+      "./data/images/img-1.jpg",
+      "./data/images/modal-slide-1.jpg",
+      "./data/images/modal-slide-2.jpg",
+      "./data/images/modal-slide-3.jpg",
+      "./data/images/modal-slide-4.jpg",
+      "./data/images/modal-slide-5.jpg"
+
+
+
+    ]
 
    },
    {
     "id":2,
     "title":"mexican salad",
     "category":"img-galery",
+    "gallery":[
 
+      "./data/images/modal-slide-3.jpg",
+      "./data/images/modal-slide-4.jpg",
+      "./data/images/modal-slide-5.jpg",
+      "./data/images/modal-slide-1.jpg",
+      "./data/images/modal-slide-2.jpg",
+      "./data/images/img-1.jpg"
+
+
+
+    ],
     "mainImage":"./data/images/img-2.png"
 
    },
@@ -18,7 +40,17 @@
     "id":3,
     "title":"seafood ceviche",
     "category":"img-galery",
+    "gallery":[
 
+
+      "./data/images/modal-slide-1.jpg",
+      "./data/images/modal-slide-2.jpg",
+      "./data/images/modal-slide-3.jpg",
+      "./data/images/modal-slide-4.jpg",
+      "./data/images/modal-slide-5.jpg"
+
+
+    ],
     "mainImage":"./data/images/img-3.png"
 
    },
@@ -26,6 +58,11 @@
     "id":4,
     "title":"nachos",
     "category":"img-galery",
+    "gallery":[
+      "./data/images/img-4.jpg",
+      "./data/images/img-4.webp"
+
+    ],
     "mainImage":"./data/images/img-4.jpg"
 
    },
@@ -33,6 +70,92 @@
     "id":5,
     "title":"nachos",
     "category":"img-galery",
+    "gallery":[
+      "./data/images/img-5.jpg",
+      "./data/images/img-5.webp"
+
+    ],
+    "mainImage":"./data/images/img-5.jpg"
+
+   },
+   {
+    "id":6,
+    "title":"nachos",
+    "category":"img-galery",
+    "gallery":[
+      "./data/images/dish-4.png",
+      "./data/images/dish-1.png",
+      "./data/images/dish-2.jpg",
+      "./data/images/dish-3.jpg"
+
+
+
+    ],
+    "mainImage":"./data/images/img-5.jpg"
+
+   },
+   {
+    "id":7,
+    "title":"nachos",
+    "category":"img-galery",
+    "gallery":[
+      "./data/images/dish-1.png",
+
+      "./data/images/dish-2.jpg",
+      "./data/images/dish-3.jpg",
+      "./data/images/dish-5.jpg",
+      "./data/images/dish-6.jpg",
+      "./data/images/dish-7.png",
+      "./data/images/dish-8.jpg",
+      "./data/images/dish-9.png",
+      "./data/images/dish-10.png"
+
+
+
+    ],
+    "mainImage":"./data/images/img-5.jpg"
+
+   },
+   {
+    "id":8,
+    "title":"nachos",
+    "category":"img-galery",
+    "gallery":[
+      "./data/images/dish-2.jpg",
+      "./data/images/dish-1.png",
+      "./data/images/dish-3.jpg",
+      "./data/images/dish-5.jpg",
+      "./data/images/dish-6.jpg",
+      "./data/images/dish-7.png",
+      "./data/images/dish-8.jpg",
+      "./data/images/dish-9.png",
+      "./data/images/dish-10.png"
+
+
+
+    ],
+    "mainImage":"./data/images/img-5.jpg"
+
+   },
+   {
+    "id":9,
+    "title":"nachos",
+    "category":"img-galery",
+    "gallery":[
+      "./data/images/dish-3.jpg",
+      "./data/images/dish-1.png",
+      "./data/images/dish-2.jpg",
+      "./data/images/dish-5.jpg",
+      "./data/images/dish-6.jpg",
+      "./data/images/dish-7.png",
+      "./data/images/dish-8.jpg",
+      "./data/images/dish-9.png",
+      "./data/images/dish-10.png"
+
+
+
+
+    ],
     "mainImage":"./data/images/img-5.jpg"
 
    }

@@ -5,7 +5,7 @@ import './components/cart.js';
 import './components/extras.js';
 import './components/input-number.js';
 import './components/menu.js';
-import './components/modal-slider.js';
+import './components/mod2.js';
 
 
 

@@ -1585,6 +1585,8 @@ a {
   justify-content: center;
 }
 .about-interior__images {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
   margin-top: 50px;
   padding-bottom: 50px;
   display: -ms-grid;
@@ -2123,11 +2125,6 @@ input[type=number] {
   height: 1000px;
 }
 
-.my-swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .my-swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -2153,7 +2150,7 @@ input[type=number] {
 
 .my-swiper {
   width: 100%;
-  height: 300px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2163,14 +2160,14 @@ input[type=number] {
   background-position: center;
 }
 
-.modalSwiper2 {
+.mySwiper2 {
   margin-top: 40px;
   margin-bottom: 40px;
   height: auto;
   width: 90%;
 }
 
-.modalSwiper {
+.mySwiper {
   height: 20%;
   width: 75%;
   -webkit-box-sizing: border-box;
@@ -2178,13 +2175,13 @@ input[type=number] {
   padding: 10px 0;
 }
 
-.modalSwiper .my-swiper-slide {
+.mySwiper .my-swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
 
-.modalSwiper .swiper-slide-thumb-active {
+.mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
 
@@ -2195,6 +2192,10 @@ input[type=number] {
 
 .swiper-wrapper {
   height: auto;
+}
+
+.graph-modal__close {
+  background-image: url(../img/plus.svg);
 }
 
 .footer__content {
