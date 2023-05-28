@@ -7,11 +7,16 @@
     &__down {
       margin-top: 10%;
       svg {
-
-            width: 30px;
-            height: 30px;
-            fill: var(--black-color);
+        width: 30px;
+        height: 30px;
+        fill: var(--black-color);
           }
+
+      @include small-tablet {
+        svg {
+          fill: var(--light-color);
+        }
+      }
     }
 
     &__decor {
@@ -55,7 +60,7 @@ span {
     background-size: cover;
     min-height: 700px;
 
-    @include mobile {
+    @include small-tablet {
       min-height: 500px;
 
     }

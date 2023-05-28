@@ -230,48 +230,87 @@
   <button class="btn btn-reset menu__btn btn--stroke">Order for Delivery</button>
 </div>
 <hr width="50%">
+</div>
+</section>
+
+    <section class="menu-dop">
+  <div class="container menu-dop__container">
+    <div class="menu-dop__left">
+      <nav class="header-menu-nav menu-dop__header" title="">
+        <ul class="header-menu-nav__list list-reset">
+          <li class="header-menu-nav__item"><a href="#" class="nav__link">Extras</a></li>
+          <li class="header-menu-nav__item"><a href="#" class="nav__link">Beverages</a></li>
+        </ul>
+      </nav>
+      <ul class="list-reset menu-dop__list">
+        <!--<li class="menu-dop__item">
+          <div class="menu-dop__top">
+            <div class="menu-dop__name-wrap">
+              <div class="menu-dop__name">Pistachios</div>
+            </div>
+
+            <div class="quantity">
+              <input class="extras" type="number" min="1" max="9" step="1" value="0">
+            </div>
+          </div>
+          <div class="menu-dop__value"><span class="value" data-price="23">23<span>  €</span></div>
+        </li>
+        <li class="menu-dop__item">
+          <div class="menu-dop__top">
+            <div class="menu-dop__name-wrap">
+              <div class="menu-dop__name">chips</div>
+            </div>
+
+            <div class="quantity">
+              <input  class="extras" type="number" min="1" max="9" step="1" value="0">
+            </div>
+          </div>
+          <div class="menu-dop__value"><span class="value" data-price="2">2<span>  €</span></div>
+        </li>
+        <li class="menu-dop__item">
+          <div class="menu-dop__top">
+            <div class="menu-dop__name-wrap">
+            <div class="menu-dop__name">nachos</div>
+          </div>
+            <div class="quantity">
+              <input  class="extras" type="number" min="1" max="9" step="1" value="0">
+            </div>
+          </div>
+          <div class="menu-dop__value"><span class="value" data-price="3">3<span>  €</span></div>
+        </li>
+        <li class="menu-dop__item">
+          <div class="menu-dop__top">
+            <div class="menu-dop__name-wrap">
+            <div class="menu-dop__name">guacamole</div>
+          </div>
+            <div class="quantity">
+              <input  class="extras" type="number" min="1" max="9" step="1" value="0">
+            </div>
+          </div>
+          <div class="menu-dop__value"><span class="value" data-price="1">11<span>  €</span></div>
+        </li>
+        <li class="menu-dop__item">
+          <div class="menu-dop__top">
+            <div class="menu-dop__name-wrap">
+            <div class="menu-dop__name">peanut</div>
+          </div>
+            <div class="quantity">
+              <input  class="extras" type="number" min="1" max="9" step="1" value="0">
+            </div>
+          </div>
+          <div class="menu-dop__value"><span class="value" data-price="3.3">11<span>  €</span></div>
+        </li>-->
+      </ul>
+    </div>
+    <div class="menu-dop__right">
+      <div class="summ-wrap">
+        <span class="summ" data-nights="55" data-guests="25">100</span>
+        <span> €</span>
+      </div>
+    </div>
 
   </div>
 </section>
-plus.forEach (el => {
-  el.addEventListener ('click', (e) => {
-    let btn = e.currentTarget;
-    let span = btn.previousElementSibling;
-    let oldValue = Number (span.value);
-    let newVal = oldValue + 1;
-    //span.value = newVal;
-
-  })
-});
-adds.forEach (el => {
-  let plus = document.querySelectorAll ('.add-plus__plus');
-  let minus = document.querySelectorAll ('.add-plus__minus');
-  let span = document.querySelector ('.add-plus__input');
-
-   // console.log (plus)
-plus.forEach ((el) => {
-  el.addEventListener ('click', (e) => {
-    let value = e.span;
-    let oldValue = Number (span.value);
-    console.log (value)
-   // let oldValue = Number (span.value);
-   // let newVal = oldValue + 1;
-   // span.value = newVal;
-
-  })
-})
-
-})
-
-adds.forEach ((el) => {
-  let plus = document.querySelector ('.add-plus__plus');
-  //console.log (plus)
-  el.addEventListener ('click', (e) => {
-let btn = e.currentTarget;
-//let span = btn.previousElementSibling;
-console.log (btn)
-  })
-})
 
      <section class="address-block">
   <div class="container">

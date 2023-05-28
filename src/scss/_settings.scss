@@ -132,11 +132,16 @@ a {
 }
 .down-wrap {
   position: relative;
+  margin-top: 50px;
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include tablet {
+    margin-top: 80px;
+  }
 }
 .down {
   position: absolute;

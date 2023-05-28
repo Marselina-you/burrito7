@@ -2,9 +2,11 @@
   padding-top: 100px;
   background-color: var(--light-color);
 
-  @include mobile {
-    margin-top: -60px;
+  @include tablet {
+    padding-top: 60px;
   }
+
+
 
   &__container {
 @include flex-column-center;
@@ -19,11 +21,8 @@
     }
 
     @include small-tablet {
-      margin-top: -50px;
       width: 100%;
     }
-
-
   }
 }
 .reservation-form {
@@ -59,15 +58,7 @@
   padding: 0;
   grid-column: 1 span;
 
-  @include old-desktop {
-    grid-column: 12 span;
-    &:not(:last-child) {
-      padding-bottom: 20px;
-    }
-
-  }
-
-&__select {
+  &__select {
     margin-right: 0;
     border-style: solid;
     border-width: 1px;
@@ -79,35 +70,55 @@
     color: var(--gray-light-color);
     background-position: 10px 50%;
     background-repeat: no-repeat;
-
-    &--data {
-      border-radius: 5px 0 0 5px;
-      border-right: 0;
-      background-image: url("../img/data.png");
-
-
 }
+
     &--people {
       background-image: url("../img/people.png");
       border-right: 0;
+
+      @include old-desktop {
+        border-radius: 5px;
+        border-right: 1px solid var(--gray-light-color);
+      }
 }
 
     &--hour {
       border-right: 0;
       background-image: url("../img/hour.png");
-    }
 
-    @include old-desktop {
-      border: 1px solid var(--gray-light-color);
-      //border-right: 1px solid var(--gray-light-color);
-      border-radius: 5px;
-      //background-image: url("../img/hour.png");
+      @include old-desktop {
+        border-radius: 5px;
+        border-right: 1px solid var(--gray-light-color);
+      }
     }
+    &--data {
+      border-radius: 5px 0 0 5px;
+      border-right: 0;
+      background-image: url("../img/data.png");
 
-    }
+      @include old-desktop {
+        border-radius: 5px;
+        border-right: 1px solid var(--gray-light-color);
+      }
 
 
 }
+
+
+
+    @include old-desktop {
+      grid-column: 12 span;
+      border: none;
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+
+    }
+
+    }
+
+
+
 .reservation-explain {
   padding-top: 60px;
   border-top: 1px solid var(--gray-light-color);
