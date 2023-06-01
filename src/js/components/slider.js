@@ -16,17 +16,17 @@ if(mainSlider) {
       prevEl: ".hero__nav--right",
       //clickable: true,
     },
-   // autoplay: {
-  //delay: 2500,
-  //disableOnInteraction: false,
-//},
-    speed: 1000,
+   autoplay: {
+  delay: 2500,
+  disableOnInteraction: false,
+},
+    speed: 3000,
 
 
-    //effect: "fade",
-    //fadeEffect: {
-      //crossFade: true
-    //},
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
 
     mousewheel: true,
     keyboard: true,
