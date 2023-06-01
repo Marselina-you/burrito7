@@ -12,9 +12,9 @@ buttons.forEach(el => {
   el.addEventListener('click', (e) => {
 
     let btn = e.currentTarget;
-    //console.log(btn)
+    console.log(btn)
     let ad = btn.nextElementSibling;
-    //console.log(ad)
+    console.log(ad)
     let plus = ad.getElementsByClassName('add-plus__plus');
     let minus = ad.getElementsByClassName('add-plus__minus');
     let result = ad.getElementsByClassName('add-plus__input');
@@ -50,6 +50,12 @@ buttons.forEach(el => {
           let newVal = oldValue - 1;
 
             span.setAttribute('value', newVal);
+
+            console.log(newVal)
+            if (newVal == 0) {
+              btn.classList.remove('btn-order--none');
+              ad.classList.remove('add-plus--active');
+            }
 
 
 

@@ -1,4 +1,5 @@
 const menuDopList = document.querySelector('.menu-dop__list');
+
 let prodQuantity = 8;
 
 if (menuDopList) {
@@ -19,6 +20,9 @@ if (menuDopList) {
         if (i < quantity) {
         let item = data[i];
         //console.log(item)
+let valIn = 0;
+
+
 
         menuDopList.innerHTML += `
         <li class="menu-dop__item">
@@ -28,14 +32,22 @@ if (menuDopList) {
           </div>
 
           <div class="quantity">
-            <input class="extras" type="number" min="1" max="9" data-id="${item.id}" step="1" value="0">
-            <div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
+            <input class="extras" type="number" min="0" max="9" data-id="${item.id}" step="1" value="${valIn}">
+            <div class="quantity-nav">
+            <div class="quantity-button quantity-up">
+            <img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
           </div>
         </div>
         <div class="menu-dop__value"><span class="value" data-price="${item.price}">${item.price}<span>  €</span></div>
       </li>
 `;
+
+
+
+
         }
+
+
 
       }
     })

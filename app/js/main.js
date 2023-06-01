@@ -251,7 +251,7 @@ if (menuDopList) {
         if (i < quantity) {
           let item = data[i];
           //console.log(item)
-
+          let valIn = 0;
           menuDopList.innerHTML += `
         <li class="menu-dop__item">
         <div class="menu-dop__top">
@@ -260,8 +260,10 @@ if (menuDopList) {
           </div>
 
           <div class="quantity">
-            <input class="extras" type="number" min="1" max="9" data-id="${item.id}" step="1" value="0">
-            <div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
+            <input class="extras" type="number" min="0" max="9" data-id="${item.id}" step="1" value="${valIn}">
+            <div class="quantity-nav">
+            <div class="quantity-button quantity-up">
+            <img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
           </div>
         </div>
         <div class="menu-dop__value"><span class="value" data-price="${item.price}">${item.price}<span>  €</span></div>
@@ -329,6 +331,34 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MOD
       spinner.find("input").trigger("change");
     });
   });
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.quantity-up').on('click', function () {
+    let par = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent();
+    let inp = par.prev();
+    inp.removeClass('extras');
+
+    //var quant = $(this);
+    //console.log(inp)
+    //input = quant.parent();//нашли инпут
+    //console.log(input);
+    //input.toggleClass('extras-visible');
+  });
+
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.quantity-down').on('click', function () {
+    let par = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parent();
+    let inp = par.prev();
+    let valIn = parseFloat(inp.val());
+    //console.log(valIn);
+    if (valIn == 0) {
+      inp.addClass('extras');
+    }
+
+    //var quant = $(this);
+    //console.log(inp)
+    //input = quant.parent();//нашли инпут
+    //console.log(input);
+    //input.toggleClass('extras-visible');
+  });
+
   new (wowjs__WEBPACK_IMPORTED_MODULE_0___default().WOW)({
     live: false //чтобы не было ошибок в консоли
     //и любые другие параметры - это просто пример
@@ -351,9 +381,9 @@ const inputs = document.querySelectorAll('.add-plus__input');
 buttons.forEach(el => {
   el.addEventListener('click', e => {
     let btn = e.currentTarget;
-    //console.log(btn)
+    console.log(btn);
     let ad = btn.nextElementSibling;
-    //console.log(ad)
+    console.log(ad);
     let plus = ad.getElementsByClassName('add-plus__plus');
     let minus = ad.getElementsByClassName('add-plus__minus');
     let result = ad.getElementsByClassName('add-plus__input');
@@ -381,6 +411,11 @@ buttons.forEach(el => {
         let oldValue = Number(span.value);
         let newVal = oldValue - 1;
         span.setAttribute('value', newVal);
+        console.log(newVal);
+        if (newVal == 0) {
+          btn.classList.remove('btn-order--none');
+          ad.classList.remove('add-plus--active');
+        }
       });
     });
     ad.classList.toggle('add-plus--active');

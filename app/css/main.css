@@ -75,14 +75,9 @@ html {
   box-sizing: inherit;
 }
 
-.page {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  -webkit-text-size-adjust: 100%;
-}
-
 .body {
   margin: 0;
+  font-family: var(--font-family, sans-serif);
   font-weight: 400;
   overflow-x: hidden;
   background-color: var(--gray-color);
@@ -2144,6 +2139,14 @@ input[type=number] {
   color: #fff;
 }
 
+.extras {
+  opacity: 0;
+}
+
+.extras-visible {
+  opacity: 1;
+}
+
 .quantity input:focus {
   outline: 0;
 }
@@ -2175,6 +2178,9 @@ input[type=number] {
   position: absolute;
   top: 12px;
   right: -5px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .quantity-button.quantity-down {

@@ -35,6 +35,35 @@ $.when( $.ready ).then(function() {
 
     });
 
+    $('.quantity-up').on('click', function() {
+      let par = $(this).parent();
+      let inp = par.prev();
+      inp.removeClass('extras');
+
+      //var quant = $(this);
+      //console.log(inp)
+      //input = quant.parent();//нашли инпут
+      //console.log(input);
+      //input.toggleClass('extras-visible');
+
+    })
+    $('.quantity-down').on('click', function() {
+      let par = $(this).parent();
+      let inp = par.prev();
+      let valIn = parseFloat(inp.val());
+      //console.log(valIn);
+      if (valIn == 0) {
+        inp.addClass('extras')
+      }
+
+      //var quant = $(this);
+      //console.log(inp)
+      //input = quant.parent();//нашли инпут
+      //console.log(input);
+      //input.toggleClass('extras-visible');
+
+    })
+
 
 
     new WOW.WOW({

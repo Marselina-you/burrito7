@@ -18,6 +18,7 @@ input[type=number]
 }
 
 .quantity input {
+
   width: 45px;
   height: 42px;
   //float: left;
@@ -28,7 +29,12 @@ input[type=number]
   text-transform: uppercase;
   color: #fff;
 }
-
+.extras {
+  opacity: 0;
+}
+.extras-visible {
+  opacity: 1;
+}
 .quantity input:focus {
   outline: 0;
 }
@@ -56,6 +62,11 @@ input[type=number]
   position: absolute;
   top: 12px;
   right: -5px;
+  transform: rotate(180deg);
+
+
+
+  
 
 }
 
@@ -63,6 +74,8 @@ input[type=number]
   position: absolute;
   top: 12px;
   left: -15px;
+  //transform: rotate(90deg);
+
 
 }
 .summ-wrap {
