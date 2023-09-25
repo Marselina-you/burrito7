@@ -59,6 +59,7 @@
   grid-column: 1 span;
 
   &__select {
+    min-height: 36px;
     margin-right: 0;
     border-style: solid;
     border-width: 1px;
@@ -75,6 +76,7 @@
     &--people {
       background-image: url("../img/people.png");
       border-right: 0;
+      padding: 25px 45px;
 
       @include old-desktop {
         border-radius: 5px;
@@ -85,6 +87,7 @@
     &--hour {
       border-right: 0;
       background-image: url("../img/hour.png");
+      padding: 25px 45px;
 
       @include old-desktop {
         border-radius: 5px;
@@ -95,6 +98,7 @@
       border-radius: 5px 0 0 5px;
       border-right: 0;
       background-image: url("../img/data.png");
+
 
       @include old-desktop {
         border-radius: 5px;

@@ -44,16 +44,19 @@
     }
   }
   &__summ {
-    font: var(--bold-lato);
+    font-family: var(--font-family-lato);
+    font-weight: 700;
     font-size: 20px;
+    line-height: 140%;
 
     color: rgba(77, 77, 77, 1);
   }
   &__btn {
     border-radius: 4px;
     padding: 5px 30px;
-    font: var(--regular-lato);
+    font-family: var(--regular-lato);
     font-size: 20px;
+    line-height: 140%;
 
 
     @include mobile {

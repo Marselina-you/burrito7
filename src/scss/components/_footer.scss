@@ -42,7 +42,9 @@
 
   }
   &__info {
-    font: var(--middle-regular-gabriola);
+    font: var(----font-family-gabriola);
+    font-size: 30px;
+    line-height: 140%;
     color: var(--light-color);
   }
 }

@@ -55,8 +55,9 @@
   }
 
   &__title {
-    font: var(--bold-lato);
+    font-family: var(--font-family-lato);
     font-size: 65px;
+    font-weight: 700;
     line-height: 0;
     text-transform: uppercase;
     color: var(--light-color);

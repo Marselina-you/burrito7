@@ -17,10 +17,12 @@
 
   &__title {
     margin: 45% auto;
-    font: var(--bold-lato);
+    font-family: var(--font-family-lato);
     font-size: 64px;
     letter-spacing: 20px;
     padding: 20px 100px;
+    font-weight: 700;
+    line-height: 140%;
     color: var(--light-color);
     background-color: var(--blue-light-color);
 

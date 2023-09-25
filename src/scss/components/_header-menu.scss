@@ -10,9 +10,24 @@
 
 
   &__item {
+
+    a {
+      font: var(--regular-lato);
+      font-size: 25px;
+      text-transform: capitalize;
+      color: var(--light-color);
+      transition: color 0.3s ease-in-out;
+    }
+
     &:not(:last-child) {
       margin-right: 40px;
+
+      @include small-tablet {
+        margin-right: 0;
+      }
     }
+
+
   }
   &__list {
     @include flex-all-center;

@@ -1,1 +1,458 @@
-<!DOCTYPE html><html lang="ru" class="page"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.png" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>Burrito</title><link rel="stylesheet" href="css/vendor.css"><link rel="stylesheet" href="css/main.css"></head><body class="body"><div class="site-container"><header class="header container"><div class="header__container"><div class="header-logo wow animate__fadeInLeft"><h1 class="header-logo__title">burrito</h1><img class="header-logo__decor" src="img/decor.svg" alt="burrito"> <span class="header-logo__subtitle">chilebar</span></div><div class="nav-wrap"><nav class="nav header__nav wow animate__fadeInDown"><ul class="nav__list list-reset"><li class="nav__item"><a href="#" class="nav__link">main</a></li><li class="nav__item"><a href="#" class="nav__link">about us</a></li><li class="nav__item"><a href="#" class="nav__link">menu</a></li><li class="nav__item"><a href="#" class="nav__link">reservation</a></li><li class="nav__item"><button class="btn-reset btn-order nav__link cart__count">cart</button></li></ul></nav></div><div class="burger-wrap"><button class="burger btn-reset"><span class="burger__line"></span></button></div><div class="mini-cart"><div class="mini-cart__top"><ul class="list-reset mini-cart__list"><li class="mini-cart__item" data-id=""><article class="mini-cart__product mini-product"><div class="mini-product__image"><img src="/img/tapas.png" alt=""></div><div class="mini-product__content"><div class="mini-product__text"><h3 class="mini-product__title">Tapas with bacon</h3><span class="mini-product__quant">4</span> <span class="mini-product__price">1450 r</span></div><button class="btn-reset mini-product__delete" aria-label="Удалить товар"><svg><use xlink:href="img/sprite.svg#trash"></use></svg></button></div></article></li><li class="mini-cart__item" data-id=""><article class="mini-cart__product mini-product"><div class="mini-product__image"><img src="/img/tapas.png" alt=""></div><div class="mini-product__content"><div class="mini-product__text"><h3 class="mini-product__title">Tapas with bacon</h3><span class="mini-product__quant">4</span> <span class="mini-product__price">1450 r</span></div><button class="btn-reset mini-product__delete" aria-label="Удалить товар"><svg><use xlink:href="img/sprite.svg#trash"></use></svg></button></div></article></li></ul></div><div class="mini-cart__bottom"><div class="mini-cart__itog"><span class="mini-cart__txt">In total</span> <span class="mini-cart__summ">1459</span></div><button class="btn-reset btn btn--primary mini-cart__btn" data-graph-path="cart-modal">order</button></div></div></div></header><!----><div class="section hero"><div class="swiper mainSlider"><div class="swiper-wrapper"><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-6.jpg);"><div class="order-swiper-slide__content wow animate__fadeIn" data-wow-duration="2s"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-1.jpg);"><div class="order-swiper-slide__content"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-2.jpg);"><div class="order-swiper-slide__content"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-3.jpg);"><div class="order-swiper-slide__content"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-4.jpg);"><div class="order-swiper-slide__content"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-5.jpg);"><div class="order-swiper-slide__content"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div><div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-1.jpg);"><div class="order-swiper-slide__content"><div class="swiper-slide__logo"><img src="img/logo.svg" alt="logo"></div><div class="order-swiper-slide__title">Burrito</div><div class="order-swiper-slide__decor"><img class="header-logo__decor" src="img/decor.svg" alt="burrito"></div><div class="order-swiper-slide__subtitle">chilebar</div></div></div></div></div><div class="hero__container container"><ul class="hero__nav list-reset"><li class="hero__nav--left"><img src="img/left.svg" alt=""></li><li class="hero__nav--right"><img src="img/right.svg" alt=""></li></ul><div class="down-wrap"><a href="#down" class="down"><svg class="animate__animated animate__fadeInUp animate__infinite animate__slower"><use xlink:href="img/sprite.svg#arrows-down"></use></svg></a></div></div></div><!-- Swiper --><!-- Swiper JS --><!-- Initialize Swiper --><section class="reservation"><div class="container reservation__container"><div class="reservation__content"><form action="#" class="reservation-form wow animate__bounce" data-wow-offset="300"><label class="reservation-form-field"><select class="reservation-form-field__select reservation-form-field--data"><option class="reservation-form-field__option">July 11</option><option>July 12</option><option>July 13</option><option>July 14</option></select></label> <label class="reservation-form-field"><select class="reservation-form-field__select reservation-form-field--hour"><option class="reservation-form-field__option">20.00</option><option>21.00</option><option>22.00</option><option>23.00</option></select></label> <label class="reservation-form-field"><select class="reservation-form-field__select reservation-form-field--people"><option class="reservation-form-field__option">2 people</option><option>3 people</option><option>4 people</option><option>5 people</option></select></label> <button class="reservation-form__btn btn btn--primary">order</button></form><p class="reservation-explain">Due to the limited amount of tables in our restaurant, we cannot guarantee a private table. Some reservations will be sat at the bar or c ommunal. If you prefer a table, please call or make a note and we will do our bes t to accommodate your request.</p><div class="reservation-flower wow animate__pulse" data-wow-offset="200"><div class="flower"></div></div></div></div></section><section class="calling"><div class="container"><h2 class="calling__title wow animate__zoomInDown" data-wow-duration="1.5s" data-wow-offset="200">Feel Mexico</h2></div></section><section class="info-first info"><div class="container"><div class="info__content"><ul class="list-reset info__list"><li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s"><div class="info__title">Burrito ChileBar</div><div class="info__text"><p class="">Burrito — this is a chili bar in the heart of Tijuana, decorated  in a kitschy style with bright colors and a hot atmosphere. It embodies an  original   culture Mexico.  Visitorswillfeel as if they are in  hell and; heaven at  the; same  time</p></div><div class="info__decor wow animate__pulse" data-wow-offset="200"><div class="flower"></div></div></li><li class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s"><div class="info__img info__img--first"></div></li></ul></div></div></section><section class="quote quote--first"><div class="container quote__container"><div class="quote__content wow animate__fadeInLeft" data-wow-offset="200"><quote class="quote__text">«Burrito ignites a hot flame in you, it collapses on you like lava, with its most powerful music, a sea of tequila and devilish food»</quote><div class="quote__autor">Jonny Depp, the visitor</div></div></div></section><section class="info-second info"><div class="container"><div class="info__content"><ul class="list-reset info__list"><li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s"><div class="info__subtitle">The most profitable deals with us</div><div class="info__title">Happy Hours</div><div class="info__text"><p class="">Burrito — this is a chili bar in the heart of Tijuana, decorated  in a kitschy style with bright colors and a hot atmosphere. It embodies an  original   culture Mexico.  Visitorswillfeel as if they are in  hell and; heaven at  the; same  time</p></div></li><li class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s"><div class="info__img info__img--second"></div></li></ul></div></div></section><section class="info--third info"><div class="container"><div class="info__content"><ul class="list-reset info__list"><li class="info__item info__item--block-1 wow animate__fadeInRight" data-wow-offset="200" data-wow-delay=".1s"><div class="info__subtitle">The most profitable deals with us</div><div class="info__title">Music Time</div><div class="info__decor wow animate__pulse" data-wow-offset="200"><div class="flower"></div></div><div class="info__text"><p class="">Burrito — this is a chili bar in the heart of Tijuana, decorated  in a kitschy style with bright colors and a hot atmosphere. It embodies an  original   culture Mexico.  Visitorswillfeel as if they are in  hell and; heaven at  the; same  time</p></div></li><li class="info__item info__item--block-2 wow animate__fadeInLeft" data-wow-offset="200" data-wow-delay=".1s"><div class="info__img info__img--third"></div></li></ul></div></div></section><section class="info-fourth info"><div class="container"><div class="info__content"><ul class="list-reset info__list"><li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s"><div class="info__subtitle">50% discount every Sunday!</div><div class="info__decor wow animate__pulse" data-wow-offset="300"><div class="flower"></div></div><div class="info__title">Sunday with teguila</div><div class="info__text"><p class="">Burrito — this is a chili bar in the heart of Tijuana, decorated  in a kitschy style with bright colors and a hot atmosphere. It embodies an  original   culture Mexico.  Visitorswillfeel as if they are in  hell and; heaven at  the; same  time</p></div></li><li class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s"><div class="info__img info__img--fourth"></div></li></ul></div></div></section><section class="quote quote--second"><div class="container quote__container"><div class="quote__content quote__content--second wow animate__fadeInLeft" data-wow-offset="200"><quote class="quote__text">«Burrito ignites a hot flame in you, it collapses on you like lava, with its most powerful music, a sea of tequila and devilish food»</quote><div class="quote__autor">Penelope Cruz, the visitor</div></div></div></section><section class="address-block"><div class="container"><div class="address-block__content"><h2 class="title address-block__title">Our address</h2><address class="address-block__address">Moscow A.Berzarina str. building 6</address><span class="address-block__phone">(510) 647-9525</span><div class="address-block__mail">info@lamarchaberkeley.com</div><a href="" class="address-block__btn btn btn--gray btn-reset wow animate__pulse" data-wow-offset="200">reserve</a></div><a class="arrow-up" href="#top"><svg class="animate__animated animate__fadeInUp animate__infinite animate__slower wow" data-wow-offset="200"><use xlink:href="img/sprite.svg#up-arrow"></use></svg></a></div></section><footer class="footer"><div class="container"><div class="footer__content"><div class="footer__social" id="down"><a class="footer__image" href=""><svg><use xlink:href="img/sprite.svg#twit"></use></svg> </a><a class="footer__image" href=""><svg><use xlink:href="img/sprite.svg#vk"></use></svg> </a><a class="footer__image" href=""><svg><use xlink:href="img/sprite.svg#what"></use></svg></a></div><h2 class="footer__title">2018 Burrito Chili-Bar</h2><h3 class="footer__subtitle">Website built at The Building Block</h3><span class="footer__info">Terms&PrivacyPolicyReserveNow</span></div></div></footer></div><script defer="defer" src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Burrito</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body" id="page">
+  <div class="site-container">
+    <header class="header container">
+  <div class="header__container">
+    <div class="header-logo wow animate__fadeInLeft">
+      <h1 class="header-logo__title">burrito</h1>
+      <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+      <span class="header-logo__subtitle">chilebar</span>
+    </div>
+    <div class="nav-wrap">
+      <nav class="nav header__nav wow animate__fadeInDown">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">main</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">menu</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">reservation</a></li>
+
+    </ul>
+    <button class="btn-reset btn-order nav__link cart__count">cart</button>
+    </nav>
+    </div>
+
+  <div class="burger-wrap">
+    <button class="burger btn-reset">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+  <div class="mini-cart">
+    <div class="mini-cart__top">
+      <ul class="list-reset mini-cart__list">
+        <li class="mini-cart__item" data-id="">
+          <article class="mini-cart__product mini-product">
+            <div class="mini-product__image">
+              <img src="/img/tapas.png" alt="">
+            </div>
+            <div class="mini-product__content">
+              <div class="mini-product__text">
+                <h3 class="mini-product__title">Tapas with bacon</h3>
+                <span class="mini-product__quant">4</span>
+                <span class="mini-product__price">1450 r</span>
+
+              </div>
+              <button class="btn-reset mini-product__delete" aria-label="Удалить товар">
+                <svg>
+                  <use xlink:href="img/sprite.svg#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="mini-cart__item" data-id="">
+          <article class="mini-cart__product mini-product">
+            <div class="mini-product__image">
+              <img src="/img/tapas.png" alt="">
+            </div>
+            <div class="mini-product__content">
+              <div class="mini-product__text">
+                <h3 class="mini-product__title">Tapas with bacon</h3>
+                <span class="mini-product__quant">4</span>
+                <span class="mini-product__price">1450 r</span>
+
+              </div>
+              <button class="btn-reset mini-product__delete" aria-label="Удалить товар">
+                <svg>
+                  <use xlink:href="img/sprite.svg#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  <div class="mini-cart__bottom">
+    <div class="mini-cart__itog">
+      <span class="mini-cart__txt">In total</span>
+      <span class="mini-cart__summ">1459</span>
+    </div>
+    <button class="btn-reset btn btn--primary mini-cart__btn" data-graph-path="cart-modal">order</button>
+  </div>
+  </div>
+  </div>
+</header>
+
+     <!---->
+     <div class="section hero">
+  <div class="swiper mainSlider">
+    <div class="swiper-wrapper">
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-6.jpg);">
+        <div class="order-swiper-slide__content wow animate__fadeIn" data-wow-duration="2s">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+
+        </div>
+      </div>
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-1.jpg);">
+        <div class="order-swiper-slide__content">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+
+        </div>
+      </div>
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-2.jpg);">
+        <div class="order-swiper-slide__content">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+
+        </div>
+      </div>
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-3.jpg);">
+        <div class="order-swiper-slide__content">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+
+        </div>
+      </div>
+
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-4.jpg);">
+        <div class="order-swiper-slide__content">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+        </div>
+      </div>
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-5.jpg);">
+        <div class="order-swiper-slide__content">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+        </div>
+      </div>
+      <div class="order-swiper-slide swiper-slide" style="background-image: url(../img/slide-1.jpg);">
+        <div class="order-swiper-slide__content">
+          <div class="swiper-slide__logo">
+            <img src="img/logo.svg" alt="logo" >
+          </div>
+          <div class="order-swiper-slide__title">Burrito</div>
+          <div class="order-swiper-slide__decor">
+            <img class="header-logo__decor" src="img/decor.svg" alt="burrito">
+          </div>
+          <div class="order-swiper-slide__subtitle">chilebar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__container container">
+    <ul class="hero__nav list-reset">
+      <li class="hero__nav--left"><img src="img/left.svg" alt=""></li>
+      <li class="hero__nav--right"><img src="img/right.svg" alt=""></li>
+    </ul>
+    <div class="down-wrap">
+      <a href="#down" class="down">
+        <svg class="animate__animated animate__fadeInUp animate__infinite animate__slower"><use xlink:href="img/sprite.svg#arrows-down"></use></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper -->
+
+<!-- Swiper JS -->
+
+<!-- Initialize Swiper -->
+
+      <section class="reservation">
+  <div class="container reservation__container">
+
+    <div class="reservation__content">
+      <form action="#" class="reservation-form wow animate__bounce" data-wow-offset="300">
+        <label class="reservation-form-field">
+          <select class="reservation-form-field__select reservation-form-field--data">
+            <option class="">July 11</option>
+            <option>July 12</option>
+            <option>July 13</option>
+            <option>July 14</option>
+          </select>
+        </label>
+        <label class="reservation-form-field">
+          <select class="reservation-form-field__select reservation-form-field--hour">
+            <option class="">20.00</option>
+            <option>21.00</option>
+            <option>22.00</option>
+            <option>23.00</option>
+          </select>
+        </label>
+
+        <label class="reservation-form-field">
+          <select class="reservation-form-field__select reservation-form-field--people">
+            <option class="">2 people</option>
+            <option>3 people</option>
+            <option>4 people</option>
+            <option>5 people</option>
+          </select>
+        </label>
+        <button class="reservation-form__btn btn btn--primary">order</button>
+
+      </form>
+      <p class="reservation-explain">Due to the limited amount of tables in our restaurant, we cannot guarantee a private table.
+        Some reservations will be sat at the bar or c ommunal. If you prefer a table, please
+        call or make a note and we will do our bes t to accommodate your request.</p>
+<div class="reservation-flower wow animate__pulse" data-wow-offset="200">
+  <div class="flower"></div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="calling">
+  <div class="container">
+    <h2 class="calling__title wow animate__zoomInDown" data-wow-duration="1.5s" data-wow-offset="200">Feel Mexico</h2>
+  </div>
+</section>
+
+      <section class="info-first info">
+  <div class="container">
+    <div class="info__content">
+      <ul class="list-reset info__list">
+        <li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__title">Burrito ChileBar</div>
+          <div class="info__text">
+            <p class="">Burrito — this is a chili bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+          </div>
+          <div class="info__decor wow animate__pulse" data-wow-offset="200">
+            <div class="flower"></div>
+          </div>
+        </li>
+        <li class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__img info__img--first"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="quote quote--first">
+  <div class="container quote__container">
+    <div class="quote__content wow animate__fadeInLeft" data-wow-offset="200">
+      <quote class="quote__text">«Burrito ignites a hot flame in you, it collapses
+        on you like lava, with its most powerful music,
+               a sea of tequila and devilish food»</quote>
+               <div class="quote__autor">Jonny Depp, the visitor</div>
+    </div>
+
+  </div>
+</section>
+
+      <section class="info-second info">
+  <div class="container">
+    <div class="info__content">
+      <ul class="list-reset info__list">
+        <li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__subtitle">The most profitable deals with us</div>
+          <div class="info__title">Happy Hours</div>
+          <div class="info__text">
+        <p class="">Burrito — this is a chili bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+
+  </div>
+
+        </li>
+        <li class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__img info__img--second"></div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+      <section class="info--third info">
+  <div class="container">
+    <div class="info__content">
+      <ul class="list-reset info__list">
+        <li class="info__item info__item--block-1 wow animate__fadeInRight" data-wow-offset="200" data-wow-delay=".1s">
+          <div class="info__subtitle">The most profitable deals with us</div>
+          <div class="info__title">Music Time</div>
+          <div class="info__decor wow animate__pulse" data-wow-offset="200">
+            <div class="flower"></div>
+          </div>
+          <div class="info__text">
+            <p class="">Burrito — this is a chili bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+          </div>
+
+        </li>
+        <li class="info__item info__item--block-2 wow animate__fadeInLeft" data-wow-offset="200" data-wow-delay=".1s">
+          <div class="info__img info__img--third"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="info-fourth info">
+  <div class="container">
+    <div class="info__content">
+      <ul class="list-reset info__list">
+        <li class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__subtitle">50% discount every Sunday!</div>
+
+          <div class="info__decor wow animate__pulse" data-wow-offset="300">
+            <div class="flower"></div>
+          </div>
+          <div class="info__title">Sunday with teguila</div>
+          <div class="info__text">
+            <p class="">Burrito — this is a chili bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+          </div>
+
+        </li>
+        <li class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__img info__img--fourth"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="quote quote--second">
+  <div class="container quote__container">
+    <div class="quote__content quote__content--second wow animate__fadeInLeft" data-wow-offset="200">
+      <quote class="quote__text">«Burrito ignites a hot flame in you, it collapses
+        on you like lava, with its most powerful music,
+        a sea of tequila and devilish food»</quote>
+      <div class="quote__autor">Penelope Cruz, the visitor</div>
+    </div>
+  </div>
+</section>
+
+      <section class="address-block">
+  <div class="container">
+    <div class="address-block__content">
+      <h2 class="title address-block__title">Our address</h2>
+      <address class="address-block__address">Moscow A.Berzarina str. building 6</address>
+      <span class="address-block__phone">(510) 647-9525</span>
+      <div class="address-block__mail">info@lamarchaberkeley.com</div>
+      <a href="" class="address-block__btn btn btn--gray btn-reset wow animate__pulse" data-wow-offset="200">reserve</a>
+
+    </div>
+    <!--<a class="arrow-up" href="#top">
+      <svg class="animate__animated animate__fadeInUp animate__infinite animate__slower wow" data-wow-offset="200">
+            <use xlink:href="img/sprite.svg#to-top"></use>
+          </svg>
+        </a>-->
+  </div>
+
+</section>
+
+    <footer class="footer">
+  <a href="#page" data-scroll class="to-top">
+    <span class="to-top__icon">
+      <svg>
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </span>
+  </a>
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__social" id="down">
+        <a class="footer__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#twit"></use>
+          </svg>
+        </a>
+        <a class="footer__image" href="">
+        <svg>
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a class="footer__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#what"></use>
+          </svg>
+        </a>
+      </div>
+      <h2 class="footer__title">2018 Burrito Chili-Bar</h2>
+      <h3 class="footer__subtitle">Website built at The Building Block</h3>
+      <span class="footer__info">Terms&PrivacyPolicyReserveNow</span>
+    </div>
+</div>
+</footer>
+<div class="overlay"></div>
+
+  </div>
+  <script defer src="js/main.js"></script>
+
+</body>
+
+</html>

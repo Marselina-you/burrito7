@@ -32,9 +32,10 @@
     @include flex-column-center;
 }
     &__title {
-      font: var(--bold-lato);
+      font-family: var(--font-family-lato);
       letter-spacing: 5px;
-      //font-weight: 700;
+      font-weight: 700;
+      line-height: 140%;
       font-size: 65px;
       text-transform: uppercase;
       color: var(--light-color);

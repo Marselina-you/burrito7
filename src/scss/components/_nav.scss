@@ -1,12 +1,27 @@
 .nav {
   background-color: var(--gray-color-opacity);
+  display: flex;
+
+  @include tablet {
+    display: flex;
+  flex-direction: column;
+  }
+
   &__list {
     position: relative;
     padding: 10px 40px;
+    padding-right: 0;
     @include flex-v-center;
+    justify-content: space-between;
+
+    @include tablet {
+      margin: 0;
+      padding: 20px 0;
+
+    }
 }
   &__item {
-    &:not(:last-child) {
+
       margin-right: 140px;
 
       @include big-desktop {
@@ -19,7 +34,7 @@
         margin: 0;
         padding: 20px 0;
       }
-    }
+
   }
     &__link {
       font: var(--regular-lato);
@@ -103,6 +118,10 @@
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
 }
+.cart__count {
+  padding-right: 40px;
+}
+
 
 
 

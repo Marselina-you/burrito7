@@ -9,11 +9,14 @@
 
 }
 &__title {
-  font: var(--bold-lato);
+  font: var(--regular-lato);
+  font-size: 25px;
   margin: 0;
   padding: 0;
-  letter-spacing: 2px;
+  //letter-spacing: 2px;
   margin-bottom: 100px;
+  line-height: 140%;
+  //font-weight: 700;
   text-align: center;
   color: var(--light-color);
   }
@@ -44,6 +47,14 @@
   position: relative;
   grid-column: 6 span;
 
+  &__value {
+    font-family: var(--font-family-lato);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: var(--light-color);
+  }
+
   @include small-tablet {
     grid-column: 4 span;
   }
@@ -54,8 +65,30 @@
 
     margin: 0;
     padding: 0;
-    font: var(--bold-lato);
-    color: var(--light-color);
+
+    &__value {
+      font-family: var(--font-family-lato);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 140%;
+      color: var(--light-color);
+    }
+
+
+    a {
+      font-family: var(--font-family-lato);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 140%;
+      color: var(--light-color);
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--text-light-color);
+
+
+      }
+    }
 
     @include tablet {
       font-size: 24px;
@@ -63,8 +96,9 @@
   }
   &__components {
     font: var(--regular-lato);
-
     color: var(--light-color);
+    font-size: 24px;
+
     @include tablet {
       font-size: 20px;
     }

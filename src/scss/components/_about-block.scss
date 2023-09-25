@@ -28,8 +28,10 @@
       color: var(--gray-light-color);
 
 span {
-  font: var(--bold-lato);
+  font-family: var(--font-family-lato);
   font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
   transition: 0.3s color ease-in-out;
 
   &:hover {
@@ -324,8 +326,9 @@ justify-content: center;
   }
   &__subtitle {
     line-height: 150%;
-    font: var(--bold-lato);
+    font-family: var(font-family-lato);
     font-size: 24px;
+    font-weight: 700;
   }
   &__name {
     padding-bottom: 30px;

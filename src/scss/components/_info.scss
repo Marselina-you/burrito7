@@ -61,9 +61,10 @@ background-color: var(--light-color);
   color: var(--primary-color);
 }
 &__subtitle {
-  font: var(--middle-regular-gabriola);
+  font-family: var( --font-family-gabriola);
   font-size: 28px;
   color: var(--text-light-color);
+  line-height: 140%;
 }
 &__text {
   font: var(--regular-lato);
