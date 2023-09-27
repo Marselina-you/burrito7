@@ -28,7 +28,6 @@
 .reservation-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   padding-bottom: 60px;
 
   @include small-tablet {
@@ -36,15 +35,13 @@
     padding-bottom: 30px;
   }
 
-
-  &__btn {
+&__btn {
     grid-column: 4 / 1 span; //начинается со 4 колонки / занимает 1 колонки
     border-radius: 0 5px 5px 0 ;
     padding: 0 100px;
     font: var(--regular-lato);
 
     @include old-desktop {
-
       border-radius: 5px;
       padding: 10px 100px;
     }
@@ -64,7 +61,7 @@
     border-style: solid;
     border-width: 1px;
     border-color: var(--gray-light-color);
-    padding: 20px 45px;
+    padding: 25px 45px;
     width: 100%;
     font: var(--regular-lato);
     text-align: start;
@@ -76,7 +73,7 @@
     &--people {
       background-image: url("../img/people.png");
       border-right: 0;
-      padding: 25px 45px;
+      //padding: 25px 45px;
 
       @include old-desktop {
         border-radius: 5px;
@@ -87,7 +84,7 @@
     &--hour {
       border-right: 0;
       background-image: url("../img/hour.png");
-      padding: 25px 45px;
+      //padding: 25px 45px;
 
       @include old-desktop {
         border-radius: 5px;

@@ -5,7 +5,7 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
+//@import "./components/header";
 @import "./components/nav";
 @import "./components/hero";
 @import "./components/form-reservation";
@@ -21,6 +21,11 @@
 
 @import "./components/mini-cart";
 @import "./components/input-number";
+@import "./components/single-product";
+
+@import "./components/w-header";
+@import "./components/w-nav";
+
 
 
 @import "./components/footer";

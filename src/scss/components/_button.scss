@@ -147,4 +147,10 @@ input {
     outline: none !important;
   }
 }
+.button {
+  border: 1px solid transparent;
+  color: var(--light-color);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
 

@@ -20,52 +20,8 @@
 
     }
 }
-  &__item {
-
-      margin-right: 140px;
-
-      @include big-desktop {
-        margin-right: 80px;
-      }
-      @include for-desktop {
-        margin-right: 65px;
-      }
-      @include tablet {
-        margin: 0;
-        padding: 20px 0;
-      }
-
-  }
-    &__link {
-      font: var(--regular-lato);
-      text-transform: capitalize;
-      //font-size: 20px;
-      color: var(--light-color);
-      transition: color 0.3s ease-in-out;
-
-      @include for-hover {
-   &:hover {
-    color: var( --text-light-color);
-}
-}
 
 
-
-      &:active {
-        color: var(--primary-color-hover);
-      }
-      &:focus-visible {
-        outline: none;
-        color: var(--primary-color-hover);
-      }
-
-
-
-      @include tablet {
-        font-size: 35px;
-      }
-
-    }
 
 }
 .burger-wrap {
@@ -121,6 +77,54 @@
 .cart__count {
   padding-right: 40px;
 }
+.page_item {
+
+    margin-right: 140px;
+
+    @include big-desktop {
+      margin-right: 80px;
+    }
+    @include for-desktop {
+      margin-right: 65px;
+    }
+    @include tablet {
+      margin: 0;
+      padding: 20px 0;
+    }
+
+  a {
+    font: var(--regular-lato);
+    text-transform: capitalize;
+    //font-size: 20px;
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out;
+
+    @include for-hover {
+ &:hover {
+  color: var( --text-light-color);
+}
+}
+
+
+
+    &:active {
+      color: var(--primary-color-hover);
+    }
+    &:focus-visible {
+      outline: none;
+      color: var(--primary-color-hover);
+    }
+
+
+
+    @include tablet {
+      font-size: 35px;
+    }
+
+  }
+
+  }
+
 
 
 

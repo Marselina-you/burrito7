@@ -1,0 +1,84 @@
+.product {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 50px;
+  letter-spacing: 1px;
+  padding-bottom: 65px;
+  align-items: center;
+
+  @include small-tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+.single-left {
+  grid-column: 6 span;
+
+  figure {
+    width: 100%;
+  }
+
+  @include small-tablet {
+    grid-column: 4 span;
+  }
+}
+.single-right {
+  position: relative;
+  grid-column: 6 span;
+
+}
+.product_title {
+  margin: 0;
+    padding: 0;
+    font-family: var(--font-family-lato);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 140%;
+      color: var(--light-color);
+
+}
+.price {
+  span {
+    font-family: var(--font-family-lato);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 140%;
+      color: var(--light-color);
+
+      @include tablet {
+        font-size: 24px;
+      }
+  }
+}
+.woocommerce-product-details__short-description {
+  font: var(--regular-lato);
+    color: var(--light-color);
+    font-size: 24px;
+
+    @include tablet {
+      font-size: 20px;
+    }
+}
+.single_add_to_cart_button {
+  border-radius: 4px;
+    padding: 4px 39px;
+    font-weight: 400;
+    font: var(--regular-lato);
+    font-size: 20px;
+
+    background-color: var(--order-color);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+
+      background-color: var(--order-color-hover);
+    }
+    &:active {
+      border-color: var(--primary-color-hover);
+      background-color: var(--order-color-hover);
+    }
+    &:focus {
+      background-color: var(--order-color-hover);
+    }
+}

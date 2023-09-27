@@ -2,6 +2,31 @@
   margin: 0;
   background-color: var(--gray-color);
 }
+.breadcrumb_dress {
+  margin-top: 86px;
+}
+.woocommerce-breadcrumb {
+  //padding-top: 86px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  background-color: transparent;
+  color: var(--light-color);
+
+
+  a {
+    font: var(--regular-lato);
+
+      text-transform: capitalize;
+      color: var(--light-color);
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--text-light-color)
+      }
+  }
+}
+
 .header-menu-nav {
   padding-top: 86px;
   display: flex;

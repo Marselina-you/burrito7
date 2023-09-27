@@ -39,6 +39,10 @@
 .menu-content-image {
   grid-column: 6 span;
 
+  img {
+    width: 100%;
+  }
+
   @include small-tablet {
     grid-column: 4 span;
   }
@@ -154,3 +158,5 @@
 .btn-order--none {
   display: none;
 }
+
+
