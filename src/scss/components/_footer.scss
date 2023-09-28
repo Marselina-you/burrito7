@@ -1,5 +1,6 @@
 .footer {
-  //background-color: var(--dark-color);
+
+  background-color: var(--gray-color);
 
   &__content {
     @include flex-column-center;
@@ -11,6 +12,12 @@
   }
 
   &__image {
+
+    img {
+      width: 30px;
+
+
+    }
     svg {
       width: 30px;
       height: 30px;
@@ -27,24 +34,28 @@
     }
   }
   &__title {
-    font: var(--regular-lato);
 
+margin: 0;
+
+    font-family: var(--regular-lato);
+    margin-top: 30px;
     line-height: 150%;
+
     color: var( --light-color);
 
   }
   &__subtitle {
-    font: var(--regular-lato);
+    font-family: var(--regular-lato);
     //font-weight: 400;
     font-size: 22px;
     line-height: 150%;
     color: var( --light-color);
 
   }
-  &__info {
-    font: var(----font-family-gabriola);
+  &__copyright {
+    font-family: var(--font-family-gabriola);
     font-size: 30px;
-    line-height: 140%;
+    line-height: 150%;
     color: var(--light-color);
   }
 }

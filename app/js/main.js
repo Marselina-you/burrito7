@@ -16,10 +16,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
 /* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/menu.js */ "./src/js/components/menu.js");
 /* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_menu_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_aboutWP_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/aboutWP.js */ "./src/js/components/aboutWP.js");
-/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
-/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/login-modal.js */ "./src/js/components/login-modal.js");
-/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_login_modal_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_modal_about_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/modal-about.js */ "./src/js/components/modal-about.js");
+/* harmony import */ var _components_aboutWP_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/aboutWP.js */ "./src/js/components/aboutWP.js");
+/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
+/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/login-modal.js */ "./src/js/components/login-modal.js");
+/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_login_modal_js__WEBPACK_IMPORTED_MODULE_8__);
 //import './components/burger.js';
 
 
@@ -27,7 +28,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import './components/mod2.js';
+
 
 
 
@@ -485,11 +486,14 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MOD
 const btns = document.querySelectorAll('.login-button');
 const modalOverlay = document.querySelector('.modal-login-overlay ');
 const modals = document.querySelectorAll('.modal-login');
+console.log(modalOverlay);
+console.log(modals);
+console.log(btns);
 btns.forEach(el => {
   el.addEventListener('click', e => {
     let path = e.currentTarget.getAttribute('data-path');
     modals.forEach(el => {
-      el.classList.remove('modal--visible');
+      el.classList.remove('modal-login--visible');
     });
     document.querySelector(`[data-target="${path}"]`).classList.add('modal-login--visible');
     modalOverlay.classList.add('modal-login-overlay--visible');
@@ -573,6 +577,128 @@ buttons.forEach(el => {
   //})
   //})
 });
+
+/***/ }),
+
+/***/ "./src/js/components/modal-about.js":
+/*!******************************************!*\
+  !*** ./src/js/components/modal-about.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+
+swiper__WEBPACK_IMPORTED_MODULE_1__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_1__.Thumbs]);
+
+//const modal = new GraphModal();
+//const modalSlider = document.querySelector(".modalSwiper");
+//const modalSlider2 = document.querySelector(".modalSwiper2");
+const imgList = document.querySelector('.about-interior__images');
+const myModal = document.querySelector('[data-graph-target ="modal-first"] .modal-content');
+const myModalSlider = document.querySelector('.mySwiper2 .swiper-wrapper');
+const myModalSliderThumb = document.querySelector('.mySwiper .swiper-wrapper');
+//console.log(myModalSliderThumb)
+
+let prodQuantity = 3;
+let dataLength = null;
+let modal = null;
+const idImg = document.querySelectorAll('.about-interior__img');
+const modalSliderThumb = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('.mySwiper', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true
+});
+const modalSlider = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('.mySwiper2', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  thumbs: {
+    swiper: modalSliderThumb
+  }
+});
+if (imgList) {
+  const loadImg = function () {
+    let quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+    fetch('../data/gallery.json').then(response => {
+      return response.json();
+    }).then(data => {
+      dataLength = data.length;
+      imgList.innerHTML = '';
+      //console.log(imgList);
+      for (let i = 0; i < dataLength; i++) {
+        if (i < quantity) {
+          let item = data[i];
+          let id = item.id;
+
+          //console.log(id);
+          imgList.innerHTML += `<li class="${id === 1 ? 'about-interior__img-left animate__fadeInLeft' : 'animate__fadeInRight'} about-interior-img about-interior__img wow   btnModalFirst"  data-wow-offset="200" data-wow-delay=".1s" >
+          <img src="${item.mainImage}" alt="interior">
+          <button class="btn-reset about__overlay" data-graph-path="modal-first" data-id="${item.id}"></button>
+        </li>`;
+        }
+      }
+      modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]({
+        isOpen: modal => {
+          if (modal.modalContainer.classList.contains('modal-first')) {
+            const openBtnId = modal.previousActiveElement.dataset.id;
+            console.log(openBtnId);
+            loadModalData(openBtnId);
+            modalSlider.update();
+            modalSliderThumb.update();
+          }
+        }
+      });
+      //let w = modal.modalContainer();
+
+      //if (modal.modalContainer.classList.contains('modal-first')) {
+
+      //  const openBtnId = modal.previousActiveElement.dataset.id;
+      // console.log(openBtnId);
+      //loadModalData(openBtnId);
+      //prodSlider.update();
+      //}
+    }); //end .then((data)
+  }; //end const loadImg =(quantity = 3)
+  loadImg(prodQuantity);
+  const loadModalData = function () {
+    let id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+    fetch(`../data/gallery.json`).then(response => {
+      return response.json();
+    }).then(data => {
+      myModalSlider.innerHTML = '';
+      myModalSliderThumb.innerHTML = '';
+      for (let dataItem of data) {
+        if (dataItem.id == id) {
+          console.log(dataItem);
+          const slides = dataItem.gallery.map((image, idx) => {
+            return `
+            <div class="my-swiper-slide swiper-slide" data-index="${idx}">
+              <img src="${image}" alt=""/>
+            </div>`;
+          });
+          const preview = dataItem.gallery.map((image, idx) => {
+            return `
+            <div class="my-swiper-slide swiper-slide" data-index="${idx}">
+            <img src="${image}" alt="">
+          </div>`;
+          });
+          myModalSlider.innerHTML = slides.join('');
+          myModalSliderThumb.innerHTML = preview.join('');
+        }
+      }
+    }).then(() => {
+      modalSlider.update();
+      modalSliderThumb.update();
+    });
+  };
+}
 
 /***/ }),
 
