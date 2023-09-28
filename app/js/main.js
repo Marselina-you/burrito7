@@ -11,22 +11,24 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger-menu.js */ "./src/js/components/burger-menu.js");
 /* harmony import */ var _components_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider.js */ "./src/js/components/slider.js");
-/* harmony import */ var _components_cart_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/cart.js */ "./src/js/components/cart.js");
-/* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/extras.js */ "./src/js/components/extras.js");
-/* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_extras_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
-/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/menu.js */ "./src/js/components/menu.js");
-/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_menu_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_aboutWP_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/aboutWP.js */ "./src/js/components/aboutWP.js");
-/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
+/* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/extras.js */ "./src/js/components/extras.js");
+/* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_extras_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
+/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/menu.js */ "./src/js/components/menu.js");
+/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_menu_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_aboutWP_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/aboutWP.js */ "./src/js/components/aboutWP.js");
+/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
+/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/login-modal.js */ "./src/js/components/login-modal.js");
+/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_login_modal_js__WEBPACK_IMPORTED_MODULE_7__);
 //import './components/burger.js';
 
 
-
+//import './components/cart.js';
 
 
 
 //import './components/mod2.js';
+
 
 
 
@@ -206,9 +208,10 @@ swiper__WEBPACK_IMPORTED_MODULE_1__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 //const modalSlider2 = document.querySelector(".modalSwiper2");
 const imgList = document.querySelector('.about-interior__images');
 const myModal = document.querySelector('[data-graph-target ="modal-first"] .modal-content');
+//const myModalLogin = document.querySelector('[data-graph-target ="modal-login"] .modal-content');
 const myModalSlider = document.querySelector('.mySwiper2 .swiper-wrapper');
 const myModalSliderThumb = document.querySelector('.mySwiper .swiper-wrapper');
-//console.log(myModalSliderThumb)
+//console.log(myModalLogin);
 
 let prodQuantity = 3;
 let dataLength = null;
@@ -331,31 +334,6 @@ burger.addEventListener('click', () => {
   navwrap.classList.toggle('nav-wrap--active');
   wrap?.classList.toggle('burger-wrap--close');
   list.classList.toggle('nav__list--tablet');
-});
-
-/***/ }),
-
-/***/ "./src/js/components/cart.js":
-/*!***********************************!*\
-  !*** ./src/js/components/cart.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wowjs */ "./node_modules/wowjs/dist/wow.js");
-/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_0__);
-
-const cartBtn = document.querySelector('.btn-order');
-const miniCart = document.querySelector('.mini-cart');
-const btnModalFirst = document.querySelector('.about-interior-img');
-cartBtn.addEventListener('click', () => {
-  miniCart.classList.toggle('mini-cart--visible');
-});
-document.addEventListener('click', e => {
-  if (!e.target.classList.contains('mini-cart') && !e.target.closest('.mini-cart') && !e.target.closest('.mini-cart') && !e.target.classList.contains('btn-order')) {
-    miniCart.classList.remove('mini-cart--visible');
-  }
 });
 
 /***/ }),
@@ -494,6 +472,37 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MOD
     live: false //чтобы не было ошибок в консоли
     //и любые другие параметры - это просто пример
   }).init();
+});
+
+/***/ }),
+
+/***/ "./src/js/components/login-modal.js":
+/*!******************************************!*\
+  !*** ./src/js/components/login-modal.js ***!
+  \******************************************/
+/***/ (() => {
+
+const btns = document.querySelectorAll('.login-button');
+const modalOverlay = document.querySelector('.modal-login-overlay ');
+const modals = document.querySelectorAll('.modal-login');
+btns.forEach(el => {
+  el.addEventListener('click', e => {
+    let path = e.currentTarget.getAttribute('data-path');
+    modals.forEach(el => {
+      el.classList.remove('modal--visible');
+    });
+    document.querySelector(`[data-target="${path}"]`).classList.add('modal-login--visible');
+    modalOverlay.classList.add('modal-login-overlay--visible');
+  });
+});
+modalOverlay.addEventListener('click', e => {
+  console.log(e.target);
+  if (e.target == modalOverlay) {
+    modalOverlay.classList.remove('modal-login-overlay--visible');
+    modals.forEach(el => {
+      el.classList.remove('modal-login--visible');
+    });
+  }
 });
 
 /***/ }),

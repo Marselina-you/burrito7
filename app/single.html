@@ -33,7 +33,7 @@
 
   </ul>
   <div class="cart cart box_1 site-header-cart">
-    <a class="cart-contents" href="http://burrito-wc/cart/" title="View your shopping cart">
+    <a class="cart-contents" href="#" title="View your shopping cart">
       <span class="amount">cart</span> <span class="count">(5)</span>
   </a>
 
@@ -59,8 +59,78 @@
   </div></div> </div>
   </div>
   <div class="login-btn">
-    <a href="#" data-toggle="modal" data-target="#myModal88"><span class="" aria-hidden="true">LogIn</span></a>
+    <a class="login-button" data-path="form-popup">LogIn</a>
   </div>
+
+  <div class="modal-container">
+        <div class="modal-login-overlay">
+            <div class="modal-login" data-target="form-popup">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                                <div class="modal-btns">
+                                    <div id="horizontalTab">
+                                        <ul class="list-reset list-btn">
+                                            <li class="btn-login-wrap" aria-controls="tab_item-0"><span class="btn btn-reset btn--login">Авторизация</span></li>
+                                            <li class="btn-login-wrap" aria-controls="tab_item-1"><span class="btn btn-reset btn--login">Регистрация</span></li>
+                                        </ul>
+                    <h2 class="" role="tab" aria-controls="tab_item-0">Авторизация</h2>
+
+                                        <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+
+                                                <div class="register">
+                                                    <form method="post" class="register">
+
+                            <p class="form-block">
+                              <label for="username">Имя пользователя или Email <span class="required">*</span></label>
+                              <input type="text" class="form-block-text" name="username" id="username" value=""> </p>
+<p class="form-block">
+                                <label for="reg_password">Пароль<span class="required">*</span></label>
+                                <input type="password" class="form-block-text" name="password"
+                                  id="reg_password"/>
+                              </p>
+                              <p class="form-block-submit">
+                                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="a816d2aebf"><input type="hidden" name="_wp_http_referer" value="/">
+                                <button type="submit" class="btn btn-reset btn--order" name="login" value="Вход">вход</button>
+
+                                <label class="form-block-remember">
+                                  <input class="form-block__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever">
+                                  <span>Запомнить меня</span>
+                                </label>
+                              </p>
+                            </form><!--форма авторизации-->
+                                                </div>
+</div>
+                    <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Регистрация</h2>
+                                        <div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+                                            <div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+                        <div class="facts">
+                          <div class="register">
+                            <form method="post" class="register">
+
+    <p class="form-block">
+      <label for="reg_email">Email <span class="required">*</span></label>
+      <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" value=""> </p>
+
+    <p class="form-block-submit">
+      <input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="ece5871410"><input type="hidden" name="_wp_http_referer" value="/">
+              <button type="submit" class="btn btn-reset btn--order" name="register" value="Регистрация">Регистрация</button>
+    </p>
+
+  </form>
+                          </div>
+                        </div>
+                      </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
 
     </nav>
     </div>

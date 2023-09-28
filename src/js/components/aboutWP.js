@@ -7,9 +7,10 @@ Swiper.use([Navigation, Thumbs]);
 //const modalSlider2 = document.querySelector(".modalSwiper2");
 const imgList = document.querySelector('.about-interior__images');
 const myModal = document.querySelector('[data-graph-target ="modal-first"] .modal-content');
+//const myModalLogin = document.querySelector('[data-graph-target ="modal-login"] .modal-content');
 const myModalSlider = document.querySelector('.mySwiper2 .swiper-wrapper');
 const myModalSliderThumb = document.querySelector('.mySwiper .swiper-wrapper');
-//console.log(myModalSliderThumb)
+//console.log(myModalLogin);
 
 
 let prodQuantity = 3;

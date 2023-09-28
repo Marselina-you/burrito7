@@ -1,0 +1,80 @@
+.modal-login-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal-login {
+	background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 16px;
+  outline: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.modal-login-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal-login--visible {
+	display: block;
+}
+.modal-content {
+  position: relative;
+}
+.modal-body {
+  padding: 30px 50px;
+}
+.list-btn {
+  display: flex;
+
+}
+.btn-login-wrap {
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.form-block {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font: var(--regular-lato);
+    font-size: 18px;
+    color: var(--dark-color);
+  }
+  input {
+    height: 40px;
+  }
+
+}
+.form-block-submit {
+  button {
+    display: inline-block;
+  }
+}
+.form-block-remember {
+  span {
+    font: var(--regular-lato);
+    font-size: 18px;
+    color: var(--dark-color);
+  }
+}
+
