@@ -14,17 +14,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/extras.js */ "./src/js/components/extras.js");
 /* harmony import */ var _components_extras_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_extras_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_input_number_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/input-number.js */ "./src/js/components/input-number.js");
-/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/menu.js */ "./src/js/components/menu.js");
-/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_menu_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_modal_about_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/modal-about.js */ "./src/js/components/modal-about.js");
-/* harmony import */ var _components_aboutWP_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/aboutWP.js */ "./src/js/components/aboutWP.js");
-/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
-/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/login-modal.js */ "./src/js/components/login-modal.js");
-/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_login_modal_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_myinput_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/myinput.js */ "./src/js/components/myinput.js");
+/* harmony import */ var _components_myinput_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_myinput_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/menu.js */ "./src/js/components/menu.js");
+/* harmony import */ var _components_menu_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_menu_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_modal_about_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/modal-about.js */ "./src/js/components/modal-about.js");
+/* harmony import */ var _components_aboutWP_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/aboutWP.js */ "./src/js/components/aboutWP.js");
+/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
+/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/login-modal.js */ "./src/js/components/login-modal.js");
+/* harmony import */ var _components_login_modal_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_login_modal_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_tabs__WEBPACK_IMPORTED_MODULE_10__);
 //import './components/burger.js';
 
 
 //import './components/cart.js';
+
+
 
 
 
@@ -373,10 +379,10 @@ if (menuDopList) {
             <input class="extras" type="number" min="0" max="9" data-id="${item.id}" step="1" value="${valIn}">
             <div class="quantity-nav">
             <div class="quantity-button quantity-up">
-            <img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
+            <img src="img/plus.svg" alt="plus"></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt="minus"></div></div>
           </div>
         </div>
-        <div class="menu-dop__value"><span class="value" data-price="${item.price}">${item.price}<span>  €</span></div>
+
       </li>
 `;
         }
@@ -486,9 +492,9 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MOD
 const btns = document.querySelectorAll('.login-button');
 const modalOverlay = document.querySelector('.modal-login-overlay ');
 const modals = document.querySelectorAll('.modal-login');
-console.log(modalOverlay);
-console.log(modals);
-console.log(btns);
+const btnCard = document.querySelectorAll('.card-btn-popup');
+const modalOverlayCard = document.querySelector('.modal-card-overlay ');
+const modalsCard = document.querySelectorAll('.modal-card');
 btns.forEach(el => {
   el.addEventListener('click', e => {
     let path = e.currentTarget.getAttribute('data-path');
@@ -500,11 +506,28 @@ btns.forEach(el => {
   });
 });
 modalOverlay.addEventListener('click', e => {
-  console.log(e.target);
   if (e.target == modalOverlay) {
     modalOverlay.classList.remove('modal-login-overlay--visible');
     modals.forEach(el => {
       el.classList.remove('modal-login--visible');
+    });
+  }
+});
+btnCard.forEach(el => {
+  el.addEventListener('click', e => {
+    let path = e.currentTarget.getAttribute('data-path');
+    modalsCard.forEach(el => {
+      el.classList.remove('modal-card--visible');
+    });
+    document.querySelector(`[data-target="${path}"]`).classList.add('modal-card--visible');
+    modalOverlayCard.classList.add('modal-card-overlay--visible');
+  });
+});
+modalOverlayCard.addEventListener('click', e => {
+  if (e.target == modalOverlayCard) {
+    modalOverlayCard.classList.remove('modal-card-overlay--visible');
+    modalsCard.forEach(el => {
+      el.classList.remove('modal-card--visible');
     });
   }
 });
@@ -702,6 +725,31 @@ if (imgList) {
 
 /***/ }),
 
+/***/ "./src/js/components/myinput.js":
+/*!**************************************!*\
+  !*** ./src/js/components/myinput.js ***!
+  \**************************************/
+/***/ (() => {
+
+let counter = document.querySelectorAll('.counter');
+let calculate = document.querySelectorAll("calculation");
+let count = document.querySelectorAll("buttonCountNumber");
+let calculation = document.querySelectorAll("calculation").innerHTML;
+const quantity = document.querySelectorAll('.quantity');
+const up = document.querySelectorAll('.quantity-up');
+//console.log(quantity)
+up.forEach(el => {
+  el.addEventListener('click', e => {
+    const en = e.currentTarget;
+    let btn = e.previousElementSibling;
+    console.log(btn);
+  });
+  console.log(btn);
+  let input = document.querySelector(`.extras[data-id="${id}"]`);
+});
+
+/***/ }),
+
 /***/ "./src/js/components/slider.js":
 /*!*************************************!*\
   !*** ./src/js/components/slider.js ***!
@@ -722,25 +770,55 @@ if (mainSlider) {
     loop: true,
     navigation: {
       nextEl: ".hero__nav--left",
-      prevEl: ".hero__nav--right"
-      //clickable: true,
+      prevEl: ".hero__nav--right",
+      clickable: true
     },
-
-    //  autoplay: {
-    // delay: 2500,
-    // disableOnInteraction: false,
+    //autoplay: {
+    //delay: 2500,
+    //disableOnInteraction: false,
     //},
-    //   speed: 3000,
+    // speed: 3000,
 
-    // effect: "fade",
-    //fadeEffect: {
-    //   crossFade: true
-    // },
-
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
     mousewheel: true,
     keyboard: true
   });
 }
+
+/***/ }),
+
+/***/ "./src/js/components/tabs.js":
+/*!***********************************!*\
+  !*** ./src/js/components/tabs.js ***!
+  \***********************************/
+/***/ (() => {
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelector('.tabs');
+  const tabsBtn = document.querySelectorAll('.tabs__btn');
+  const tabsContent = document.querySelectorAll('.tabs__content');
+  if (tabs) {
+    tabs.addEventListener('click', e => {
+      if (e.target.classList.contains('tabs__btn')) {
+        const tabsPath = e.target.dataset.tabsPath;
+        tabsBtn.forEach(el => {
+          el.classList.remove('tabs__btn--active');
+        });
+        document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('tabs__btn--active');
+        tabsHandler(tabsPath);
+      }
+    });
+  }
+  const tabsHandler = path => {
+    tabsContent.forEach(el => {
+      el.classList.remove('tabs__content--active');
+    });
+    document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
+  };
+});
 
 /***/ }),
 
@@ -758,6 +836,9 @@ __webpack_require__.r(__webpack_exports__);
 const scroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_0___default())('.to-top');
 const toTop = document.querySelector('.to-top');
 let heroHeight;
+const dev = document.querySelector('.dev');
+let windowHeight = window.innerHeight;
+const footer = document.querySelector('footer');
 if (document.querySelector('.hero')) {
   heroHeight = document.querySelector('.hero').offsetHeight;
 }
@@ -779,6 +860,9 @@ window.addEventListener('scroll', () => {
   let y = window.scrollY;
   isVisibleToTop(y);
 });
+if (dev) {
+  footer.classList.toggle("fixed-bottom");
+}
 
 /***/ }),
 

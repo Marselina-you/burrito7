@@ -1,7 +1,6 @@
 import WOW from 'wowjs';
 import $ from "jquery";
 
-
 $.when( $.ready ).then(function() {
   $('.quantity').each(function() {
       var spinner = $(this),

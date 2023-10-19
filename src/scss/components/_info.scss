@@ -59,6 +59,10 @@ background-color: var(--light-color);
   font-size: 32px;
   line-height: 150%;
   color: var(--primary-color);
+
+  @include small-tablet {
+    font-size: 24px;
+  }
 }
 &__subtitle {
   font-family: var( --font-family-gabriola);
@@ -74,7 +78,8 @@ background-color: var(--light-color);
       font-size: 20px;
     }
     @include small-tablet {
-      width: 80%;
+      width: 100%;
+      font-size: 18px;
     }
 }
 &__img {

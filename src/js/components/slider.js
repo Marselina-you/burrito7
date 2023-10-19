@@ -14,19 +14,19 @@ if(mainSlider) {
     navigation: {
       nextEl: ".hero__nav--left",
       prevEl: ".hero__nav--right",
-      //clickable: true,
+      clickable: true,
     },
- //  autoplay: {
- // delay: 2500,
- // disableOnInteraction: false,
+   //autoplay: {
+  //delay: 2500,
+ //disableOnInteraction: false,
 //},
- //   speed: 3000,
+  // speed: 3000,
 
 
-  // effect: "fade",
-  //fadeEffect: {
-  //   crossFade: true
-  // },
+  effect: "fade",
+  fadeEffect: {
+     crossFade: true
+   },
 
     mousewheel: true,
     keyboard: true,

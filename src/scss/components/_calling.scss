@@ -31,6 +31,9 @@
       text-align: center;
       font-size: 45px;
     }
+    @include small-tablet {
+      font-size: 30px;
+    }
 
   }
 }

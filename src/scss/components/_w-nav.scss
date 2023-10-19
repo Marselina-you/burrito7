@@ -1,35 +1,27 @@
 .nav-wrap {
   @include tablet {
     display: none;
-
-
   }
 }
 .header--secondary {
   background-color: var(--gray-color);
 }
 .nav-wrap--active {
-
   z-index: 5000;
   display: block;
-
-
-
 }
 .nav__list--tablet {
   flex-direction: column;
   align-items: center;
-
 }
-
 .nav {
   background-color: var(--gray-light-color);
-
-    display: flex;
+  display: flex;
 
   @include tablet {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    background-color: var(--dark-color);
   }
 
   &__list {
@@ -49,15 +41,12 @@
 .menu-item {
   margin-right: 110px;
 
-
-
-    @include big-desktop {
+  @include big-desktop {
       margin-right: 65px;
     }
     @include old-desktop {
       margin-right: 30px;
     }
-
     @include tablet {
       margin: 0;
       padding: 20px 0;
@@ -69,18 +58,21 @@
     color: var(--light-color);
     transition: color 0.3s ease-in-out;
 
-
-
     @include for-hover {
-  &:hover {
-  color: var( --text-light-color);
+
+      &:hover {
+        color: var( --text-light-color);
+      }
   }
+
+  @include old-desktop {
+    font-size: 22px;
   }
   }
 
 }
 .mini-card-content {
-  display: none;
+  //display: none;
 }
 .site-header-cart, .login-btn {
   position: relative;
@@ -92,22 +84,19 @@
   a {
     font: var(--regular-lato);
     text-transform: capitalize;
-    //font-size: 20px;
     color: var(--light-color);
     transition: color 0.3s ease-in-out;
 
     @include for-hover {
- &:hover {
-  color: var( --text-light-color);
-}
-}
+      &:hover {
+        color: var( --text-light-color);
+      }
+    }
   }
-
 
   @include tablet {
     margin: 0;
     padding: 20px 0;
-
   }
 }
 .site-header-cart {
@@ -126,11 +115,9 @@
     margin: 0;
     padding: 20px 0;
   }
-
 }
 .login-btn {
   margin-right: 40px;
-
 
   @include tablet {
     display: flex;
@@ -141,37 +128,30 @@
 }
 .burger-wrap {
 
-  //display: none;
-
   @include tablet {
     display: block;
     border-radius: 5px;
     padding: 7px;
     background-color: var(--gray-light-color);
   }
-
 }
 .burger-wrap--close {
   border: none;
   padding: 7px;
   background-color: transparent;
 }
-
 .burger {
   @include burger;
   --burger-width: 44px;
   --burger-height: 30px;
   --burger-line-height: 3px;
   z-index: 5000;
-
-
   display: none;
   color: var(--light-color);
 
   @include tablet {
     display: block;
   }
-
   &__line {
     height: 4px;
     border-radius: 2px;
@@ -187,5 +167,4 @@
   border-radius: 2px;
   background-color: #fff;
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
 }

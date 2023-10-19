@@ -1,9 +1,6 @@
 .btn {
-  //border-radius: 4px;
   border: 1px solid transparent;
-font: var(--regular-lato);
-  //border-radius: 4px;
-  //padding: 15px 40px;
+  font: var(--regular-lato);
   color: var(--light-color);
   cursor: pointer;
   transition: color 0.3s ease-in-out;
@@ -24,6 +21,7 @@ font: var(--regular-lato);
         background-color: var(--gray-color);
       }
     }
+
   }
 
   &--stroke {
@@ -34,11 +32,14 @@ font: var(--regular-lato);
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
 
-
-    &:hover {
-      background-color: var(--light-color);
-      color: var(--gray-color);
+    @include for-hover {
+      &:hover {
+        background-color: var(--light-color);
+        color: var(--gray-color);
+      }
     }
+
+
     &:active {
       background-color: var(--light-color);
       color: var(--gray-color);
@@ -50,15 +51,15 @@ font: var(--regular-lato);
   }
 
   &--gray {
-
-
     background-color: var(--text-light-color);
     transition: background-color 0.3s ease-in-out;
 
+@include for-hover {
+  &:hover {
+    background-color: var( --green-color);
+  }
+}
 
-    &:hover {
-      background-color: var( --green-color);
-    }
     &:active {
       background-color: var( --green-color);
     }
@@ -86,16 +87,17 @@ font: var(--regular-lato);
 
   &--order {
     border-radius: 4px;
-    padding: 4px 39px;
+    padding: 4px 27px;
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
     background-color: var(--order-color);
     transition: background-color 0.3s ease-in-out;
 
-    &:hover {
-
-      background-color: var(--order-color-hover);
+    @include for-hover {
+      &:hover {
+        background-color: var(--order-color-hover);
+      }
     }
     &:active {
       border-color: var(--primary-color-hover);
@@ -104,28 +106,25 @@ font: var(--regular-lato);
     &:focus {
       background-color: var(--order-color-hover);
     }
-
+  }
+  @include small-tablet {
+    font-size: 18px;
   }
 }
 .add-plus {
 
 &__input {
-
   padding: 0;
-margin: 0;
-border: 0;
-border: none;
-width: 55px;
+  margin: 0;
+  border: 0;
+  border: none;
+  width: 33px;
   background-color: inherit;
   color: var(--light-color);
   font-size: 20px;
   text-align: center;
-
-
-
 }
   &__btn {
-
     border: none;
     border-radius: 8px;
     padding: 7px 6px;
@@ -136,7 +135,6 @@ width: 55px;
       background-color: #2d4f8f
     }
   }
-
   &__svg {
     display: flex;
     align-items: center;
@@ -144,7 +142,6 @@ width: 55px;
     svg {
       fill: white;
     }
-
   }
   &__quantity {
     display: flex;
@@ -153,17 +150,13 @@ width: 55px;
     font-size: 20px;
     color: var(--light-color)
   }
-
-
-
   &--visibility {
     opacity: 1;
   }
 }
 input {
   &:focus-visible {
-    //outline-offset: unset !important;
-    outline: none !important;
+   outline: none !important;
   }
 }
 .button {

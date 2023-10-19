@@ -21,10 +21,7 @@ if (menuDopList) {
         let item = data[i];
         //console.log(item)
 let valIn = 0;
-
-
-
-        menuDopList.innerHTML += `
+menuDopList.innerHTML += `
         <li class="menu-dop__item">
         <div class="menu-dop__top">
           <div class="menu-dop__name-wrap">
@@ -35,23 +32,15 @@ let valIn = 0;
             <input class="extras" type="number" min="0" max="9" data-id="${item.id}" step="1" value="${valIn}">
             <div class="quantity-nav">
             <div class="quantity-button quantity-up">
-            <img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>
+            <img src="img/plus.svg" alt="plus"></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt="minus"></div></div>
           </div>
         </div>
-        <div class="menu-dop__value"><span class="value" data-price="${item.price}">${item.price}<span>  €</span></div>
+
       </li>
 `;
-
-
-
-
-        }
-
-
-
-      }
-    })
-
+}
+}
+})
 };
 
 

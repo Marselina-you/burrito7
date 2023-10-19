@@ -1,4 +1,20 @@
-<header id="masthead" class="header container">
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Burrito</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body" id="page">
+  <div class="site-container">
+    <header id="masthead" class="header container">
   <div class="header-logo">
     <img class="header-logo__decor" src="img/logo-t.svg" alt="burrito">
 </div>
@@ -18,9 +34,9 @@
 
   </div>
   <div class="modal-container">
-		<div class="modal-card-overlay">
-			<div class="modal-card" data-target="card-popup">
-				<div class="modal-content">
+        <div class="modal-card-overlay">
+            <div class="modal-card" data-target="card-popup">
+                <div class="modal-content">
           <div class="modal-body">
             <div class="mini-card-content">
               <div class="widget woocommerce widget_shopping_card"><div class="widget_shopping_card_content">
@@ -39,26 +55,25 @@
                 <span class="quantity">3 × <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>18.00</bdi></span></span></li>
               </ul>
             <p class="woocommerce-mini-card__total total">
-              <strong>Summary:</strong> <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>164.00</bdi></span>	</p>
-            <p class="woocommerce-mini-card__buttons buttons"><a href="http://burrito-wc/card/" class="button wc-forward">Viewing the cart</a><a href="#" class="button checkout wc-forward">Making an order</a></p>
+              <strong>Summary:</strong> <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>164.00</bdi></span> </p>
+            <p class="woocommerce-mini-card__buttons buttons"><a href="http://burrito-wc/card/" class="button wc-forward">Viewing the cart</a><a href="#" class="button checkout wc-forward">Making an order</a></p>
             </div>
             </div>
             </div>
           </div>
 
         </div>
-			</div>
-			</div>
-	</div>
+            </div>
+            </div>
+    </div>
   <div class="login-btn">
     <a class="login-button" data-path="form-popup">LogIn</a>
   </div>
 
-
   <div class="modal-container">
-		<div class="modal-login-overlay">
-			<div class="modal-login" data-target="form-popup">
-				<div class="modal-content">
+        <div class="modal-login-overlay">
+            <div class="modal-login" data-target="form-popup">
+                <div class="modal-content">
           <div class="modal-body">
             <div class="tabs">
               <ul class="tabs__list">
@@ -125,11 +140,10 @@
             </div>
           </div>
 
-
-				</div>
-			</div>
-			</div>
-	</div>
+                </div>
+            </div>
+            </div>
+    </div>
 
     </nav>
     </div>
@@ -140,3 +154,72 @@
 
     </div>
 </header>
+
+    <!---->
+    <section class="cart">
+  <div class="container">
+   <ul class="cart__list list-reset">
+    <li class="cart-item">
+      <article class="cart-item__img">
+        <img src="img/seviche.png" alt="">
+        <a href="#" class="cart-item__remove">x</a>
+      </article>
+      <article class="cart-item__content">
+
+          <a href="#" class="cart-item__title">Seviche</a>
+
+        <span class="cart-item__weight cart-item__txt">weight: 300 g</span>
+        <div class="cart-item__quantity cart-item__txt">quantity: <span>2</span></div>
+        <span class="cart-item__price cart-item__txt">Price: <span>20 €</span></span>
+      </article>
+    </li>
+   </ul>
+   <div class="cart-result">
+<h2 class="cart-result__title">in total</h2>
+<p class="cart-result__summ">summary<span>54</span>€</p>
+   </div>
+  </div>
+</section>
+
+    <footer class="footer  page-footer">
+  <a href="#page" data-scroll class="to-top">
+    <span class="to-top__icon">
+      <svg>
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </span>
+  </a>
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__social" id="down">
+        <a class="footer__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a class="footer__image" href="">
+            <svg>
+              <use xlink:href="img/sprite.svg#odno"></use>
+              </svg>
+            </a>
+
+      <a class="footer__image" href="">
+        <svg>
+          <use xlink:href="img/sprite.svg#twit"></use>
+          </svg>
+        </a>
+      </div>
+      <h2 class="footer__title">2018 Burrito Chili-Bar</h2>
+      <h3 class="footer__subtitle">Website built at The Building Block</h3>
+      <span class="footer__copyright">Terms&PrivacyPolicyReserveNow</span>
+    </div>
+</div>
+</footer>
+<div class="overlay"></div>
+
+  </div>
+  <script defer src="js/main.js"></script>
+
+</body>
+
+</html>

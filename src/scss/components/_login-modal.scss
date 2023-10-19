@@ -72,14 +72,22 @@
 }
 .form-block-remember {
   span {
-    font: var(--regular-lato);
+    font-family: var(--regular-lato);
     font-size: 18px;
     color: var(--dark-color);
   }
 }
 .login-title {
-  font: var(--regular-lato);
+  font-family: var(--regular-lato);
   color: var(--dark-color);
   font-weight: 700;
 }
+.site-header-cart--n {
+  &:hover {
+    .mini-card-content {
+        display: block;
+      }
+      }
+}
+
 

@@ -1,0 +1,17 @@
+.development {
+
+  &__container {
+    height: 100%;
+  }
+
+  &__title {
+    padding: 45px 0;
+    font-family: var(--font-family-lato);
+    font-size: 30px;
+    color: var(--light-color);
+
+    @include small-tablet {
+      font-size: 22px;
+    }
+  }
+}

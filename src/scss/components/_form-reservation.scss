@@ -5,6 +5,9 @@
   @include tablet {
     padding-top: 60px;
   }
+  @include small-tablet {
+    padding-top: 30px;
+  }
 
 
 
@@ -21,6 +24,7 @@
     }
 
     @include small-tablet {
+      padding-bottom: 10px;
       width: 100%;
     }
   }
@@ -45,7 +49,7 @@
       border-radius: 5px;
       padding: 10px 100px;
     }
-    @include mobile {
+    @include small-tablet {
       grid-column: 4 span;
     }
   }
@@ -68,6 +72,11 @@
     color: var(--gray-light-color);
     background-position: 10px 50%;
     background-repeat: no-repeat;
+
+    @include small-tablet {
+      padding: 15px 35px;
+      font-size: 18px;
+    }
 }
 
     &--people {
@@ -131,6 +140,10 @@
   @include tablet {
     margin-top: 10px;
     font-size: 20px;
+  }
+  @include small-tablet {
+    font-size: 18px;
+    padding-top: 20px;
   }
 }
 .reservation-flower {
